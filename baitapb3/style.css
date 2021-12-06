@@ -1,0 +1,40 @@
+.san-pham {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+p {
+    font-size: 40px;
+}
+
+.bia {
+    display: flex;
+    align-items: center;
+}
+
+.bia-img {
+    max-width: 500px;
+}
+
+.back-link {
+    margin-left: 155px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #dfd4d4;
+}
+
+span {
+    padding: 5px;
+}
