@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+.all {
+    display: flex;
+}
+
+.div1 {
+    height: 400px;
+    width: 50%;
+    background-color: red;
+}
+
+.div2 {
+    width: 50%;
+}
+
+.div3 {
+    height: 200px;
+    width: 100%;
+    background-color: green;
+}
+
+.div4 {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+
+.p {
+    color: white;
+    position: absolute;
+    margin: auto;
+}

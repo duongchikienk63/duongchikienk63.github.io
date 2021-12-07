@@ -1,0 +1,195 @@
+/* Câu 1 */
+#pond {
+    display: flex;
+  justify-content: flex-end;
+  /* Di chuyển item theo chiều flex (flex theo chiều ngang) đến điểm cuối */
+  }
+
+/* Câu 2 */
+#pond {
+    display: flex;
+  justify-content: center;
+  /* Căn chỉnh item ra giữa */
+  }
+
+/* Câu 3 */
+#pond {
+    display: flex;
+  justify-content: space-around;
+  /* giãn cách item ra 2 phía trung bình */
+  }
+
+/* Câu 4 */
+#pond {
+    display: flex;
+  justify-content: space-between;
+  /* giãn cách item ra 2 phía dính vào lề */
+  }
+
+/* Câu 5 */
+#pond {
+    display: flex;
+  align-items: flex-end;
+  /* Di chuyển item xuống dưới cùng của flex */
+  }
+
+/* Câu 6 */
+#pond {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+/* Câu 7 */
+#pond {
+    display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  }
+
+/* Câu 8 */
+#pond {
+    display: flex;
+  flex-direction: row-reverse;
+   /* Điều chỉnh lại hướng item ngược hướng ban đầu */
+  }
+
+/* Câu 9 */
+#pond {
+    display: flex;
+  flex-direction: column;
+  /* Đặt các item theo cột */
+  }
+
+/* Câu 10 */
+#pond {
+    display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  }
+
+/* Câu 11 */
+#pond {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  }
+
+/* Câu 12 */
+#pond {
+    display: flex;
+  flex-direction: column-reverse;
+  /* Đặt các item theo cột theo chiều ngược lại với vị trí ban đầu*/
+  justify-content: space-between;
+  }
+
+
+/* Câu 13 */
+#pond {
+    display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  }
+
+
+/* Câu 14 */
+#pond {
+    display: flex;
+  }
+  
+  .yellow {
+  order: 1;
+  /* Di chuyển item lên 1 đơn vị (item di chuyển lùi hoặc tiến phụ thuộc vào số đc order là âm hay dương) */
+}
+
+
+/* Câu 15 */
+#pond {
+    display: flex;
+  }
+  
+  .red {
+  order: -3;
+  }
+
+
+/* Câu 16 */
+#pond {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .yellow {
+  align-self: flex-end;
+  /* Chỉnh sửa vị trí giống align-items nhưng với 1 hạng mục riêng */
+  }
+
+
+/* Câu 17 */
+#pond {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .yellow {
+  order: 2;
+  align-self: flex-end;
+  }
+
+
+/* Câu 18 */
+#pond {
+    display: flex;
+  flex-wrap: wrap;
+  }
+  /* Các hạng mục quấn xung quanh để tạo thêm dòng */
+
+
+/* Câu 19 */
+#pond {
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap
+  }
+
+
+/* Câu 20 */
+#pond {
+    display: flex;
+  flex-flow: column wrap;
+  }
+  /* Thẻ flex-flow là kết hợp của thẻ flex-direction và thẻ flex-wrap */
+
+
+/* Câu 21 */
+#pond {
+    display: flex;
+    flex-wrap: wrap;
+  align-content: flex-start;
+  /* Lệnh này dùng để chỉnh vị trí dòng (align-items khác là chỉnh items) */
+  }
+
+/* Câu 22 */
+#pond {
+    display: flex;
+    flex-wrap: wrap;
+  align-content: flex-end;
+  }
+
+/* Câu 23 */
+#pond {
+    display: flex;
+    flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-content: center;
+  }
+
+/* Câu 24 */
+#pond {
+    display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+  }
