@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.all {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.div1 {
+  height: 400px;
+}
+
+.div2 {
+  height: 200px;
+  width: 100%;
+}
+
+.with-50 {
+  width: 50%;
+}
+
+.height-witdh {
+  width: 33.333333333%;
+  height: 400px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  margin: 0;
+}
+
+.margin-right {
+  margin-right: 15px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
