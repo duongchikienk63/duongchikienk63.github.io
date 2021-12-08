@@ -100,7 +100,7 @@
   
   .yellow {
   order: 1;
-  /* Di chuyển item lên 1 đơn vị (item di chuyển lùi hoặc tiến phụ thuộc vào số đc order là âm hay dương) */
+  /* Đặt giá trị cho items, giá trị lớn nhất sẽ bị đẩy lùi ra đằng sau cùng (giá trị ban đầu của các items = 0) */
 }
 
 
@@ -110,7 +110,7 @@
   }
   
   .red {
-  order: -3;
+  order: -1;
   }
 
 
@@ -133,7 +133,7 @@
   }
   
   .yellow {
-  order: 2;
+  order: 1;
   align-self: flex-end;
   }
 
@@ -193,3 +193,33 @@
   justify-content: center;
   align-content: space-between;
   }
+
+
+/* justify-content chỉnh css khối theo chiều ngang
+flex-start: Các hạng mục sẽ được sắp xếp về phía bên trái của hộp chứa.
+flex-end: Các hạng mục sẽ được sắp xếp về phía bên phải của hộp chứa.
+center: Các hạng mục sẽ được sắp xếp ở giữa chính của hộp chứa.
+space-between: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau giữa chúng.
+space-around: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau xung quanh chúng. */
+
+/* align-items chỉnh css khối theo chiều dọc
+flex-start: Các hạng mục sẽ được sắp xếp phía trên của hộp chứa.
+flex-end: Các hạng mục sẽ được sắp xếp phía dưới cùng của hộp chứa.
+center: Các hạng mục sẽ được sắp xếp ở giữa chính của hộp chứa.
+baseline: Các hạng mục sẽ được hiển thị ở đường cơ bản của hộp chứa.
+stretch: Các hạng mục sẽ được kéo dài để phù hợp với hộp chứa. */
+
+/* flex-direction chỉnh css hướng và chiều của khối
+row: Các hạng mục được đặt cùng hướng với hướng của từ trong văn bản.
+row-reverse: Các hạng mục được đặt ngược hướng với hướng của từ trong văn bản.
+column: Các hạng mục được đặt từ trên xuống dưới.
+column-reverse: Các hạng mục được đặt từ dưới lên trên. */
+
+/* order di chuyển vị trí của phần tử theo giá trị(âm = lùi; dương = tiến) */
+
+/* align-self cũng giống align-items nhưng chỉ css cho 1 phần tử riêng biệt */
+
+/* flex-wrap chỉnh css 
+nowrap: Mỗi hạng mục được dồn vào một hàng duy nhất.
+wrap: Các hạng mục quấn xung quanh để tạo thêm dòng.
+wrap-reverse: Các hạng mục quấn xung quanh để tạo thêm dòng ngược lại. */
