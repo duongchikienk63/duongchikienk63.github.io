@@ -1,0 +1,108 @@
+/* Chiều dài màn hình  */
+/* mobile<740, 740=<ipad<1024, pc>=1024 */
+@media (max-width: 739px) {
+    /* .header {
+        overflow: hidden;
+    } */
+
+    .header-wrap {
+        display: block;
+        position: relative;
+        margin-top: auto;
+    }
+
+    .header_search {
+        display: grid;
+    }
+
+    .header_search-link {
+        padding: 16px;
+    }
+
+    .header_search-search {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+        position: relative;
+        margin-bottom: auto;
+    }
+
+    .menu-mobile--hover {
+        background-color: #000;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 48px;
+    }
+    
+    .menu-mobile--hover-link {
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+        
+    }
+    
+    .menu-mobile--hover-item {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 16px 24px;
+    }
+
+    .header:hover .menu-mobile--hover {
+        display: block;
+    }
+
+    .menu-mobile--hover:hover {
+        display: none !important;
+    }
+
+    .member {
+        display: grid;
+    }
+
+    .member-item {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .slider-note {
+        display: none;
+    }
+
+    .tour-location-list {
+        display: block;
+    }
+
+    .tour-location-item {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .information {
+        display: block;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact-name {
+        display: block;
+        margin-right: 16px;
+    }
+
+    .contact-name-in4 {
+        margin-top: 8px;
+    }
+
+    .content-img {
+        margin-top: 50px;
+    }
+}
