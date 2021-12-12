@@ -1,21 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    max-width: 100%;
+}
+
 .san-pham {
     display: flex;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.item {
+    max-width: calc(33.33333% - 10px);
+    border: 0.5px solid #cbcbcb;
+    margin-bottom: 20px;
 }
 
 img {
-    max-width: 300px;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 a {
     text-decoration: none;
     font-size: 25px;
     color: black;
+    width: 100%;
 }
 
 p {
     font-size: 40px;
+    width: 100%;
 }
 
 .bia {
@@ -37,4 +66,10 @@ p {
 
 span {
     padding: 5px;
+}
+
+.price {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
