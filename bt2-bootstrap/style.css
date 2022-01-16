@@ -5,7 +5,7 @@
 }
 
 .font {
-    font-family: regular;
+  font-family: regular;
 }
 
 .header {
@@ -34,7 +34,7 @@
 }
 
 .menu-mobile {
-    display: none;
+  display: none;
 }
 
 .content-img {
@@ -76,6 +76,7 @@
 
 .content-text-item1 {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .content-text-item1 img {
