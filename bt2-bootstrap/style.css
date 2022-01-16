@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.font {
+    font-family: regular;
+}
+
 .header {
   padding: 50px 0;
   display: flex;
