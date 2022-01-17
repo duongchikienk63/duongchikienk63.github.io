@@ -70,6 +70,10 @@
     display: none;
   }
 
+  .sign_up-header {
+      font-size: 20px;
+  }
+
   .footer {
     margin: 0 auto 100px auto;
   }
