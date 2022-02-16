@@ -13,27 +13,20 @@ function renderListBox(arr) {
     listBox.classList.add("box");
     boxes.append(listBox);
     listBox.style.backgroundColor = arr[i];
+
+    //Thêm event xóa box khi nhấn vào box
+    listBox.addEventListener("click", function () {
+      listBox.remove();
+      pointsEl.innerHTML = " " + listBoxEl.length;
+    });
   }
+  //Hiện thị số lượng box ra ngoài
+  pointsEl.innerHTML = " " + listBoxEl.length;
 }
 
 renderListBox(colors);
 
-//Hiện thị số lượng box ra ngoài
-pointsEl.innerHTML = " " + listBoxEl.length;
-
-//Ấn vào box nào thì xóa box đó
-function remove(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    listBoxEl[i].addEventListener("click", function () {
-      listBoxEl[i].remove();
-      pointsEl.innerHTML = " " + listBoxEl.length;
-    });
-  }
-}
-
-remove(listBoxEl);
-
-//Bấm vào nút More boxes thì thêm 5 box
+// Bấm vào nút More boxes thì thêm 5 box
 btnAdd.addEventListener("click", function () {
   renderListBox(colors);
   pointsEl.innerHTML = " " + listBoxEl.length;
