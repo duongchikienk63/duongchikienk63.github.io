@@ -1,0 +1,82 @@
+.col-lg-3 {
+  background: rgb(44, 44, 44);
+  padding: 6px 14px;
+  height: 100%;
+  width: 240px;
+  padding: 1px;
+  color: rgb(255 255 255);
+}
+
+.mot {
+  height: 100%;
+}
+
+.row-1 {
+  height: 10%;
+  display: flex;
+}
+.logo {
+  padding: 2px;
+  text-align: center;
+  font-size: 21px;
+}
+.menu-list {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+.bxs-hot {
+  font-size: 40px;
+}
+
+.logoWrap {
+  display: flex;
+  justify-content: center; /* can trai phai */
+  align-items: center; /* can tren duoi */
+  margin-top: 20px;
+}
+.ItemWrap {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* cách giữa hai phần tử */
+  padding: 10px;
+}
+.color_active {
+  background-color: #329c36;
+  border-radius: 10px;
+}
+
+.Admin-page {
+}
+
+.form-control:focus {
+  outline: 0 !important;
+  border-color: initial;
+  box-shadow: none;
+}
+.col-md-12 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-2 {
+  margin-top: 20px;
+}
+
+.borders {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+.borderss {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
+.R-Header {
+  font-size: 20px;
+  word-spacing: 15px;
+}
+
+.form-control {
+    border-radius: 0px;
+}

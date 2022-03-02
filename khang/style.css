@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+.header {
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.logo_item {
+  display: flex;
+  align-items: center;
+}
+
+.logo_item i {
+  font-size: 28px;
+  color: red;
+  margin-right: 2px;
+}
+
+.logo_item p {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-right: 3px;
+}
+
+.logo_item span {
+  font-size: 12px;
+  position: relative;
+  top: -8px;
+  color: #979797;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.ipt {
+  border: 1px solid #d2d2d2;
+}
+
+.search input {
+  width: 570px;
+  height: 36px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+  border: none;
+}
+
+.btn {
+  border: 1px solid #d2d2d2;
+  margin-right: 20px;
+}
+
+.search button {
+  height: 36px;
+  width: 60px;
+  border: none;
+}
+
+.btn i {
+  font-size: 18px;
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.square {
+  font-size: 20px;
+}
+
+.notification {
+  font-size: 20px;
+}
+
+.notification div {
+  background-color: red;
+  font-size: 14px;
+  border-radius: 50%;
+  width: 15px;
+  text-align: center;
+  height: 15px;
+  position: absolute;
+  right: 66px;
+  top: 15px;
+}
+
+.user_img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url("https://scontent.fhan5-3.fna.fbcdn.net/v/t1.6435-9/126901793_402614427594055_4198437239240920982_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_ohc=R2DaY-d5KmMAX8kIKmA&_nc_ht=scontent.fhan5-3.fna&oh=00_AT943GK2ABnqz1FK_P2DMheE7_pL8nJh_hIHOkfRObR0VQ&oe=624620F5");
+}

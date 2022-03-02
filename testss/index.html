@@ -1,24 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sơn</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Hello.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <p>
-      This example uses the addEventListener() method to attach a "change" event
-      to an input element.
-    </p>
-
-    Enter your name: <input type="text" id="fname" />
-
-    <p>
-      When you leave the input field, a function is triggered which transforms
-      the input text to upper case.
-    </p>
-
-    <script src="./main.js"></script>
+    <div class="Admin-page">
+      <div class="row mot">
+        <div class="col-lg-3">
+          <div class="logo">
+            <div class="logoWrap"><i class="bx bxs-hot"></i>Tua CRM</div>
+          </div>
+          <div class="menu">
+            <ul class="menu-list">
+              <li>
+                <p class="ItemWrap color_active">
+                  <i class="bx bx-category-alt"></i>Dashboard
+                </p>
+                <p class="ItemWrap"><i class="bx bx-user-pin"></i>Customers</p>
+                <p class="ItemWrap"><i class="bx bx-package"></i>Products</p>
+                <p class="ItemWrap"><i class="bx bx-cart"></i>Orders</p>
+                <p class="ItemWrap">
+                  <i class="bx bx-bar-chart-alt"></i>Analytics
+                </p>
+                <p class="ItemWrap"><i class="bx bx-grid-alt"></i>Categories</p>
+                <p class="ItemWrap"><i class="bx bx-gift"></i>Discount</p>
+                <p class="ItemWrap"><i class="bx bx-store-alt"></i>Inventory</p>
+                <p class="ItemWrap"><i class="bx bx-cog"></i>Settings</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row-2">
+            <div class="col-md-12">
+              <div class="input-group col-md-3 px-0">
+                <input
+                  class="form-control py-2 border-right-0 border"
+                  placeholder="Search here"
+                />
+                <span class="input-group-append borders">
+                  <button
+                    class="btn btn-outline-secondary border-left-0"
+                    type="button"
+                  >
+                    <i class="bx bx-search-alt"></i>
+                  </button>
+                </span>
+              </div>
+              <p class="R-Header">
+                khangdam <i class="bx bx-bell"></i>
+                <i class="bx bxs-keyboard"></i>
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
