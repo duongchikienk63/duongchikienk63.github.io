@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+#header {
+  position: relative;
+  margin-bottom: 750px;
+}
+
+.banner_header {
+  position: absolute;
+  z-index: 1;
+}
+
+.banner_header,
+.banner_header img {
+  width: 100%;
+}
+
+.header-content {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.header-advertisement {
+  height: 35px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+}
+
+.qc {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.qc p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.user {
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 80px;
+  gap: 12px;
+}
+
+.user::after {
+  content: "";
+  border-width: 8px 0.1px;
+  border-style: solid;
+  border-color: white;
+  position: absolute;
+  top: 10px;
+  right: 104px;
+}
+
+.user button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.header-menu {
+  width: 100%;
+  height: 71px;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  margin-top: 2px;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.header-menu_item {
+  height: 100%;
+  text-align: center;
+}
+
+.header-menu_item ul {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.header-menu_item li {
+  font-weight: 700;
+  font-size: 17px;
+  padding: 15px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search form {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.search input {
+  border: none;
+  width: 100px;
+}
+
+.search input:focus {
+  outline: 0;
+}
+
+.search button {
+  border: none;
+  background-color: white;
+}
+
+.fa-cart-shopping {
+  font-size: 24px;
+}
+
+.login {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 20;
+}
+
+.close {
+  background-color: white;
+  color: black;
+  border: none;
+  width: 16px;
+  height: 16px;
+  padding: 4px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close i {
+  font-size: 24px;
+  position: absolute;
+  right: 4px;
+  top: -4px;
+}
+
+.login-content,
+.registration-content {
+  width: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.login-content input,
+.registration-content input {
+  width: 100%;
+  height: 57px;
+  padding: 6px 12px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #ced4da;
+}
+
+.login-content button,
+.registration-content button {
+  width: 100%;
+  height: 57px;
+  padding: 6px 12px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.login h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.login-content p,
+.registration-content p {
+  margin: 15px 0;
+  color: gray;
+}
+
+.login-item,
+.registration-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-item button,
+.registration-item button {
+  width: 150px;
+  height: 38px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #ced4da;
+  font-weight: 300;
+}
+
+.login-item img,
+.registration-item img {
+  margin-right: 5px;
+}
+
+.login-content a,
+.registration-content a {
+  color: #0d6efd;
+}
+
+.login-content p:last-child,
+.registration-content p:last-child {
+  color: black;
+}
+
+.login-content input:focus,
+.registration-content input:focus {
+  outline: 0;
+}
+
+.policy{
+  color: black!important;
+  margin-bottom: 0!important;
+  font-size: 17px;
+}
+
+#list-products {
+  margin-bottom: 50px;
+
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.products-item,
+.products-item img {
+  width: 100%;
+}
+
+.products-item p {
+  margin-top: 20px;
+}
+
+.display-none {
+  display: none;
+}
+
+#banner {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+#banner img {
+  width: 100%;
+}
+
+
+
