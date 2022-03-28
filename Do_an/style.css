@@ -164,6 +164,20 @@ a:hover {
   font-size: 24px;
 }
 
+.total-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 72px;
+  color: white;
+}
+
 .login {
   width: 400px;
   height: 100%;
