@@ -312,7 +312,10 @@ a:hover {
   width: 100%;
 }
 
-.next-left {
+
+
+.next-left-it1,
+.next-left-it2 {
   width: 50px;
   height: 50px;
   background-color: #ccc;
@@ -321,15 +324,25 @@ a:hover {
   justify-content: center;
   border-radius: 50%;
   position: relative;
+}
+
+.next-left-it1 {
+  top: -300px;
+  left: 30px;
+}
+
+.next-left-it2 {
   top: -250px;
   left: 30px;
 }
 
-.next-left i {
+.next-left-it1 i,
+.next-left-it2 i {
   font-size: 20px;
 }
 
-.next-right {
+.next-right-it1,
+.next-right-it2{
   width: 50px;
   height: 50px;
   background-color: #ccc;
@@ -338,8 +351,21 @@ a:hover {
   justify-content: center;
   border-radius: 50%;
   position: relative;
+}
+
+.next-right-it1 {
+  top: -350px;
+  left: 1435px;
+}
+
+.next-right-it2 {
   top: -300px;
   left: 1435px;
+}
+
+.next-right-it1 i,
+.next-right-it2 i {
+  font-size: 20px;
 }
 
 
