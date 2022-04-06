@@ -915,3 +915,185 @@ ul {
 .endow {
   margin-bottom: 5px!important;
 }
+
+.receiver_information input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.note {
+  margin-bottom: 80px;
+}
+
+.note input {
+  width: 100%;
+  padding: 10px 10px 100px 10px;
+  margin-bottom: 15px;
+}
+
+.payment_option {
+  margin-bottom: 15px;
+}
+
+.payment_option div,
+.choose_delivery div {
+  width: 100%;
+  border: 1px solid #767676;
+  padding: 10px;
+}
+
+.choose_delivery {
+  margin-bottom: 50px;
+}
+
+.VN-pay,
+.standard {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.Bank,
+.free {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+form p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.confirm {
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.confirm h2{
+  font-size: 16px;
+  margin-bottom: 19px;
+}
+
+.voucher input {
+  padding: 10px;
+  width: 230px;
+  float: left;
+}
+
+.voucher button {
+  width: 97px;
+  height: 48px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 16px;
+}
+
+.voucher {
+  margin-bottom: 30px;
+}
+
+.confirm p {
+  font-size: 16px;
+  padding-bottom: 5px;
+  border: 2px solid;
+  border-color: transparent transparent black transparent;
+}
+
+.confirm-product {
+  display: flex;
+}
+
+.confirm-product_img {
+  width: 75px;
+  margin-right: 10px;
+}
+
+.confirm-product_img img {
+  max-width: 100%;
+}
+
+.confirm-product-infor h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.confirm-product-infor p {
+  font-size: 14px !important;
+  border: none;
+  color: #7F828C;
+  font-weight: 400 !important;
+  margin-bottom: 10px !important;
+  padding: 0;
+}
+
+.confirm-price p {
+  font-size: 14px !important;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  border: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.confirm-price {
+  border: 2px solid;
+  border-color: transparent transparent #EEE transparent;
+  margin-bottom: 20px;
+}
+
+.provisional,
+.ship,
+.confirm-price-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border: 2px solid;
+  border-color: transparent transparent #EEE transparent;
+}
+
+.provisional span,
+.ship span,
+.confirm-price-total span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.provisional p,
+.ship p,
+.confirm-price-total p {
+  border: none;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ship p {
+  color: #6D7073;
+}
+
+.confirm-price-total p {
+  color: red;
+}
+
+.confirm-price-total {
+  margin-bottom: 20px;
+}
+
+#btn-confirm {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 16px;
+}
+ 
+.line {
+}
