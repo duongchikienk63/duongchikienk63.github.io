@@ -8,7 +8,10 @@ const nextLog = document.getElementById("next-log");
 const loginEle = document.querySelector(".login-content");
 const regEle = document.querySelector(".registration-content");
 const fixedMenu = document.querySelector(".header-menu");
+const fixedMenuMB = document.querySelector(".header-menu-moblie");
 const backTop = document.querySelector(".back_top");
+const menuMB = document.getElementById("menu-mobile");
+const menuMbList = document.getElementById("menu-list-moblie");
 
 dangNhap.addEventListener("click", function () {
   loginPage.classList.remove("display-none");
@@ -32,8 +35,10 @@ nextLog.addEventListener("click", function () {
 window.addEventListener("scroll", (e) => {
   if (window.scrollY >= 35) {
     fixedMenu.classList.add("fixed-menu");
+    fixedMenuMB.classList.add("fixed-menu");
   } else {
     fixedMenu.classList.remove("fixed-menu");
+    fixedMenuMB.classList.remove("fixed-menu");
   }
 });
 
@@ -45,25 +50,17 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-// Thêm, bớt sản phẩm
-let btnAdd = document.querySelector("#add");
-let btnMinus = document.querySelector("#minus");
-let totalProduct = document.getElementById("total-products");
+const phoneUser = document.querySelector("#phone-user");
+const btnLogin = document.querySelector(".login-submit");
 
-btnAdd.addEventListener("click", function () {
-  totalProduct.innerText = Number(totalProduct.innerText) + 1;
-});
+// btnLogin.addEventListener("click", function() {
+//   if(phoneUser.value == "") {
+//     alert("Thông tin tài khoản chưa chính xác");
+//   } else {
+//     loginEle.classList.add("display-none");
+//   }
+// })
 
-btnMinus.addEventListener("click", function () {
-  if ( Number(totalProduct.innerText) > 1) {
-    totalProduct.innerText = Number(totalProduct.innerText) - 1;
-  }
-});
-
-// Xóa sản phẩm trong giỏ hàng
-let delEle = document.getElementById("detele");
-let productsCartEle = document.querySelector(".products-cart");
-
-delEle.addEventListener("click", function() {
-  productsCartEle.classList.add("display-none");
-})
+// menuMB.addEventListener("click", function () {
+//   menuMbList.classList.remove("display-none");
+// });
