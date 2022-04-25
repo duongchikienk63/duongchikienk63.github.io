@@ -67,9 +67,9 @@
               </div>
             </li>
             <li>
-              <a href="#">SẢN PHẨM</a>
+              <a href="./san_pham.html">SẢN PHẨM</a>
               <div class="list-item">
-                <p><a href="#">Áo thun</a></p>
+                <p><a href="./phan_loai_sp.html">Áo thun</a></p>
                 <p><a href="#">Áo sơmi</a></p>
                 <p><a href="#">Quần âu</a></p>
                 <p><a href="#">Quần jeans</a></p>
@@ -114,7 +114,7 @@
       <div class="move">
         <a href="./index.html">Home /</a>
         <a href="./san_pham.html">Sản Phẩm /</a>
-        <a href="#">Áo Sơmi</a>
+        <a href="#" id="name-product">Áo Sơmi</a>
       </div>
     </section>
 
@@ -185,7 +185,7 @@
 
     <section id="detail-product">
       <div class="container">
-        <div class="row">
+        <div class="row" id="add_product">
           <div class="col-lg-8">
             <div class="img-group">
               <div class="img-list">
@@ -436,11 +436,15 @@
     <section id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-8 col-md-12">
             <div class="row">
-              <div class="col-lg-4">
-                <h3>VỀ CHÚNG TÔI</h3>
-                <ul>
+              <div class="col-lg-4 col-md-4">
+                <div id="thuong_hieu-content">
+                  <h3>VỀ CHÚNG TÔI</h3>
+                  <i id="down-th" class="fa-solid fa-angle-down"></i>
+                  <i id="up-th" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="thuong_hieu" class="display-none">
                   <li>
                     <a href="#">Câu chuyện thương hiệu</a>
                   </li>
@@ -455,9 +459,13 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4">
-                <h3>CHÍNH SÁCH BÁN HÀNG</h3>
-                <ul>
+              <div class="col-lg-4 col-md-4">
+                <div id="chinh_sach-content">
+                  <h3>CHÍNH SÁCH BÁN HÀNG</h3>
+                  <i id="down-cs" class="fa-solid fa-angle-down"></i>
+                  <i id="up-cs" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="chinh_sach" class="display-none">
                   <li>
                     <a href="#">Chính sách đổi hàng</a>
                   </li>
@@ -478,9 +486,13 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4">
-                <h3>TƯ VẤN</h3>
-                <ul>
+              <div class="col-lg-4 col-md-4">
+                <div id="tu_van-content">
+                  <h3>TƯ VẤN</h3>
+                  <i id="down-tv" class="fa-solid fa-angle-down"></i>
+                  <i id="up-tv" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="tu_van" class="display-none">
                   <li>
                     <a href="#">Tư vấn phong cách</a>
                   </li>
@@ -498,7 +510,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-12">
             <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
             <div class="uu_dai">
               <input type="text" placeholder="Nhập email của bạn..." />
@@ -507,10 +519,18 @@
             <div class="connect">
               <p>Kết nối với chúng tôi</p>
               <div class="connect-icon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
               </div>
             </div>
           </div>

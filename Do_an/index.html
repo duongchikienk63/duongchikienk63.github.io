@@ -120,9 +120,9 @@
       </div>
 
       <div class="header-menu-moblie">
-        <div id="menu-mobile">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <i class="fa-solid fa-bars"></i>
-        </div>
+        </button>
 
         <div class="logo">
           <img src="./img/DCK.png" alt="logo" />
@@ -136,43 +136,48 @@
         </div>
       </div>
     </section>
-
-    <div id="menu-list-moblie display-none">
-      <h3>Menu</h3>
-      <ul>
-        <li>
-          <a href="#">TRANG CHỦ</a>
-        </li>
-        <li>
-          <a href="#">THƯƠNG HIỆU</a>
-          <span><i class="fa-solid fa-angle-right"></i></span>
-        </li>
-        <li>
-          <a href="./san_pham.html">SẢN PHẨM</a>
-          <span><i class="fa-solid fa-angle-right"></i></span>
-        </li>
-        <li>
-          <a href="#">PHỤ KIỆN</a>
-          <span><i class="fa-solid fa-angle-right"></i></span>
-        </li>
-        <li>
-          <a href="#">BỘ SƯU TẬP</a>
-          <span><i class="fa-solid fa-angle-right"></i></span>
-        </li>
-        <li>
-          <a href="#">SALE</a>
-        </li>
-      </ul>
-
-      <div class="login-mobile">
-        <button id="login">
-          <i class="fa-regular fa-circle-user"></i>
-          Đăng Nhập
-        </button>
-        <button>
-          <i class="fa-solid fa-phone"></i>
-          0705155283
-        </button>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+        <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>
+            <a href="#">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="#">THƯƠNG HIỆU</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="./san_pham.html">SẢN PHẨM</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="#">PHỤ KIỆN</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="#">BỘ SƯU TẬP</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="#">SALE</a>
+          </li>
+        </ul>
+  
+        <div class="login-mobile">
+          <button id="login">
+            <i class="fa-regular fa-circle-user"></i>
+            Đăng Nhập
+          </button>
+          <button>
+            <i class="fa-solid fa-phone"></i>
+            0705155283
+          </button>
+        </div>
       </div>
     </div>
 
@@ -276,7 +281,7 @@
     <section id="list-products">
       <div class="container">
         <h2>DANH MỤC NỔI BẬT</h2>
-        <div class="row carousel ">
+        <div class="row carousel">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <a href="#">
               <div class="products-item">
@@ -367,7 +372,7 @@
           </div>
         </div>
 
-        <div class="row carousel_mb ">
+        <div class="row carousel_mb">
           <div class="list-img-products">
             <a href="#">
               <div class="products-item">
@@ -458,7 +463,7 @@
           </div>
         </div>
 
-        <div class="row carousel_tablet ">
+        <div class="row carousel_tablet">
           <div class="list-img-products">
             <a href="#">
               <div class="products-item">
@@ -849,7 +854,11 @@
           <div class="col-lg-8 col-md-12">
             <div class="row">
               <div class="col-lg-4 col-md-4">
-                <h3 id="thuong_hieu-content">VỀ CHÚNG TÔI</h3>
+                <div id="thuong_hieu-content">
+                  <h3>VỀ CHÚNG TÔI</h3>
+                  <i id="down-th" class="fa-solid fa-angle-down"></i>
+                  <i id="up-th" class="fa-solid fa-angle-up display-none"></i>
+                </div>
                 <ul id="thuong_hieu">
                   <li>
                     <a href="#">Câu chuyện thương hiệu</a>
@@ -866,7 +875,11 @@
                 </ul>
               </div>
               <div class="col-lg-4 col-md-4">
-                <h3 id="chinh_sach-content">CHÍNH SÁCH BÁN HÀNG</h3>
+                <div id="chinh_sach-content">
+                  <h3>CHÍNH SÁCH BÁN HÀNG</h3>
+                  <i id="down-cs" class="fa-solid fa-angle-down"></i>
+                  <i id="up-cs" class="fa-solid fa-angle-up display-none"></i>
+                </div>
                 <ul id="chinh_sach">
                   <li>
                     <a href="#">Chính sách đổi hàng</a>
@@ -888,8 +901,12 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4 col-md-4" >
-                <h3 id="tu_van-content">TƯ VẤN</h3>
+              <div class="col-lg-4 col-md-4">
+                <div id="tu_van-content">
+                  <h3>TƯ VẤN</h3>
+                  <i id="down-tv" class="fa-solid fa-angle-down"></i>
+                  <i id="up-tv" class="fa-solid fa-angle-up display-none"></i>
+                </div>
                 <ul id="tu_van">
                   <li>
                     <a href="#">Tư vấn phong cách</a>
@@ -908,7 +925,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12  ">
+          <div class="col-lg-4 col-md-12">
             <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
             <div class="uu_dai">
               <input type="text" placeholder="Nhập email của bạn..." />
@@ -964,6 +981,12 @@
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
     ></script>
 
     <script

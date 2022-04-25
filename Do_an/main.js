@@ -61,6 +61,54 @@ const btnLogin = document.querySelector(".login-submit");
 //   }
 // })
 
-// menuMB.addEventListener("click", function () {
-//   menuMbList.classList.remove("display-none");
-// });
+const downTh = document.getElementById("down-th");
+const upTh = document.getElementById("up-th");
+const thList = document.querySelector("#thuong_hieu");
+const downCs = document.getElementById("down-cs");
+const upCs = document.getElementById("up-cs");
+const csList = document.querySelector("#chinh_sach");
+const downTv = document.getElementById("down-tv");
+const upTv = document.getElementById("up-tv");
+const tvList = document.querySelector("#tu_van");
+
+//Đóng mở mục thương hiệu
+downTh.addEventListener("click", function () {
+  thList.classList.add("display-block");
+  upTh.classList.remove("display-none");
+  downTh.classList.add("display-none");
+});
+
+upTh.addEventListener("click", function () {
+  thList.classList.remove("display-block");
+  downTh.classList.remove("display-none");
+  upTh.classList.add("display-none");
+});
+
+//Đóng mở mục chính sách
+downCs.addEventListener("click", function () {
+  csList.classList.add("display-block");
+  upCs.classList.remove("display-none");
+  downCs.classList.add("display-none");
+});
+
+upCs.addEventListener("click", function () {
+  csList.classList.remove("display-block");
+  downCs.classList.remove("display-none");
+  upCs.classList.add("display-none");
+});
+
+//Đóng mở mục tư vấn
+downTv.addEventListener("click", function () {
+  tvList.classList.add("display-block");
+  upTv.classList.remove("display-none");
+  downTv.classList.add("display-none");
+});
+
+upTv.addEventListener("click", function () {
+  tvList.classList.remove("display-block");
+  downTv.classList.remove("display-none");
+  upTv.classList.add("display-none");
+});
+
+
+

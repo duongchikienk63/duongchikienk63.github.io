@@ -1173,31 +1173,24 @@ form p {
   padding: 0 15px;
 }
 
-.menu-list-moblie {
-  position: absolute;
-  height: 100%;
-  width: 80%;
-  background: white;
-  z-index: 999;
-  top: 0;
+.offcanvas-body {
+  padding: 0;
 }
 
-.menu-list-moblie h3 {
-  font-size: 16px;
-  text-align: center;
-  padding: 15px 0;
-  border-bottom: 1px solid #aca8a8;
-  font-weight: 300;
+.offcanvas-header {
+  justify-content: center !important;
+}
+
+.offcanvas-title {
   color: #aca8a8;
-  margin-bottom: 0;
 }
 
-.menu-list-moblie ul {
+.offcanvas-body ul {
   padding-left: 15px;
   margin-bottom: 80px;
 }
 
-.menu-list-moblie li {
+.offcanvas-body li {
   border-bottom: 1px solid #aca8a8;
   font-weight: 700;
   font-size: 14px;
@@ -1206,11 +1199,11 @@ form p {
   justify-content: space-between;
 }
 
-.menu-list-moblie li a {
+.offcanvas-body li a {
   padding: 10px 0;
 }
 
-.menu-list-moblie li span {
+.offcanvas-body li span {
   font-size: 20px;
   border-left: 1px solid #aca8a8;
   height: 42px;
@@ -1240,6 +1233,16 @@ form p {
 
 .login-mobile button:last-child {
   border-bottom: 1px solid #aca8a8;
+}
+
+#down-th,
+#down-cs,
+#down-tv {
+  display: none;
+}
+
+.display-block {
+  display: block !important;
 }
 
 @media (max-width: 1400px) {
@@ -1275,7 +1278,6 @@ form p {
 
   .product_page {
     flex-basis: unset;
-
   }
 }
 
@@ -1331,16 +1333,16 @@ form p {
   .list-item {
     top: 55px;
   }
- }
+}
 
 @media (max-width: 768px) {
   .list-img-products {
-    max-width: 300px ;
+    max-width: 300px;
   }
   .carousel_mb a {
     display: flex;
     justify-content: center;
-  }  
+  }
 
   .uu_dai {
     margin-bottom: 30px;
@@ -1370,13 +1372,38 @@ form p {
     display: flex;
   }
 
-  .menu-mobile {
+  .btn-primary,
+  .btn-primary:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
     font-size: 20px;
+    padding: 0 !important;
   }
 
   .total-item {
     right: 6px;
     top: 2px;
+  }
+
+  #footer {
+    margin: 0 15px;
+  }
+
+  #footer h3 {
+    margin: 0;
+  }
+
+  #thuong_hieu-content,
+  #chinh_sach-content,
+  #tu_van-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px 0;
   }
 
   #thuong_hieu,
@@ -1385,11 +1412,13 @@ form p {
     display: none;
   }
 
-  #footer {
-    margin: 0 15px;
+  #down-th,
+  #down-cs,
+  #down-tv {
+    display: block;
   }
 
-  #footer .col-lg-8 h3 {
-    border-bottom: 1px solid black;
+  .end_product {
+    font-size: 13px;
   }
 }
