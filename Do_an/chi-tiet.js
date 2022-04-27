@@ -23,7 +23,7 @@ let products = [
   },
   {
     name: "Áo sơ mi dài tay nam",
-    price: 695000,
+    price: 850000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03502/ao-so-mi-nam-aristino-ALS03502-03x900x900x4.jpg",
     image1:
@@ -41,270 +41,270 @@ let products = [
     type: "Trắng",
   },
   {
-    name: "Áo Polo Nam",
+    name: "Áo sơ mi ngắn tay nam",
     price: 695000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps001s2/ao-polo-nam-APS001S2-03x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass206s2/ao-so-mi-nam-aristino-ASS206S2-05x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass206s2/ao-so-mi-nam-aristino-ASS206S2-06x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass206s2/ao-so-mi-nam-aristino-ASS206S2-03x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass206s2/ao-so-mi-nam-aristino-ASS206S2-04x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass206s2/ao-so-mi-nam-aristino-ASS206S2-01x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass206s2/ao-so-mi-nam-aristino-ASS206S2-05x50x50x4.jpg",
     count: 1,
     id: 2,
-    type: "Xám",
+    type: "Trắng in kẻ",
   },
   {
     name: "Áo Sơmi Ngắn Tay Nam",
-    price: 695000,
+    price: 750000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass230s2/ao-so-mi-nam-aristino-ASS230S2x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass223s2/ao-so-mi-nam-aristino-ASS223s2-05x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass223s2/ao-so-mi-nam-aristino-ASS223s2x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass223s2/ao-so-mi-nam-aristino-ASS223s2-04x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass223s2/ao-so-mi-nam-aristino-ASS223s2-03x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass230s2/ao-so-mi-nam-aristino-ASS230S2x50x50x4.jpg",
     count: 1,
     id: 3,
-    type: "Xám",
+    type: "Xanh kẻ caro",
   },
   {
-    name: "Quần Short Nam",
-    price: 695000,
+    name: "Áo sơ mi dài tay nam",
+    price: 900000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso052s2/quan-short-nam-aristino-ASO052S2-04x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als42802/ao-so-mi-nam-aristino-ALS42802-01x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als42802/ao-so-mi-nam-aristino-ALS42802-02x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als42802/ao-so-mi-nam-aristino-ALS42802-07x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als42802/ao-so-mi-nam-aristino-ALS42802x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als42802/ao-so-mi-nam-aristino-ALS42802-06x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als42802/ao-so-mi-nam-aristino-ALS42802-01x50x50x4.jpg",
     count: 1,
     id: 4,
-    type: "Xám",
+    type: "Xanh kẻ trắng",
   },
   {
-    name: "Áo Polo Nam",
-    price: 695000,
+    name: "Áo sơ mi dài tay nam",
+    price: 850000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps001s2/ao-polo-nam-APS001S2-03x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als36502/ao-so-mi-nam-aristino-ALS36502x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als36502/ao-so-mi-nam-aristino-ALS36502x900x900x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als36502/ao-so-mi-nam-aristino-ALS36502x900x900x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als36502/ao-so-mi-nam-aristino-ALS36502x900x900x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als36502/ao-so-mi-nam-aristino-ALS36502x900x900x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als36502/ao-so-mi-nam-aristino-ALS36502x50x50x4.jpg",
     count: 1,
     id: 5,
-    type: "Xám",
+    type: "Đen kẻ xanh",
   },
   {
-    name: "Áo Sơmi Ngắn Tay Nam",
-    price: 695000,
+    name: "Áo sơ mi dài tay nam",
+    price: 795000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als35602/ao-so-mi-nam-aristino-ALS35602x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als35602/ao-so-mi-nam-aristino-ALS35602x900x900x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als35602/ao-so-mi-nam-aristino-ALS35602x900x900x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als35602/ao-so-mi-nam-aristino-ALS35602x900x900x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als35602/ao-so-mi-nam-aristino-ALS35602x900x900x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als35602/ao-so-mi-nam-aristino-ALS35602x50x50x4.jpg",
     count: 1,
     id: 6,
-    type: "Xám",
+    type: "Trắng kẻ xanh",
   },
   {
-    name: "Quần Short Nam",
+    name: "Áo sơ mi ngắn tay nam",
     price: 695000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso052s2/quan-short-nam-aristino-ASO052S2-04x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass228s2/ao-so-mi-nam-aristino-ASS228S2x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass228s2/ao-so-mi-nam-aristino-ASS228S2-06x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass228s2/ao-so-mi-nam-aristino-ASS228S2-05x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass228s2/ao-so-mi-nam-aristino-ASS228S2-04x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass228s2/ao-so-mi-nam-aristino-ASS228S2-03x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass228s2/ao-so-mi-nam-aristino-ASS228S2x50x50x4.jpg",
     count: 1,
     id: 7,
-    type: "Xám",
+    type: "Xanh tím than in",
   },
   {
-    name: "Áo Polo Nam",
+    name: "Áo sơ mi ngắn tay nam",
     price: 695000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps001s2/ao-polo-nam-APS001S2-03x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass216s2/ao-so-mi-nam-aristino-ASS216S2-04x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass216s2/ao-so-mi-nam-aristino-ASS216S2-05x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass216s2/ao-so-mi-nam-aristino-ASS216S2-03x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass216s2/ao-so-mi-nam-aristino-ASS216S2-02x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass216s2/ao-so-mi-nam-aristino-ASS216S2-01x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass216s2/ao-so-mi-nam-aristino-ASS216S2-04x50x50x4.jpg",
     count: 1,
     id: 8,
-    type: "Xám",
+    type: "Xanh tím than in",
   },
   {
-    name: "Áo Sơmi Ngắn Tay Nam",
-    price: 695000,
+    name: "Áo polo nam",
+    price: 585000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps193s2/ao-polo-nam-aristino-APS193S2-05x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps193s2/ao-polo-nam-aristino-APS193S2-06x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps193s2/ao-polo-nam-aristino-APS193S2-07x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps193s2/ao-polo-nam-aristino-APS193S2-04x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps193s2/ao-polo-nam-aristino-APS193S2-02x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps193s2/ao-polo-nam-aristino-APS193S2-05x50x50x4.jpg",
     count: 1,
     id: 9,
-    type: "Xám",
+    type: "Xanh tím than",
   },
   {
-    name: "Quần Short Nam",
-    price: 695000,
+    name: "Áo thun nam",
+    price: 350000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso052s2/quan-short-nam-aristino-ASO052S2-04x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats041s2/ao-thun-nam-aristino-ATS041S2-12x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats041s2/ao-thun-nam-aristino-ATS041S2-11x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats041s2/ao-thun-nam-aristino-ATS041S2-13x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats041s2/ao-thun-nam-aristino-ATS041S2-09x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats041s2/ao-thun-nam-aristino-ATS041S2-10x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats041s2/ao-thun-nam-aristino-ATS041S2-12x50x50x4.jpg",
     count: 1,
     id: 10,
-    type: "Xám",
+    type: "Xám 32 kẻ",
   },
   {
-    name: "Áo Polo Nam",
+    name: "Quần short nam",
     price: 695000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps001s2/ao-polo-nam-APS001S2-03x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso042s2/quan-short-nam-aristino-ASO042S2-02x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso042s2/quan-short-nam-aristino-ASO042S2x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso042s2/quan-short-nam-aristino-ASO042S2-01x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso042s2/quan-short-nam-aristino-ASO042S2x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso042s2/quan-short-nam-aristino-ASO042S2-03x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso042s2/quan-short-nam-aristino-ASO042S2-02x50x50x4.jpg",
     count: 1,
     id: 11,
-    type: "Xám",
+    type: "Xám 288 kẻ",
   },
   {
-    name: "Áo Sơmi Ngắn Tay Nam",
-    price: 695000,
+    name: "Áo sơ mi dài tay nam",
+    price: 850000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03602/ao-so-mi-nam-aristino-ALS03602-03x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03602/ao-so-mi-nam-aristino-ALS03602-04x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03602/ao-so-mi-nam-aristino-ALS03602x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03602/ao-so-mi-nam-aristino-ALS03602-02x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03602/ao-so-mi-nam-aristino-ALS03602-01x900x900x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03602/ao-so-mi-nam-aristino-ALS03602-03x50x50x4.jpg",
     count: 1,
     id: 12,
-    type: "Xám",
+    type: "Trắng",
   },
   {
-    name: "Quần Short Nam",
-    price: 695000,
+    name: "Áo tank-top nam",
+    price: 275000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso052s2/quan-short-nam-aristino-ASO052S2-04x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att019s2/ao-tank-top-nam-aristino-ATT019S2-02x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att019s2/ao-tank-top-nam-aristino-ATT019S2-01x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att019s2/ao-tank-top-nam-aristino-ATT019S2-03x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att019s2/ao-tank-top-nam-aristino-ATT019S2-14x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att019s2/ao-tank-top-nam-aristino-ATT019S2x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att019s2/ao-tank-top-nam-aristino-ATT019S2-02x50x50x4.jpg",
     count: 1,
     id: 13,
-    type: "Xám",
+    type: "Xanh biển",
   },
   {
-    name: "Áo Polo Nam",
-    price: 695000,
+    name: "Áo polo nam",
+    price: 650000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps001s2/ao-polo-nam-APS001S2-03x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps131s2/ao-polo-nam-aristino-APS131S2-01x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps131s2/ao-polo-nam-aristino-APS131S2-02x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps131s2/ao-polo-nam-aristino-APS131S2-03x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps131s2/ao-polo-nam-aristino-APS131S2-04x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps131s2/ao-polo-nam-aristino-APS131S2x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps131s2/ao-polo-nam-aristino-APS131S2-01x50x50x4.jpg",
     count: 1,
     id: 14,
-    type: "Xám",
+    type: "Trắng 6 kẻ",
   },
   {
-    name: "Áo Polo Nam",
-    price: 695000,
+    name: "Áo polo nam",
+    price: 595000,
     image:
-      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps001s2/ao-polo-nam-APS001S2-03x500x500x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps091s2/ao-polo-nam-aristino-APS091S2-11x900x900x4.jpg",
     image1:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-10x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps091s2/ao-polo-nam-aristino-APS091S2-12x90x90x4.jpg",
     image2:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-08x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps091s2/ao-polo-nam-aristino-APS091S2-13x90x90x4.jpg",
     image3:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-07x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps091s2/ao-polo-nam-aristino-APS091S2-09x90x90x4.jpg",
     image4:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-09x90x90x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps091s2/ao-polo-nam-aristino-APS091S2-10x90x90x4.jpg",
     image5:
-      "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x50x50x4.jpg",
+      "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps091s2/ao-polo-nam-aristino-APS091S2-11x50x50x4.jpg",
     count: 1,
     id: 15,
-    type: "Xám",
+    type: "Xanh Aqua",
   },
 ];
 
@@ -435,3 +435,20 @@ btnMinus.addEventListener("click", function () {
     totalProduct.innerText = Number(totalProduct.innerText) - 1;
   }
 });
+
+const btnBuy = document.querySelector(".btn-buy");
+let productsInCart = [];
+
+btnBuy.addEventListener("click", function () {
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].id == idItem) {
+      productsInCart.push(products[i]);
+    };
+  }
+  abc();
+});
+
+function abc() {
+  localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
+}
+

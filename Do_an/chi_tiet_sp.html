@@ -110,13 +110,76 @@
             <div class="total-item">0</div>
           </a>
         </div>
+
       </div>
+
+      <div class="header-menu-moblie">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./img/DCK.png" alt="logo" />
+        </div>
+
+        <div class="cart-moblie">
+          <a href="./gio_hang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="total-item">0</div>
+          </a>
+        </div>
+      </div>
+
       <div class="move">
         <a href="./index.html">Home /</a>
         <a href="./san_pham.html">Sản Phẩm /</a>
         <a href="#" id="name-product">Áo Sơmi</a>
       </div>
     </section>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+        <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>
+            <a href="#">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="#">THƯƠNG HIỆU</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="./san_pham.html">SẢN PHẨM</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="#">PHỤ KIỆN</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="#">BỘ SƯU TẬP</a>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </li>
+          <li>
+            <a href="#">SALE</a>
+          </li>
+        </ul>
+  
+        <div class="login-mobile">
+          <button id="login">
+            <i class="fa-regular fa-circle-user"></i>
+            Đăng Nhập
+          </button>
+          <button>
+            <i class="fa-solid fa-phone"></i>
+            0705155283
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- Mục hiển thị đăng nhập, đăng ký -->
     <div class="login display-none">
@@ -267,6 +330,8 @@
               Thêm vào giỏ hàng
             </button>
 
+
+            <!-- onclick="location.href='gio_hang.html';" -->
             <button class="btn-buy" onclick="location.href='gio_hang.html';">Mua ngay</button>
 
             <a class="list_store" href="#">Xem store còn hàng</a>
@@ -444,7 +509,7 @@
                   <i id="down-th" class="fa-solid fa-angle-down"></i>
                   <i id="up-th" class="fa-solid fa-angle-up display-none"></i>
                 </div>
-                <ul id="thuong_hieu" class="display-none">
+                <ul id="thuong_hieu">
                   <li>
                     <a href="#">Câu chuyện thương hiệu</a>
                   </li>
@@ -465,7 +530,7 @@
                   <i id="down-cs" class="fa-solid fa-angle-down"></i>
                   <i id="up-cs" class="fa-solid fa-angle-up display-none"></i>
                 </div>
-                <ul id="chinh_sach" class="display-none">
+                <ul id="chinh_sach">
                   <li>
                     <a href="#">Chính sách đổi hàng</a>
                   </li>
@@ -492,7 +557,7 @@
                   <i id="down-tv" class="fa-solid fa-angle-down"></i>
                   <i id="up-tv" class="fa-solid fa-angle-up display-none"></i>
                 </div>
-                <ul id="tu_van" class="display-none">
+                <ul id="tu_van">
                   <li>
                     <a href="#">Tư vấn phong cách</a>
                   </li>
@@ -541,5 +606,10 @@
 
     <script src="./main.js"></script>
     <script src="./chi-tiet.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

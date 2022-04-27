@@ -110,5 +110,3 @@ upTv.addEventListener("click", function () {
   upTv.classList.add("display-none");
 });
 
-
-
