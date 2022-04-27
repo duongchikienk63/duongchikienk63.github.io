@@ -452,3 +452,23 @@ function setLocalStorage() {
   localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
 }
 
+// localStorage.setItem("lastname", JSON.stringify();
+// JSON.parse(lastname)
+
+//Lấy dữ liệu từ localStorage
+function getDataForomLocalStorage() {
+  //Lấy data thông qua key "todos"
+  let todosLocal = localStorage.getItem("productsInCart");
+
+  //Nếu có data trong localStorage thì parse, ko thì để arr rỗng
+  if (todosLocal) {
+    productsInCart = JSON.parse(todosLocal);
+  } else {
+    productsInCart = [];
+  }
+
+  renderTodo(productsInCart);
+}
+
+//Sự kiện xảy ra khi web load hết html css thì gọi vào function
+window.onload = getDataForomLocalStorage;
