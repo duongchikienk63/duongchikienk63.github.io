@@ -445,10 +445,10 @@ btnBuy.addEventListener("click", function () {
       productsInCart.push(products[i]);
     };
   }
-  abc();
+  setLocalStorage();
 });
 
-function abc() {
+function setLocalStorage() {
   localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
 }
 

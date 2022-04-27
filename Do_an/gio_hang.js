@@ -1,28 +1,3 @@
-// Thêm, bớt sản phẩm
-let btnAdd = document.querySelector("#add");
-let btnMinus = document.querySelector("#minus");
-let totalProduct = document.getElementById("total-products");
-
-btnAdd.addEventListener("click", function () {
-  totalProduct.innerText = Number(totalProduct.innerText) + 1;
-});
-
-btnMinus.addEventListener("click", function () {
-  if (Number(totalProduct.innerText) > 1) {
-    totalProduct.innerText = Number(totalProduct.innerText) - 1;
-  }
-});
-
-// Xóa sản phẩm trong giỏ hàng
-// let delEle = document.getElementById("detele");
-// let productsCartEle = document.querySelector(".products-cart");
-
-// delEle.addEventListener("click", function () {
-//   productsCartEle.classList.add("display-none");
-// });
-
-
-
 const productsCartItem = document.querySelector(".products-cart");
 let productsInCart = [];
 
@@ -54,12 +29,12 @@ function renderTodo(arr) {
         <p>${t.type} / XL</p>
         <div class="total_product">
           <div class="number_product">
-            <button id="minus">
+            <button id="minus" onclick="changeTotalProductMinus(${t.id})">
               <i class="fa-solid fa-minus"></i>
             </button>
-            <span id="total-products"></span>
-            <button id="add">
-              <i class="fa-solid fa-plus">${t.count}</i>
+            <span id="total-products">${t.count}</span>
+            <button id="add" onclick="changeTotalProduct(${t.id})">
+              <i class="fa-solid fa-plus"></i>
             </button>
           </div>
         </div>  
@@ -79,14 +54,55 @@ function renderTodo(arr) {
 
 renderTodo(productsInCart);
 
+let subtotalEl = document.querySelector(".subtotal");
+let totalCount = document.querySelector(".count");
+function updateTotalProducts(arr) {
+  let totalProducts = 0;
+  let totalPriceProducts = 0;
+  for (let i = 0; i < arr.length; i++) {
+    //Tính số lượng sản phẩm có trong giỏ
+    totalProducts += arr[i].count;
+
+    //Tính giá tiền bằng số lượng sản phẩm * giá tiền
+    totalPriceProducts += arr[i].count * arr[i].price;
+  }
+
+  //Hiển thị số lượng sản phẩm có trong giỏ hàng lên trên góc bên phải
+  if (totalProducts > 0) {
+    totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${totalProducts})`;
+  }
+}
+updateTotalProducts(productsInCart);
 
 function deleteTodo(id) {
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id == id) {
       productsInCart.splice(i, 1);
+      totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN (0)";
     }
   }
   renderTodo(productsInCart);
+  updateTotalProducts(productsInCart);
+}
+
+function changeTotalProduct(id) {
+  for (let i = 0; i < productsInCart.length; i++) {
+    if (productsInCart[i].id == id) {
+      productsInCart[i].count += 1;
+    }
+  }
+  renderTodo(productsInCart);
+  updateTotalProducts(productsInCart);
+}
+
+function changeTotalProductMinus(id) {
+  for (let i = 0; i < productsInCart.length; i++) {
+    if ((productsInCart[i].id == id) & (productsInCart[i].count > 1)) {
+      productsInCart[i].count -= 1;
+    }
+  }
+  renderTodo(productsInCart);
+  updateTotalProducts(productsInCart);
 }
 
 // localStorage.setItem("lastname", JSON.stringify();
