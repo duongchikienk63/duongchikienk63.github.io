@@ -136,7 +136,7 @@ ul {
 
 .active {
   border-bottom: 2px solid black;
-} 
+}
 
 .header-menu_item ul {
   display: flex;
@@ -1388,6 +1388,10 @@ form p {
     display: flex;
   }
 
+  #add_product {
+    width: 100%;
+  }
+
   .btn-primary,
   .btn-primary:hover {
     background-color: transparent !important;
@@ -1396,6 +1400,9 @@ form p {
     box-shadow: none !important;
     font-size: 20px;
     padding: 0 !important;
+  }
+  .img-list {
+    gap: 0 !important;
   }
 
   .total-item {
@@ -1439,7 +1446,7 @@ form p {
   }
 
   #detail-product .container {
-    padding: 0;
+    padding: 0 12px;
   }
 
   .img-group {
@@ -1458,5 +1465,9 @@ form p {
   .img-grow {
     padding: 0;
     margin-bottom: 20px;
+  }
+
+  #list-product_item .products-item {
+    padding: 0 60px;
   }
 }

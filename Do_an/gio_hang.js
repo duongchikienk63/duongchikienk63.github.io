@@ -7,7 +7,7 @@ function renderTodo(arr) {
 
   //Danh sách công việc trống
   if (arr.length == 0) {
-    productsCartItem.innerHTML = "Không có công việc nào trong danh sách";
+    productsCartItem.innerHTML = "Không có sản phẩm nào trong giỏ hàng";
     return;
   }
 
@@ -57,7 +57,7 @@ renderTodo(productsInCart);
 let subtotalEl = document.querySelector(".subtotal");
 let totalCount = document.querySelector(".count");
 function updateTotalProducts(arr) {
-  let totalProducts = 0;
+  let totalProducts = arr.length;
   let totalPriceProducts = 0;
   for (let i = 0; i < arr.length; i++) {
     //Tính số lượng sản phẩm có trong giỏ
@@ -68,7 +68,7 @@ function updateTotalProducts(arr) {
   }
 
   //Hiển thị số lượng sản phẩm có trong giỏ hàng lên trên góc bên phải
-  if (totalProducts > 0) {
+  if (totalProducts >= 0) {
     totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${totalProducts})`;
   }
 }
@@ -83,6 +83,7 @@ function deleteTodo(id) {
   }
   renderTodo(productsInCart);
   updateTotalProducts(productsInCart);
+  setLocalStorage()
 }
 
 function changeTotalProduct(id) {
@@ -105,6 +106,10 @@ function changeTotalProductMinus(id) {
   updateTotalProducts(productsInCart);
 }
 
+function setLocalStorage() {
+  localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
+}
+
 // localStorage.setItem("lastname", JSON.stringify();
 // JSON.parse(lastname)
 
@@ -119,7 +124,6 @@ function getDataForomLocalStorage() {
   } else {
     productsInCart = [];
   }
-
   renderTodo(productsInCart);
 }
 

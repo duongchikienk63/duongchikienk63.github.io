@@ -466,7 +466,6 @@ function getDataForomLocalStorage() {
   } else {
     productsInCart = [];
   }
-
   renderTodo(productsInCart);
 }
 
