@@ -21,7 +21,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Web Đồ Án</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <title>Thanh Toán</title>
   </head>
   <body>
     <section id="header my-0">
@@ -127,7 +128,8 @@
       
       <div class="move">
         <a href="./index.html">Home /</a>
-        <a href="#">Giỏ hàng</a>
+        <a href="./gio_hang.html">Giỏ hàng /</a>
+        <a href="./gio_hang.html">Thanh toán</a>
       </div>
     </section>
     
@@ -136,26 +138,26 @@
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
         <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body index-menu">
         <ul>
           <li>
-            <a href="#">TRANG CHỦ</a>
+            <a href="./index.html">TRANG CHỦ</a>
           </li>
           <li>
             <a href="#">THƯƠNG HIỆU</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-th"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="./san_pham.html">SẢN PHẨM</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-sp"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">PHỤ KIỆN</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-pk"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">BỘ SƯU TẬP</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-bst"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">SALE</a>
@@ -172,6 +174,83 @@
             0705155283
           </button>
         </div>
+      </div>
+      <div class="offcanvas-body th-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Tin Tức</a>
+          </li>
+          <li>
+            <a href="#">Phong cách</a>
+          </li>
+          <li>
+            <a href="#">Bài Viết</a>
+          </li>
+          <li>
+            <a href="#">Ưu Đãi Liên Kết</a>           
+          </li>
+        </ul>
+
+        <button class="back-home-th">
+          Quay lại
+        </button>
+      </div>
+      <div class="offcanvas-body sp-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Áo Thun</a>
+          </li>
+          <li>
+            <a href="#">Áo Sơ Mi</a>
+          </li>
+          <li>
+            <a href="">Quần Âu</a>
+          </li>
+          <li>
+            <a href="#">Quần Jeans</a>           
+          </li>
+          <li>
+            <a href="#">Quần Short</a>           
+          </li>
+        </ul>
+
+        <button class="back-home-sp">
+          Quay lại
+        </button>
+      </div>
+      <div class="offcanvas-body pk-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Ví Nam</a>
+          </li>
+          <li>
+            <a href="#">Thắt Lưng</a>
+          </li>
+          <li>
+            <a href="">Giày Da</a>
+          </li>
+          <li>
+            <a href="#">Cà Vạt</a>
+          </li>
+        </ul>
+
+        <button class="back-home-pk">
+          Quay lại
+        </button>
+      </div>
+      <div class="offcanvas-body bst-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Bộ Sưu Tập Xuân Hè</a>
+          </li>
+          <li>
+            <a href="#">Bộ Sưu Tập Thu Đông</a>
+          </li>
+        </ul>
+
+        <button class="back-home-bst">
+          Quay lại
+        </button>
       </div>
     </div>
 
@@ -306,34 +385,40 @@
                 <input type="text" placeholder="Nhập mã giảm giá" />
                 <button>Áp dụng</button>
               </div>
-              <p>ĐƠN HÀNG (1)</p>
-              <div class="confirm-product">
-                <div class="confirm-product_img">
-                  <img
-                    src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x350x350x4.jpg"
-                    alt=""
-                  />
+              <p id="order">ĐƠN HÀNG (1)</p>
+              <div class="payment-list">
+                <div class="confirm-product">
+                  <div class="confirm-product_img">
+                    <img
+                      src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x350x350x4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="confirm-product-infor">
+                    <h3>Áo sơ mi ngắn tay nam</h3>
+                    <p>Màu: Hồng kẻ xanh</p>
+                    <p>Số lượng: 1</p>
+                  </div>
                 </div>
-                <div class="confirm-product-infor">
-                  <h3>Áo sơ mi ngắn tay nam</h3>
-                  <p>Màu: Hồng kẻ xanh</p>
-                  <p>Số lượng: 1</p>
+                <div class="confirm-price">
+                  <p>695.000đ</p>
                 </div>
-              </div>
-              <div class="confirm-price">
-                <p>695.000đ</p>
               </div>
               <div class="provisional">
                 <span>Tạm tính:</span>
-                <p>695.000đ</p>
+                <p id="count-list-produst">695.000đ</p>
               </div>
               <div class="ship">
                 <span>Phí vận chuyển:</span>
-                <p>20.000đ</p>
+                <p id="ship">30.000đ</p>
+              </div>
+              <div class="count-voucher">
+                <span>Giảm giá:</span>
+                <p id="vat">0đ</p>
               </div>
               <div class="confirm-price-total">
                 <span>Thành tiền:</span>
-                <p>715.000đ</p>
+                <p id="count-total">715.000đ</p>
               </div>
               <button id="btn-confirm">
                   XÁC NHẬN ĐẶT HÀNG
@@ -459,6 +544,7 @@
     </div>
 
     <script src="./main.js"></script>
+    <script src="./thanh_toan.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

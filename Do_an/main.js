@@ -110,3 +110,123 @@ upTv.addEventListener("click", function () {
   upTv.classList.add("display-none");
 });
 
+const clickTh = document.querySelector("#click-th");
+const clickSp = document.querySelector("#click-sp");
+const clickPk = document.querySelector("#click-pk");
+const clickBst = document.querySelector("#click-bst");
+const indexMenu = document.querySelector(".index-menu");
+const thMenu = document.querySelector(".th-menu");
+const spMenu = document.querySelector(".sp-menu");
+const pkMenu = document.querySelector(".pk-menu");
+const bstMenu = document.querySelector(".bst-menu");
+const offcanvasExampleLabel = document.querySelector("#offcanvasExampleLabel");
+const backHomeTh = document.querySelector(".back-home-th");
+const backHomeSp = document.querySelector(".back-home-sp");
+const backHomePk = document.querySelector(".back-home-pk");
+const backHomeBst = document.querySelector(".back-home-bst");
+
+clickSp.addEventListener("click", function() {
+  indexMenu.classList.add("display-none");
+  thMenu.classList.add("display-none");
+  spMenu.classList.remove("display-none");
+  pkMenu.classList.add("display-none");
+  bstMenu.classList.add("display-none");
+  offcanvasExampleLabel.innerText = "SẢN PHẨM";
+})
+
+clickTh.addEventListener("click", function() {
+  indexMenu.classList.add("display-none");
+  thMenu.classList.remove("display-none");
+  spMenu.classList.add("display-none");
+  pkMenu.classList.add("display-none");
+  bstMenu.classList.add("display-none");
+  offcanvasExampleLabel.innerText = "THƯƠNG HIỆU";
+})
+
+clickPk.addEventListener("click", function() {
+  indexMenu.classList.add("display-none");
+  thMenu.classList.add("display-none");
+  spMenu.classList.add("display-none");
+  pkMenu.classList.remove("display-none");
+  bstMenu.classList.add("display-none");
+  offcanvasExampleLabel.innerText = "PHỤ KIỆN";
+})
+
+clickBst.addEventListener("click", function() {
+  indexMenu.classList.add("display-none");
+  thMenu.classList.add("display-none");
+  spMenu.classList.add("display-none");
+  pkMenu.classList.add("display-none");
+  bstMenu.classList.remove("display-none");
+  offcanvasExampleLabel.innerText = "BỘ SƯU TẬP";
+})
+
+backHomeTh.addEventListener("click", function() {
+  indexMenu.classList.remove("display-none");
+  thMenu.classList.add("display-none");
+  spMenu.classList.add("display-none");
+  pkMenu.classList.add("display-none");
+  bstMenu.classList.add("display-none");
+  offcanvasExampleLabel.innerText = "TRANG CHỦ";
+})
+
+backHomeSp.addEventListener("click", function() {
+  indexMenu.classList.remove("display-none");
+  thMenu.classList.add("display-none");
+  spMenu.classList.add("display-none");
+  pkMenu.classList.add("display-none");
+  bstMenu.classList.add("display-none");
+  offcanvasExampleLabel.innerText = "TRANG CHỦ";
+})
+
+backHomePk.addEventListener("click", function() {
+  indexMenu.classList.remove("display-none");
+  thMenu.classList.add("display-none");
+  spMenu.classList.add("display-none");
+  pkMenu.classList.add("display-none");
+  bstMenu.classList.add("display-none");
+  offcanvasExampleLabel.innerText = "TRANG CHỦ";
+})
+
+backHomeBst.addEventListener("click", function() {
+  indexMenu.classList.remove("display-none");
+  thMenu.classList.add("display-none");
+  spMenu.classList.add("display-none");
+  pkMenu.classList.add("display-none");
+  bstMenu.classList.add("display-none");
+  offcanvasExampleLabel.innerText = "TRANG CHỦ";
+})
+
+
+// let productsInCart = [];
+
+// const totalItems = document.querySelector(".total-item");
+// function renderTodos(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     const t = arr[i];
+//     totalItems.innerHTML = `${arr.length}`;
+//   }
+// }
+// renderTodos(productsInCart);
+
+
+function setLocalStorage() {
+  localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
+}
+
+//Lấy dữ liệu từ localStorage
+function getDataForomLocalStorage() {
+  //Lấy data thông qua key "todos"
+  let todosLocal = localStorage.getItem("productsInCart");
+
+  //Nếu có data trong localStorage thì parse, ko thì để arr rỗng
+  if (todosLocal) {
+    productsInCart = JSON.parse(todosLocal);
+  } else {
+    productsInCart = [];
+  } 
+  renderTodos(productsInCart);
+}
+
+//Sự kiện xảy ra khi web load hết html css thì gọi vào function
+window.onload = getDataForomLocalStorage;

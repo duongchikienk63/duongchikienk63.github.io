@@ -1,6 +1,26 @@
 const productsCartItem = document.querySelector(".products-cart");
 let productsInCart = [];
 
+// function getUnique(arr, comp) {
+
+//   const unique = arr
+//   .map(e => e[comp])
+
+//   // store the keys of the unique objects
+//   .map((e, i, final) => final.indexOf(e) === i && i)
+
+//   // eliminate the dead keys & store unique objects
+//   .filter(e => arr[e]).map(e => arr[e]);
+//   setLocalStorage();
+//   return unique;
+//  }
+
+//  getUnique(productsInCart,'id')
+
+let subtotalEl = document.querySelector(".subtotal");
+let totalCount = document.querySelector(".count");
+const totalItems = document.querySelector(".total-item");
+
 function renderTodo(arr) {
   //Xóa hết dữ liệu hiện có để thêm dữ liệu mới
   productsCartItem.innerHTML = "";
@@ -15,6 +35,10 @@ function renderTodo(arr) {
   let content = "";
   for (let i = 0; i < arr.length; i++) {
     const t = arr[i];
+    const VNDD = t.price.toLocaleString("vi", {
+      style: "currency",
+      currency: "VND",
+    });
     content += `
     <div class="produts-cart-item">
     <div class="cart-item-img">
@@ -41,23 +65,25 @@ function renderTodo(arr) {
         <p id="detele" onclick="deleteTodo(${t.id})">Xóa</p>
       </div>
       <div class="cart-item-price">
-        <p>${t.price}đ</p>
+        <p>${VNDD}</p>
       </div>
     </div>
   </div>
     `;
+    totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${arr.length})`;
+    totalItems.innerHTML = arr.length;
   }
 
   //Chèn dữ liệu mới để hiển thị
   productsCartItem.innerHTML = content;
+  updateTotalProducts(productsInCart);
 }
-
 renderTodo(productsInCart);
 
-let subtotalEl = document.querySelector(".subtotal");
-let totalCount = document.querySelector(".count");
+const payTotal = document.querySelector("#pay-total");
+
 function updateTotalProducts(arr) {
-  let totalProducts = arr.length;
+  let totalProducts = 0;
   let totalPriceProducts = 0;
   for (let i = 0; i < arr.length; i++) {
     //Tính số lượng sản phẩm có trong giỏ
@@ -65,12 +91,20 @@ function updateTotalProducts(arr) {
 
     //Tính giá tiền bằng số lượng sản phẩm * giá tiền
     totalPriceProducts += arr[i].count * arr[i].price;
-  }
 
-  //Hiển thị số lượng sản phẩm có trong giỏ hàng lên trên góc bên phải
-  if (totalProducts >= 0) {
-    totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${totalProducts})`;
+    payTotal.innerHTML = totalPriceProducts.toLocaleString("vi", {
+      style: "currency",
+      currency: "VND",
+    });
+
+    //Hiển thị số lượng sản phẩm có trong giỏ hàng lên trên góc bên phải
   }
+  totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${totalProducts})`;
+  totalItems.innerHTML = totalProducts;
+  payTotal.innerHTML = totalPriceProducts.toLocaleString("vi", {
+    style: "currency",
+    currency: "VND",
+  });
 }
 updateTotalProducts(productsInCart);
 
@@ -78,12 +112,12 @@ function deleteTodo(id) {
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id == id) {
       productsInCart.splice(i, 1);
-      totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN (0)";
+      totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${productsInCart.length})`;
     }
   }
-  renderTodo(productsInCart);
   updateTotalProducts(productsInCart);
-  setLocalStorage()
+  renderTodo(productsInCart);
+  setLocalStorage();
 }
 
 function changeTotalProduct(id) {
@@ -94,6 +128,7 @@ function changeTotalProduct(id) {
   }
   renderTodo(productsInCart);
   updateTotalProducts(productsInCart);
+  setLocalStorage();
 }
 
 function changeTotalProductMinus(id) {
@@ -104,10 +139,11 @@ function changeTotalProductMinus(id) {
   }
   renderTodo(productsInCart);
   updateTotalProducts(productsInCart);
+  setLocalStorage();
 }
 
 function setLocalStorage() {
-  localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
+  localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
 }
 
 // localStorage.setItem("lastname", JSON.stringify();

@@ -681,9 +681,12 @@ ul {
   margin-bottom: 15px;
 }
 
-.option_product,
-.size_product {
+.option_product {
   margin-bottom: 50px;
+}
+
+.size_product {
+  margin-bottom: 30px;
 }
 
 .option_product img {
@@ -716,11 +719,11 @@ ul {
   padding: 8px 15px;
   cursor: pointer;
   font-size: 16px;
+  border: 1px solid transparent;
 }
 
 .size_product li:hover {
-  border: 1px solid;
-  border-color: transparent transparent black transparent;
+  border-bottom-color: black;
 }
 
 .total_product {
@@ -1054,7 +1057,8 @@ form p {
 
 .provisional,
 .ship,
-.confirm-price-total {
+.confirm-price-total,
+.count-voucher {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1065,14 +1069,16 @@ form p {
 
 .provisional span,
 .ship span,
-.confirm-price-total span {
+.confirm-price-total span,
+.count-voucher span {
   font-size: 16px;
   font-weight: 700;
 }
 
 .provisional p,
 .ship p,
-.confirm-price-total p {
+.confirm-price-total p,
+.count-voucher p  {
   border: none;
   font-size: 16px !important;
   font-weight: 400 !important;
@@ -1249,6 +1255,24 @@ form p {
   display: block !important;
 }
 
+#offcanvasExample {
+  display: none;
+}
+
+.offcanvas-backdrop.show {
+  opacity: 0;
+}
+
+.scroller {
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.payment-list {
+  height: 150px;
+  overflow-y: scroll;
+}
+
 @media (max-width: 1400px) {
   .header-menu_item li {
     font-size: 16px;
@@ -1290,6 +1314,10 @@ form p {
 
   .product_page {
     flex-basis: unset;
+  }
+
+  #detail-product .container {
+    padding: 0px 50px;
   }
 }
 
@@ -1349,9 +1377,22 @@ form p {
   .list-item {
     top: 55px;
   }
+
+  #detail-product .container {
+    padding: 0;
+  }
+
+  .pay {
+    margin-left: 0;
+  }
+
+  .confirm {
+    margin-top: 50px;
+    margin-left: 0;
+}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   .list-img-products {
     max-width: 300px;
   }
@@ -1470,4 +1511,44 @@ form p {
   #list-product_item .products-item {
     padding: 0 60px;
   }
+
+  .offcanvas-start {
+    width: 80%;
+  }
+
+  .th-menu ul,
+  .sp-menu ul,
+  .ok-menu ul,
+  .bst-menu ul {
+    margin-bottom: 30px;
+  }
+
+  .back-home-th,
+  .back-home-sp,
+  .back-home-pk,
+  .back-home-bst {
+    font-weight: 500;
+    padding: 5px;
+    border: none;
+  }
+
+  #offcanvasExample {
+    display: block;
+  }
+
+  .offcanvas-backdrop.show {
+    opacity: 0.5;
+  }
+
+  .end_product li {
+    padding: 10px 5px;
+  }
+
+  .header-cart h2 {
+    font-size: 18px;
+  }
+
+  .move {
+    padding: 0px 15px;
+}
 }

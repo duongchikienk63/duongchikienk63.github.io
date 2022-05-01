@@ -360,7 +360,7 @@ function fixItem(arr) {
       </div>
       <div class="col-lg-4">
         <h1>${t.name}</h1>
-        <p>${t.price}</p>
+        <p class="vnd">${t.price}</p>
         <div class="option_product">
           <p>${t.type}</p>
           <img
@@ -377,18 +377,6 @@ function fixItem(arr) {
             <li>XL</li>
             <li>XXL</li>
           </ul>
-        </div>
-        <div class="total_product">
-          <p>Số lượng</p>
-          <div class="number_product">
-            <button id="minus">
-              <i class="fa-solid fa-minus"></i>
-            </button>
-            <span id="total-products">1</span>
-            <button id="add">
-              <i class="fa-solid fa-plus"></i>
-            </button>
-          </div>
         </div>
         <button class="add-cart">
           <i class="fa-solid fa-cart-plus"></i>
@@ -418,38 +406,64 @@ function fixItem(arr) {
     }
   }
 }
-
 fixItem(products);
+
+const vnd = document.querySelector(".vnd");
+vnd.innerHTML = Number(vnd.innerHTML).toLocaleString('vi', {style : 'currency', currency : 'VND'});
 
 // Thêm, bớt sản phẩm
 let btnAdd = document.querySelector("#add");
 let btnMinus = document.querySelector("#minus");
 let totalProduct = document.getElementById("total-products");
 
-btnAdd.addEventListener("click", function () {
-  totalProduct.innerText = Number(totalProduct.innerText) + 1;
-});
+// btnAdd.addEventListener("click", function () {
+//   totalProduct.innerText = Number(totalProduct.innerText) + 1;
+// });
 
-btnMinus.addEventListener("click", function () {
-  if (Number(totalProduct.innerText) > 1) {
-    totalProduct.innerText = Number(totalProduct.innerText) - 1;
-  }
-});
+// btnMinus.addEventListener("click", function () {
+//   if (Number(totalProduct.innerText) > 1) {
+//     totalProduct.innerText = Number(totalProduct.innerText) - 1;
+//   }
+// });
 
 const btnBuy = document.querySelector(".btn-buy");
+const addCart = document.querySelector(".add-cart");
 let productsInCart = [];
 
 btnBuy.addEventListener("click", function () {
   for (let i = 0; i < products.length; i++) {
     if (products[i].id == idItem) {
       productsInCart.push(products[i]);
-    };
+    }
   }
   setLocalStorage();
 });
 
+addCart.addEventListener("click", function () {
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].id == idItem) {
+      productsInCart.push(products[i]);
+    }
+  }
+  setLocalStorage();
+});
+
+// function getUnique(arr, comp) {
+//   const unique = arr
+//     .map((e) => e[comp])
+
+//     // store the keys of the unique objects
+//     .map((e, i, final) => final.indexOf(e) === i && i)
+
+//     // eliminate the dead keys & store unique objects
+//     .filter((e) => arr[e])
+//     .map((e) => arr[e]);
+
+//   return unique;
+// }
+
 function setLocalStorage() {
-  localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
+  localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
 }
 
 // localStorage.setItem("lastname", JSON.stringify();
@@ -466,7 +480,6 @@ function getDataForomLocalStorage() {
   } else {
     productsInCart = [];
   }
-  renderTodo(productsInCart);
 }
 
 //Sự kiện xảy ra khi web load hết html css thì gọi vào function

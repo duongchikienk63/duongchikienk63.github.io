@@ -21,7 +21,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Web Đồ Án</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <title>Giỏ Hàng</title>
   </head>
   <body>
     <section id="header my-0">
@@ -145,26 +146,26 @@
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
         <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body index-menu">
         <ul>
           <li>
-            <a href="#">TRANG CHỦ</a>
+            <a href="./index.html">TRANG CHỦ</a>
           </li>
           <li>
             <a href="#">THƯƠNG HIỆU</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-th"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="./san_pham.html">SẢN PHẨM</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">PHỤ KIỆN</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">BỘ SƯU TẬP</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-bst"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">SALE</a>
@@ -182,8 +183,77 @@
           </button>
         </div>
       </div>
+      <div class="offcanvas-body th-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Tin Tức</a>
+          </li>
+          <li>
+            <a href="#">Phong cách</a>
+          </li>
+          <li>
+            <a href="#">Bài Viết</a>
+          </li>
+          <li>
+            <a href="#">Ưu Đãi Liên Kết</a>
+          </li>
+        </ul>
+
+        <button class="back-home-th">Quay lại</button>
+      </div>
+      <div class="offcanvas-body sp-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Áo Thun</a>
+          </li>
+          <li>
+            <a href="#">Áo Sơ Mi</a>
+          </li>
+          <li>
+            <a href="">Quần Âu</a>
+          </li>
+          <li>
+            <a href="#">Quần Jeans</a>
+          </li>
+          <li>
+            <a href="#">Quần Short</a>
+          </li>
+        </ul>
+
+        <button class="back-home-sp">Quay lại</button>
+      </div>
+      <div class="offcanvas-body pk-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Ví Nam</a>
+          </li>
+          <li>
+            <a href="#">Thắt Lưng</a>
+          </li>
+          <li>
+            <a href="">Giày Da</a>
+          </li>
+          <li>
+            <a href="#">Cà Vạt</a>
+          </li>
+        </ul>
+
+        <button class="back-home-pk">Quay lại</button>
+      </div>
+      <div class="offcanvas-body bst-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Bộ Sưu Tập Xuân Hè</a>
+          </li>
+          <li>
+            <a href="#">Bộ Sưu Tập Thu Đông</a>
+          </li>
+        </ul>
+
+        <button class="back-home-bst">Quay lại</button>
+      </div>
     </div>
-    
+
     <!-- Mục hiển thị đăng nhập, đăng ký -->
     <div class="login display-none">
       <button class="close">
@@ -254,10 +324,10 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="header-cart">
-              <h2 class ="count" >GIỎ HÀNG CỦA BẠN (0)</h2>
+              <h2 class="count">GIỎ HÀNG CỦA BẠN (1)</h2>
               <a href="./san_pham.html">Chọn thêm sản phẩm</a>
             </div>
-            <div class="products-cart">
+            <div class="products-cart scroller">
               <div class="produts-cart-item">
                 <div class="cart-item-img">
                   <img
@@ -293,7 +363,7 @@
             <div class="pay">
               <div class="pay-price">
                 <span>Tạm tính:</span>
-                <p>695.000đ</p>
+                <p id="pay-total">695.000đ</p>
               </div>
               <p>Miễn phí vận chuyển cho đơn hàng từ 500k</p>
 
@@ -376,11 +446,15 @@
     <section id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-8 col-md-12">
             <div class="row">
-              <div class="col-lg-4">
-                <h3>VỀ CHÚNG TÔI</h3>
-                <ul>
+              <div class="col-lg-4 col-md-4">
+                <div id="thuong_hieu-content">
+                  <h3>VỀ CHÚNG TÔI</h3>
+                  <i id="down-th" class="fa-solid fa-angle-down"></i>
+                  <i id="up-th" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="thuong_hieu">
                   <li>
                     <a href="#">Câu chuyện thương hiệu</a>
                   </li>
@@ -395,9 +469,13 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4">
-                <h3>CHÍNH SÁCH BÁN HÀNG</h3>
-                <ul>
+              <div class="col-lg-4 col-md-4">
+                <div id="chinh_sach-content">
+                  <h3>CHÍNH SÁCH BÁN HÀNG</h3>
+                  <i id="down-cs" class="fa-solid fa-angle-down"></i>
+                  <i id="up-cs" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="chinh_sach">
                   <li>
                     <a href="#">Chính sách đổi hàng</a>
                   </li>
@@ -418,9 +496,13 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4">
-                <h3>TƯ VẤN</h3>
-                <ul>
+              <div class="col-lg-4 col-md-4">
+                <div id="tu_van-content">
+                  <h3>TƯ VẤN</h3>
+                  <i id="down-tv" class="fa-solid fa-angle-down"></i>
+                  <i id="up-tv" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="tu_van">
                   <li>
                     <a href="#">Tư vấn phong cách</a>
                   </li>
@@ -438,7 +520,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-12">
             <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
             <div class="uu_dai">
               <input type="text" placeholder="Nhập email của bạn..." />
@@ -447,10 +529,18 @@
             <div class="connect">
               <p>Kết nối với chúng tôi</p>
               <div class="connect-icon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
               </div>
             </div>
           </div>

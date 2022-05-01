@@ -26,7 +26,8 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Web Đồ Án</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <title>Trang Chủ</title>
   </head>
   <body>
     <section id="header">
@@ -78,17 +79,16 @@
                 <p><a href="#">Áo sơmi</a></p>
                 <p><a href="#">Quần âu</a></p>
                 <p><a href="#">Quần jeans</a></p>
-                <p><a href="#">Ví nam</a></p>
-                <p><a href="#">Giày nam</a></p>
+                <p><a href="#">Quần Short</a></p>
               </div>
             </li>
             <li>
               <a href="#">PHỤ KIỆN</a>
               <div class="list-item">
-                <p><a href="#">Túi xách</a></p>
-                <p><a href="#">Nón thời trang</a></p>
-                <p><a href="#">Kính mắt cao cấp</a></p>
-                <p><a href="#">Dây lưng</a></p>
+                <p><a href="#">Ví Nam</a></p>
+                <p><a href="#">Thắt Lưng</a></p>
+                <p><a href="#">Giày Da</a></p>
+                <p><a href="#">Cà Vạt</a></p>
               </div>
             </li>
             <li>
@@ -142,26 +142,26 @@
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
         <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body index-menu">
         <ul>
           <li>
             <a href="#">TRANG CHỦ</a>
           </li>
           <li>
             <a href="#">THƯƠNG HIỆU</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-th"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="./san_pham.html">SẢN PHẨM</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-sp"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">PHỤ KIỆN</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-pk"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">BỘ SƯU TẬP</a>
-            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-bst"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">SALE</a>
@@ -178,6 +178,83 @@
             0705155283
           </button>
         </div>
+      </div>
+      <div class="offcanvas-body th-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Tin Tức</a>
+          </li>
+          <li>
+            <a href="#">Phong cách</a>
+          </li>
+          <li>
+            <a href="#">Bài Viết</a>
+          </li>
+          <li>
+            <a href="#">Ưu Đãi Liên Kết</a>           
+          </li>
+        </ul>
+
+        <button class="back-home-th">
+          Quay lại
+        </button>
+      </div>
+      <div class="offcanvas-body sp-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Áo Thun</a>
+          </li>
+          <li>
+            <a href="#">Áo Sơ Mi</a>
+          </li>
+          <li>
+            <a href="">Quần Âu</a>
+          </li>
+          <li>
+            <a href="#">Quần Jeans</a>           
+          </li>
+          <li>
+            <a href="#">Quần Short</a>           
+          </li>
+        </ul>
+
+        <button class="back-home-sp">
+          Quay lại
+        </button>
+      </div>
+      <div class="offcanvas-body pk-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Ví Nam</a>
+          </li>
+          <li>
+            <a href="#">Thắt Lưng</a>
+          </li>
+          <li>
+            <a href="">Giày Da</a>
+          </li>
+          <li>
+            <a href="#">Cà Vạt</a>
+          </li>
+        </ul>
+
+        <button class="back-home-pk">
+          Quay lại
+        </button>
+      </div>
+      <div class="offcanvas-body bst-menu display-none">
+        <ul>
+          <li>
+            <a href="#">Bộ Sưu Tập Xuân Hè</a>
+          </li>
+          <li>
+            <a href="#">Bộ Sưu Tập Thu Đông</a>
+          </li>
+        </ul>
+
+        <button class="back-home-bst">
+          Quay lại
+        </button>
       </div>
     </div>
 
@@ -1049,5 +1126,6 @@
         });
       });
     </script>
+    <script src="./cart.js"></script>
   </body>
 </html>
