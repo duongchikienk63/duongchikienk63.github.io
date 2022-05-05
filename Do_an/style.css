@@ -1273,6 +1273,41 @@ form p {
   overflow-y: scroll;
 }
 
+.img-post img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.post-content {
+  padding: 10px;
+}
+
+.post-content h3,
+.post-content h4,
+.post-content p {
+  font-size: 16px;
+}
+
+.post-content h3 {
+  color: #8f8f19;
+}
+
+.post-content h4 {
+  font-weight: 700;
+}
+
+.post-content p {
+  height: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.margin_top-th {
+  margin-top: 40px !important;
+}
+
 @media (max-width: 1400px) {
   .header-menu_item li {
     font-size: 16px;
