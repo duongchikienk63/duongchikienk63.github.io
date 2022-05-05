@@ -590,7 +590,7 @@ ul {
   color: white; */
 }
 
-.end_product li:active {
+.end_product .active-li {
   background-color: black;
   color: white;
 }
@@ -1539,9 +1539,9 @@ form p {
   .offcanvas-backdrop.show {
     opacity: 0.5;
   }
-
+ 
   .end_product li {
-    padding: 10px 5px;
+    padding: 5px;
   }
 
   .header-cart h2 {

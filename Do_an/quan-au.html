@@ -21,16 +21,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon-32x32.png"
-    />
-    <title>Thanh Toán</title>
+    <title>Quần Âu Nam</title>
   </head>
   <body>
     <section id="header my-0">
+      <!-- <div class="banner_header">
+          <img src="./img/baner_header.jpg" alt="banner" />
+        </div> -->
+
       <div class="header-content">
         <div class="header-advertisement">
           <div class="qc">
@@ -64,18 +62,18 @@
             <li>
               <a href="#">THƯƠNG HIỆU</a>
               <div class="list-item">
-                <p><a href="#">Tin tức</a></p>
-                <p><a href="#">Phong cách</a></p>
-                <p><a href="#">Bài viết</a></p>
-                <p><a href="#">Ưu đãi liên kết</a></p>
+                <p><a href="#">Tin Tức</a></p>
+                <p><a href="#">Phong Cách</a></p>
+                <p><a href="#">Bài Viết</a></p>
+                <p><a href="#">Ưu Đãi Liên Kết</a></p>
               </div>
             </li>
-            <li>
+            <li class="active">
               <a href="./san_pham.html">SẢN PHẨM</a>
               <div class="list-item">
                 <p><a href="./phan_loai_sp.html">Áo thun</a></p>
                 <p><a href="./Ao-somi.html">Áo sơmi</a></p>
-                <p><a href="./quan-au.html">Quần âu</a></p>
+                <p><a href="#">Quần âu</a></p>
                 <p><a href="./quan-jeans.html">Quần jeans</a></p>
                 <p><a href="./quan-short.html">Quần Short</a></p>
               </div>
@@ -88,6 +86,7 @@
                 <p><a href="./giay-da.html">Giày Da</a></p>
                 <p><a href="./ca-vat.html">Cà Vạt</a></p>
               </div>
+            </li>
             </li>
             <li>
               <a href="#">BỘ SƯU TẬP</a>
@@ -109,7 +108,7 @@
             </button>
           </form>
 
-          <a href="#">
+          <a href="./gio_hang.html">
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="total-item">0</div>
           </a>
@@ -141,17 +140,15 @@
 
       <div class="move">
         <a href="./index.html">Home /</a>
-        <a href="./gio_hang.html">Giỏ hàng /</a>
-        <a href="./gio_hang.html">Thanh toán</a>
+        <a href="./san_pham.html">Sản Phẩm /</a>
+        <a href="#">Quần Âu Nam</a>
+      </div>
+      <div class="banner_trangsp">
+        <img src="./img/banner_trangsp.jpg" alt="banner" />
       </div>
     </section>
 
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
         <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
@@ -159,29 +156,29 @@
       <div class="offcanvas-body index-menu">
         <ul>
           <li>
-            <a href="./index.html">TRANG CHỦ</a>
+            <a href="#">TRANG CHỦ</a>
           </li>
           <li>
-            <a href="#">THƯƠNG HIỆU</a>
-            <span id="click-th"><i class="fa-solid fa-angle-right"></i></span>
+            <a href="./index.html">THƯƠNG HIỆU</a>
+            <span id = "click-th"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="./san_pham.html">SẢN PHẨM</a>
-            <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-sp"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">PHỤ KIỆN</a>
-            <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-pk"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">BỘ SƯU TẬP</a>
-            <span id="click-bst"><i class="fa-solid fa-angle-right"></i></span>
+            <span id = "click-bst"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="#">SALE</a>
           </li>
         </ul>
-
+  
         <div class="login-mobile">
           <button id="login">
             <i class="fa-regular fa-circle-user"></i>
@@ -205,11 +202,13 @@
             <a href="#">Bài Viết</a>
           </li>
           <li>
-            <a href="#">Ưu Đãi Liên Kết</a>
+            <a href="#">Ưu Đãi Liên Kết</a>           
           </li>
         </ul>
 
-        <button class="back-home-th">Quay lại</button>
+        <button class="back-home-th">
+          Quay lại
+        </button>
       </div>
       <div class="offcanvas-body sp-menu display-none">
         <ul>
@@ -230,7 +229,9 @@
           </li>
         </ul>
 
-        <button class="back-home-sp">Quay lại</button>
+        <button class="back-home-sp">
+          Quay lại
+        </button>
       </div>
       <div class="offcanvas-body pk-menu display-none">
         <ul>
@@ -248,7 +249,9 @@
           </li>
         </ul>
 
-        <button class="back-home-pk">Quay lại</button>
+        <button class="back-home-pk">
+          Quay lại
+        </button>
       </div>
       <div class="offcanvas-body bst-menu display-none">
         <ul>
@@ -257,7 +260,9 @@
           </li>
         </ul>
 
-        <button class="back-home-bst">Quay lại</button>
+        <button class="back-home-bst">
+          Quay lại
+        </button>
       </div>
     </div>
 
@@ -326,109 +331,212 @@
       </div>
     </div>
 
-    <section id="detail-product" class="margin_top">
+    <section id="list-products" class="margin_top">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <h2>GIAO HÀNG VÀ THANH TOÁN</h2>
-            <form action="#">
-              <p>Thông tin giao hàng</p>
-              <div class="row receiver_information">
-                <div class="col-lg-12">
-                  <input type="text" placeholder="Họ và tên người nhận" />
-                </div>
-                <div class="col-lg-6">
-                  <input type="text" placeholder="Số điện thoại" />
-                </div>
-                <div class="col-lg-6">
-                  <input type="text" placeholder="Email người nhận hàng" />
-                </div>
-                <div class="col-lg-12">
-                  <input type="text" placeholder="Tỉnh/Thành phố, Quận/Huyện" />
-                </div>
-                <div class="col-lg-12">
-                  <input type="text" placeholder="Địa chỉ giao hàng cụ thể" />
-                </div>
-              </div>
-              <div class="note">
-                <p>Ghi chú</p>
-                <input
-                  type="text"
-                  placeholder="Bạn có muốn nhắn gì tới chúng tôi không?"
+        <h2>QUẦN ÂU NAM</h2>
+        <div class="row mb-2" id="list-product_item">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="./chi_tiet_sp.html">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
+                  alt="img-item"
                 />
+                <p>Quần âu nam MS-01</p>
+                <p class="price">795.000đ</p>
               </div>
-              <div class="payment_option">
-                <p>Chọn hình thức thanh toán</p>
-                <div class="VN-pay">
-                  <input type="radio" />
-                  <label>Thanh toán qua VN PAY</label>
-                </div>
-                <div class="COD">
-                  <input type="radio" />
-                  <label>Thanh toán qua COD</label>
-                </div>
-                <div class="Bank">
-                  <input type="radio" />
-                  <label>Thanh toán chuyển khoản</label>
-                </div>
-              </div>
-              <div class="choose_delivery">
-                <p>Chọn phương thức giao hàng</p>
-                <div class="standard">
-                  <input type="radio" />
-                  <label>Giao hàng tiêu chuẩn</label>
-                </div>
-                <div class="free">
-                  <input type="radio" />
-                  <label>Miễn phí vận chuyển</label>
-                </div>
-              </div>
-            </form>
+            </a>
           </div>
-          <div class="col-lg-4">
-            <div class="confirm">
-              <h2>Ưu đãi của bạn</h2>
-              <div class="voucher">
-                <input type="text" placeholder="Nhập mã giảm giá" />
-                <button>Áp dụng</button>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr00202/quan-au-nam-aristino-ATR00202-01x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-02</p>
+                <p class="price">795.000đ</p>
               </div>
-              <p id="order">ĐƠN HÀNG (1)</p>
-              <div class="payment-list">
-                <div class="confirm-product">
-                  <div class="confirm-product_img">
-                    <img
-                      src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x350x350x4.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="confirm-product-infor">
-                    <h3>Áo sơ mi ngắn tay nam</h3>
-                    <p>Màu: Hồng kẻ xanh</p>
-                    <p>Số lượng: 1</p>
-                  </div>
-                </div>
-                <div class="confirm-price">
-                  <p>695.000đ</p>
-                </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr02101/quan-au-nam-aristino-ATR02101-20x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-03</p>
+                <p class="price">895.000đ</p>
               </div>
-              <div class="provisional">
-                <span>Tạm tính:</span>
-                <p id="count-list-produst">695.000đ</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr03001/quan-au-nam-aristino-ATR03001-02x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-04</p>
+                <p class="price">750.000đ</p>
               </div>
-              <div class="ship">
-                <span>Phí vận chuyển:</span>
-                <p id="ship">30.000đ</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr03601/quan-au-nam-aristino-ATR03601-12x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-05</p>
+                <p class="price">895.000đ</p>
               </div>
-              <div class="count-voucher">
-                <span>Giảm giá:</span>
-                <p id="vat">0đ</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr00201/quan-au-nam-aristino-ATR00201-06x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-06</p>
+                <p class="price">895.000đ</p>
               </div>
-              <div class="confirm-price-total">
-                <span>Thành tiền:</span>
-                <p id="count-total">715.000đ</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atrr02/quan-au-nam-aristino-ATRR02-02x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-07</p>
+                <p class="price">900.000đ</p>
               </div>
-              <button id="btn-confirm">XÁC NHẬN ĐẶT HÀNG</button>
-            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr01001/quan-au-nam-aristino-ATR01001-02x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-08</p>
+                <p class="price">765.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr01701/quan-au-nam-aristino-ATR01701-12x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-09</p>
+                <p class="price">795.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04309/quan-au-aristino-ATR04309-18x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-10</p>
+                <p class="price">800.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atrr08/quan-au-aristino-ATRR08-08x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-11</p>
+                <p class="price">795.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr03709/quan-au-nam-aristino-ATR03709-08x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-12</p>
+                <p class="price">795.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atrr04/quan-au-nam-aristino-ATRR04-04x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-13</p>
+                <p class="price">895.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atrr06/quan-au-nam-aristino-ATRR06-01x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-13</p>
+                <p class="price">875.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atrr12/quan-au-nam-aristino-ATRR12-01-xam55x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-14</p>
+                <p class="price">795.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr00302/quan-au-nam-aristino-ATR00302-01x500x500x4.jpg"
+                  alt="img-item"
+                />
+                <p>Quần âu nam MS-15</p>
+                <p class="price">800.000đ</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="end_product">
+          <p>Đang hiển thị 1 - 16 của 32 sản phẩm</p>
+          <div class="product_page">
+            <i class="fa-solid fa-angle-left"></i>
+            <ul>
+              <li class="active-li">1</li>
+              <li>2</li>
+            </ul>
+            <i class="fa-solid fa-angle-right"></i>
           </div>
         </div>
       </div>
@@ -549,7 +657,7 @@
     </div>
 
     <script src="./main.js"></script>
-    <script src="./thanh_toan.js"></script>
+    <script src="./cart.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

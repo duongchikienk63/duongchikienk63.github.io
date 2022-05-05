@@ -21,13 +21,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon-32x32.png"
-    />
-    <title>Tất Cả Sản Phẩm</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <title>Ví Nam</title>
   </head>
   <body>
     <section id="header my-0">
@@ -66,7 +61,7 @@
               <a href="./index.html">TRANG CHỦ</a>
             </li>
             <li>
-              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+              <a href="#">THƯƠNG HIỆU</a>
               <div class="list-item">
                 <p><a href="#">Tin tức</a></p>
                 <p><a href="#">Phong cách</a></p>
@@ -74,8 +69,8 @@
                 <p><a href="#">Ưu đãi liên kết</a></p>
               </div>
             </li>
-            <li class="active">
-              <a href="#">SẢN PHẨM</a>
+            <li>
+              <a href="./san_pham.html">SẢN PHẨM</a>
               <div class="list-item">
                 <p><a href="./phan_loai_sp.html">Áo thun</a></p>
                 <p><a href="./Ao-somi.html">Áo sơmi</a></p>
@@ -84,10 +79,10 @@
                 <p><a href="./quan-short.html">Quần Short</a></p>
               </div>
             </li>
-            <li>
+            <li class="active">
               <a href="./phu-kien.html">PHỤ KIỆN</a>
               <div class="list-item">
-                <p><a href="./ví-nam.html">Ví Nam</a></p>
+                <p><a href="#">Ví Nam</a></p>
                 <p><a href="./that-lung.html">Thắt Lưng</a></p>
                 <p><a href="./giay-da.html">Giày Da</a></p>
                 <p><a href="./ca-vat.html">Cà Vạt</a></p>
@@ -143,12 +138,7 @@
         </div>
       </div>
 
-      <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
-      >
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
           <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
@@ -160,27 +150,25 @@
             </li>
             <li>
               <a href="#">THƯƠNG HIỆU</a>
-              <span id="click-th"><i class="fa-solid fa-angle-right"></i></span>
+              <span id = "click-th"><i class="fa-solid fa-angle-right"></i></span>
             </li>
             <li>
-              <a href="#">SẢN PHẨM</a>
-              <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
+              <a href="./san_pham.html">SẢN PHẨM</a>
+              <span id = "click-sp"><i class="fa-solid fa-angle-right"></i></span>
             </li>
             <li>
-              <a href="#">PHỤ KIỆN</a>
-              <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
+              <a href="./phu-kien.html">PHỤ KIỆN</a>
+              <span id = "click-pk"><i class="fa-solid fa-angle-right"></i></span>
             </li>
             <li>
               <a href="#">BỘ SƯU TẬP</a>
-              <span id="click-bst"
-                ><i class="fa-solid fa-angle-right"></i
-              ></span>
+              <span id = "click-bst"><i class="fa-solid fa-angle-right"></i></span>
             </li>
             <li>
               <a href="#">SALE</a>
             </li>
           </ul>
-
+    
           <div class="login-mobile">
             <button id="login">
               <i class="fa-regular fa-circle-user"></i>
@@ -204,11 +192,13 @@
               <a href="#">Bài Viết</a>
             </li>
             <li>
-              <a href="#">Ưu Đãi Liên Kết</a>
+              <a href="#">Ưu Đãi Liên Kết</a>           
             </li>
           </ul>
-
-          <button class="back-home-th">Quay lại</button>
+  
+          <button class="back-home-th">
+            Quay lại
+          </button>
         </div>
         <div class="offcanvas-body sp-menu display-none">
           <ul>
@@ -222,14 +212,16 @@
               <a href="./quan-au.html">Quần Âu</a>
             </li>
             <li>
-              <a href="./quan-jeans.html">Quần Jeans</a>
+              <a href="./quan-jeans.html">Quần Jeans</a>           
             </li>
             <li>
-              <a href="./quan-short.html">Quần Short</a>
+              <a href="./quan-short.html">Quần Short</a>           
             </li>
           </ul>
-
-          <button class="back-home-sp">Quay lại</button>
+  
+          <button class="back-home-sp">
+            Quay lại
+          </button>
         </div>
         <div class="offcanvas-body pk-menu display-none">
           <ul>
@@ -246,8 +238,10 @@
               <a href="./ca-vat.html">Cà Vạt</a>
             </li>
           </ul>
-
-          <button class="back-home-pk">Quay lại</button>
+  
+          <button class="back-home-pk">
+            Quay lại
+          </button>
         </div>
         <div class="offcanvas-body bst-menu display-none">
           <ul>
@@ -255,13 +249,16 @@
               <a href="#">Bộ Sưu Tập Xuân Hè</a>
             </li>
           </ul>
-
-          <button class="back-home-bst">Quay lại</button>
+  
+          <button class="back-home-bst">
+            Quay lại
+          </button>
         </div>
       </div>
       <div class="move">
         <a href="./index.html">Home /</a>
-        <a href="#">Sản Phẩm</a>
+        <a href="./phu-kien.html">Phụ Kiện /</a>
+        <a href="#">Ví nam</a>
       </div>
       <div class="banner_trangsp">
         <img src="./img/banner_trangsp.jpg" alt="banner" />
@@ -335,163 +332,160 @@
 
     <section id="list-products" class="margin_top">
       <div class="container">
-        <h2>TẤT CẢ SẢN PHẨM</h2>
+        <h2>VÍ NAM</h2>
         <div class="row mb-2" id="list-product_item">
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=0">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/quan-jean-nam.jpg" alt="img-item" />
-                <p>Quần jeans nam MS-01</p>
-                <p class="price">895.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/apw00401/vi-da-dung-ho-chieu-aristino-APW00401-04x500x500x4.jpg" alt="img-item" />
+                <p>Ví đựng hộ chiếu MS-01</p>
+                <p class="price">1.600.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=1">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-dai.jpg" alt="img-item" />
-                <p>Áo sơmi nam dài tay MS-01</p>
-                <p class="price">850.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/apw00801/vi-dung-ho-chieu-aristino-APW00801-02x500x500x4.jpg" alt="img-item" />
+                <p>Ví đựng hộ chiếu MS-02</p>
+                <p class="price">2.450.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=2">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-ngan.jpg" alt="img-item" />
-                <p>Áo sơmi nam ngắn tay MS-01</p>
-                <p class="price">695.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/acw00801/vi-dung-giay-to-xe-aristino-ACW00801-02x500x500x4.jpg" alt="img-item" />
+                <p>Ví đựng giấy tờ xe MS-01</p>
+                <p class="price">2.200.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=3">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-ngan-1.jpg" alt="img-item" />
-                <p>Áo sơmi nam ngắn tay MS-02</p>
-                <p class="price">750.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/ach00801/vi-dung-the-aristino-ACH00801-02x500x500x4.jpg" alt="img-item" />
+                <p>Ví đựng card MS-01</p>
+                <p class="price">1.450.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=4">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-dai-1.jpg" alt="img-item" />
-                <p>Áo sơmi nam dài tay MS-02</p>
-                <p class="price">900.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/atw00301/bop-tay-nam-aristino-ATW00301x500x500x4.jpg" alt="img-item" />
+                <p>Bóp tay da nam MS-01</p>
+                <p class="price">4.600.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=5">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/2ao-so-mi-nam-dai-2.jpg" alt="img-item" />
-                <p>Áo sơmi nam dài tay MS-03</p>
-                <p class="price">850.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/acl00409/tui-cam-tay-da-nam-aristino-ACL00409-04x500x500x4.jpg" alt="img-item" />
+                <p>Túi cầm tay da nam MS-01</p>
+                <p class="price">2.950.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=6">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-dai-3.jpg" alt="img-item" />
-                <p>Áo sơmi nam dài tay MS-04</p>
-                <p class="price">795.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/acl00209/ACL00209-naux500x500x4.jpg" alt="img-item" />
+                <p>Túi cầm tay da nam MS-02</p>
+                <p class="price">3.200.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=7">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-ngan-2.jpg" alt="img-item" />
-                <p>Áo sơmi nam ngắn tay MS-03</p>
-                <p class="price">695.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/acw00409/vi-da-dung-giay-to-aristino-ACW00409-03x500x500x4.jpg" alt="img-item" />
+                <p>Ví da đựng giấy tờ MS-01</p>
+                <p class="price">1.600.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=8">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-ngan-3.jpg" alt="img-item" />
-                <p>Áo sơmi nam ngắn tay MS-04</p>
-                <p class="price">695.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/acw00109/vi-da-dung-giay-to-aristino-ACW00109x500x500x4.jpg" alt="img-item" />
+                <p>Ví da đựng giấy tờ MS-02</p>
+                <p class="price">1.500.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=9">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-polo-nam.jpg" alt="img-item" />
-                <p>Áo polo nam MS-01</p>
-                <p class="price">585.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/apw00109/vi-da-dung-ho-chieu-aristino-APW00109-02x500x500x4.jpg" alt="img-item" />
+                <p>Ví đựng hộ chiếu MS-02</p>
+                <p class="price">1.600.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=10">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-thun-nam.jpg" alt="img-item" />
-                <p>Áo thun nam MS-01</p>
-                <p class="price">350.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/acl00309/bop-tay-da-aristino-ACL00309-03x500x500x4.jpg" alt="img-item" />
+                <p>Bóp tay da nam MS-02</p>
+                <p class="price">3.950.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=11">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/quan-short-nam-1.jpg" alt="img-item" />
-                <p>Quần short nam MS-01</p>
-                <p class="price">695.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/avw00209/vi-da-nam-aristino-AVW00209-18x500x500x4.jpg" alt="img-item" />
+                <p>Ví đứng da nam MS-01</p>
+                <p class="price">1.250.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=12">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-so-mi-nam-dai-4.jpg" alt="img-item" />
-                <p>Áo sơmi nam dài tay MS-05</p>
-                <p class="price">850.000đ</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/awe02708/vi-da-nam-aristino-AWE02708-10x500x500x4.jpg" alt="img-item" />
+                <p>Ví da nam MS-01</p>
+                <p class="price">1.600.000đ</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=13">
+            <a href="#">
               <div class="products-item">
-                <img src="./img/ao-tank-top-nam.jpg" alt="img-item" />
-                <p>Áo tank-top nam MS-01</p>
-                <p class="price">275.000đ</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=14">
-              <div class="products-item">
-                <img src="./img/ao-polo-nam-1.jpg" alt="img-item" />
-                <p>Áo polo nam MS-02</p>
-                <p class="price">650.000đ</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
-            <a href="./chi_tiet_sp.html?id=15">
-              <div class="products-item">
-                <img src="./img/ao-polo-nam-2.jpg" alt="img-item" />
-                <p>Áo polo nam MS-03</p>
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/ach00209/vi-da-nam-aristino-ACH00209-03x500x500x4.jpg" alt="img-item" />
+                <p>Ví đựng card MS-02</p>
                 <p class="price">595.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/avw00109/vi-da-nam-aristino-AVW00109-01x500x500x4.jpg" alt="img-item" />
+                <p>Ví da nam MS-02</p>
+                <p class="price">1.400.000đ</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <a href="#">
+              <div class="products-item">
+                <img src="https://aristino.com/Data/ResizeImage/images/product/vi-nam/awe00509/vi-da-nam-aristino-AWE00509-02x500x500x4.jpg" alt="img-item" />
+                <p>Ví da nam MS-03</p>
+                <p class="price">1.450.000đ</p>
               </div>
             </a>
           </div>
         </div>
         <div class="end_product">
-          <p>Đang hiển thị 1 - 16 của 233 sản phẩm</p>
+          <p>Đang hiển thị 1 - 16 của 20 sản phẩm</p>
           <div class="product_page">
             <i class="fa-solid fa-angle-left"></i>
             <ul>
               <li class="active-li">1</li>
               <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
             </ul>
             <i class="fa-solid fa-angle-right"></i>
           </div>

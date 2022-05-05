@@ -3,7 +3,7 @@ let idItem = locationWeb[1];
 
 let products = [
   {
-    name: "Quần jeans nam",
+    name: "Quần jeans nam MS-01",
     price: 895000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/quan-jeans/ajnr02/quan-jean-nam-aristino-AJNR02-11x900x900x4.jpg",
@@ -22,7 +22,7 @@ let products = [
     type: "Xám",
   },
   {
-    name: "Áo sơ mi dài tay nam",
+    name: "Áo sơ mi dài tay nam MS-01",
     price: 850000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03502/ao-so-mi-nam-aristino-ALS03502-03x900x900x4.jpg",
@@ -41,7 +41,7 @@ let products = [
     type: "Trắng",
   },
   {
-    name: "Áo sơ mi ngắn tay nam",
+    name: "Áo sơ mi ngắn tay nam MS-01",
     price: 695000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass206s2/ao-so-mi-nam-aristino-ASS206S2-05x900x900x4.jpg",
@@ -60,7 +60,7 @@ let products = [
     type: "Trắng in kẻ",
   },
   {
-    name: "Áo Sơmi Ngắn Tay Nam",
+    name: "Áo Sơmi Ngắn Tay Nam MS-02",
     price: 750000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass230s2/ao-so-mi-nam-aristino-ASS230S2x900x900x4.jpg",
@@ -79,7 +79,7 @@ let products = [
     type: "Xanh kẻ caro",
   },
   {
-    name: "Áo sơ mi dài tay nam",
+    name: "Áo sơ mi dài tay nam MS-02",
     price: 900000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als42802/ao-so-mi-nam-aristino-ALS42802-01x900x900x4.jpg",
@@ -98,7 +98,7 @@ let products = [
     type: "Xanh kẻ trắng",
   },
   {
-    name: "Áo sơ mi dài tay nam",
+    name: "Áo sơ mi dài tay nam MS-03",
     price: 850000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als36502/ao-so-mi-nam-aristino-ALS36502x900x900x4.jpg",
@@ -117,7 +117,7 @@ let products = [
     type: "Đen kẻ xanh",
   },
   {
-    name: "Áo sơ mi dài tay nam",
+    name: "Áo sơ mi dài tay nam MS-04",
     price: 795000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als35602/ao-so-mi-nam-aristino-ALS35602x900x900x4.jpg",
@@ -136,7 +136,7 @@ let products = [
     type: "Trắng kẻ xanh",
   },
   {
-    name: "Áo sơ mi ngắn tay nam",
+    name: "Áo sơ mi ngắn tay nam MS-03",
     price: 695000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass228s2/ao-so-mi-nam-aristino-ASS228S2x900x900x4.jpg",
@@ -155,7 +155,7 @@ let products = [
     type: "Xanh tím than in",
   },
   {
-    name: "Áo sơ mi ngắn tay nam",
+    name: "Áo sơ mi ngắn tay nam MS-04",
     price: 695000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass216s2/ao-so-mi-nam-aristino-ASS216S2-04x900x900x4.jpg",
@@ -174,7 +174,7 @@ let products = [
     type: "Xanh tím than in",
   },
   {
-    name: "Áo polo nam",
+    name: "Áo polo nam MS-01",
     price: 585000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps193s2/ao-polo-nam-aristino-APS193S2-05x900x900x4.jpg",
@@ -193,7 +193,7 @@ let products = [
     type: "Xanh tím than",
   },
   {
-    name: "Áo thun nam",
+    name: "Áo thun nam MS-01",
     price: 350000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats041s2/ao-thun-nam-aristino-ATS041S2-12x900x900x4.jpg",
@@ -212,7 +212,7 @@ let products = [
     type: "Xám 32 kẻ",
   },
   {
-    name: "Quần short nam",
+    name: "Quần short nam MS-01",
     price: 695000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/quan-short/aso042s2/quan-short-nam-aristino-ASO042S2-02x900x900x4.jpg",
@@ -231,7 +231,7 @@ let products = [
     type: "Xám 288 kẻ",
   },
   {
-    name: "Áo sơ mi dài tay nam",
+    name: "Áo sơ mi dài tay nam MS-05",
     price: 850000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/so-mi-dai-tay/als03602/ao-so-mi-nam-aristino-ALS03602-03x900x900x4.jpg",
@@ -250,7 +250,7 @@ let products = [
     type: "Trắng",
   },
   {
-    name: "Áo tank-top nam",
+    name: "Áo tank-top nam MS-01",
     price: 275000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att019s2/ao-tank-top-nam-aristino-ATT019S2-02x900x900x4.jpg",
@@ -269,7 +269,7 @@ let products = [
     type: "Xanh biển",
   },
   {
-    name: "Áo polo nam",
+    name: "Áo polo nam MS-02",
     price: 650000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps131s2/ao-polo-nam-aristino-APS131S2-01x900x900x4.jpg",
@@ -287,8 +287,8 @@ let products = [
     id: 14,
     type: "Trắng 6 kẻ",
   },
-  {
-    name: "Áo polo nam",
+  { 
+    name: "Áo polo nam MS-03",
     price: 595000,
     image:
       "https://aristino.com/Data/ResizeImage/images/product/ao-polo/aps091s2/ao-polo-nam-aristino-APS091S2-11x900x900x4.jpg",
@@ -448,6 +448,44 @@ addCart.addEventListener("click", function () {
   setLocalStorage();
 });
 
+const totalItems = document.querySelector(".total-item");
+
+function renderTodo(arr) {
+  //Hiển thị danh sách công việc ra ngoài giao diện
+  for (let i = 0; i < arr.length; i++) {
+    totalItems.innerHTML = arr.length;
+  }
+  updateTotalProducts(productsInCart);
+}
+renderTodo(productsInCart);
+
+function updateTotalProducts(arr) {
+  let totalProducts = 0;
+  for (let i = 0; i < arr.length; i++) {
+    //Tính số lượng sản phẩm có trong giỏ
+    totalProducts += arr[i].count;
+  }
+  totalItems.innerHTML = totalProducts;
+}
+updateTotalProducts(productsInCart);
+
+// $('.your-slider').slick('unslick');
+// $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: true,
+//   centerMode: true,
+//   focusOnSelect: true
+// });
+
 // function getUnique(arr, comp) {
 //   const unique = arr
 //     .map((e) => e[comp])
@@ -480,6 +518,7 @@ function getDataForomLocalStorage() {
   } else {
     productsInCart = [];
   }
+  renderTodo(productsInCart);
 }
 
 //Sự kiện xảy ra khi web load hết html css thì gọi vào function
