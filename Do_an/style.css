@@ -1502,6 +1502,10 @@ form p {
   .connect {
     margin-bottom: 80px;
   }
+
+  #list-product_item .pe-5 {
+    padding: 0px 12px !important;
+  }
 }
 
 @media (max-width: 992px) {
