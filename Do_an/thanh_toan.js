@@ -19,9 +19,9 @@ function renderProducts(arr) {
   for (let i = 0; i < arr.length; i++) {
     const t = arr[i];
     const VNDD = t.price.toLocaleString("vi", {
-        style: "currency",
-        currency: "VND",
-      });
+      style: "currency",
+      currency: "VND",
+    });
     content += `               
     <div class="confirm-product">
     <div class="confirm-product_img">
@@ -40,9 +40,9 @@ function renderProducts(arr) {
   <p>${VNDD}</p>
   </div>
       `;
-      order.innerHTML = "ĐƠN HÀNG " + `(${arr.length})`;
-      totalItems.innerHTML = arr.length;
-      totalItemsMobile.innerHTML = arr.length;
+    order.innerHTML = "ĐƠN HÀNG " + `(${arr.length})`;
+    totalItems.innerHTML = arr.length;
+    totalItemsMobile.innerHTML = arr.length;
   }
 
   //Chèn dữ liệu mới để hiển thị
@@ -54,11 +54,11 @@ renderProducts(productsInCart);
 const countListProdust = document.querySelector("#count-list-produst");
 const countTotal = document.querySelector("#count-total");
 const ship = document.querySelector("#ship");
-const countTotals = document.querySelector("#count-total");
 
 function updateTotalProducts(arr) {
   let totalProducts = 0;
   let totalPriceProducts = 0;
+  let freeShip = 0;
   for (let i = 0; i < arr.length; i++) {
     //Tính số lượng sản phẩm có trong giỏ
     totalProducts += arr[i].count;
@@ -71,10 +71,25 @@ function updateTotalProducts(arr) {
       currency: "VND",
     });
 
-    countTotals.innerHTML = (totalPriceProducts + 30000).toLocaleString("vi", {
+    if (totalPriceProducts > 500000) {
+      ship.innerHTML = freeShip.toLocaleString("vi", {
         style: "currency",
         currency: "VND",
       });
+      countTotal.innerHTML = totalPriceProducts.toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
+    } else {
+      ship.innerHTML = (freeShip + 30000).toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
+      countTotal.innerHTML = (totalPriceProducts + 30000).toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
+    }
 
     //Hiển thị số lượng sản phẩm có trong giỏ hàng lên trên góc bên phải
   }
@@ -87,6 +102,66 @@ function updateTotalProducts(arr) {
   });
 }
 updateTotalProducts(productsInCart);
+
+let promotionCode = [
+  {
+    code: 10,
+  },
+  {
+    code: 20,
+  },
+  {
+    code: 50,
+  },
+  {
+    code: 100,
+  },
+];
+
+let inputPromotion = document.querySelector("#promo-code");
+let btnPromotion = document.querySelector(".voucher button");
+let discount = document.querySelector("#vat");
+
+//Viết function duyệt qua mảng promotionCode
+function updateTotalMoney(arrs) {
+  //Lấy ra giá trị người dùng nhập vào trong ô input
+  let valueipts = inputPromotion.value;
+  for (let i = 0; i < arrs.length; i++) {
+    //Kiểm tra giá trị nhập vào có đúng là mã giảm giá
+    if (valueipts == arrs[i].code) {
+      //Viết function duyệt qua mảng products giống phần 2
+      function updateTotalProductss(arr) {
+        let totalProductss = 0;
+        let totalPriceProductss = 0;
+        for (let j = 0; j < arr.length; j++) {
+          totalProductss += arr[j].count;
+
+          totalPriceProductss += arr[j].count * arr[j].price;
+        }
+
+        //Tính số tiền được giảm và hiển thị ra ngoài giao diện
+        discount.innerHTML = `${(
+          totalPriceProductss *
+          (arrs[i].code / 100)
+        ).toLocaleString("vi", { style: "currency", currency: "VND" })}`;
+
+        //Cập nhật lại tổng số tiền cuối cùng sau khi có mã giảm giá
+        countTotal.innerHTML = (
+          totalPriceProductss -
+          totalPriceProductss * (arrs[i].code / 100)
+        ).toLocaleString("vi", { style: "currency", currency: "VND" });
+      }
+      updateTotalProductss(productsInCart);
+      return;
+    }
+  }
+  updateTotalProducts(productsInCart);
+  alert("Mã giảm giá bạn nhập chưa chính xác!");
+}
+
+btnPromotion.addEventListener("click", function () {
+  updateTotalMoney(promotionCode);
+});
 
 function setLocalStorage() {
   localStorage.setItem("productsInCart", JSON.stringify(productsInCart));

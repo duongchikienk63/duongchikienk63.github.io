@@ -415,17 +415,6 @@ vnd.innerHTML = Number(vnd.innerHTML).toLocaleString('vi', {style : 'currency', 
 let btnAdd = document.querySelector("#add");
 let btnMinus = document.querySelector("#minus");
 let totalProduct = document.getElementById("total-products");
-
-// btnAdd.addEventListener("click", function () {
-//   totalProduct.innerText = Number(totalProduct.innerText) + 1;
-// });
-
-// btnMinus.addEventListener("click", function () {
-//   if (Number(totalProduct.innerText) > 1) {
-//     totalProduct.innerText = Number(totalProduct.innerText) - 1;
-//   }
-// });
-
 const btnBuy = document.querySelector(".btn-buy");
 const addCart = document.querySelector(".add-cart");
 let productsInCart = [];
@@ -434,6 +423,7 @@ btnBuy.addEventListener("click", function () {
   for (let i = 0; i < products.length; i++) {
     if (products[i].id == idItem) {
       productsInCart.push(products[i]);
+      
     }
   }
   setLocalStorage();
@@ -445,6 +435,7 @@ addCart.addEventListener("click", function () {
       productsInCart.push(products[i]);
     }
   }
+  renderTodo(productsInCart);
   setLocalStorage();
 });
 
