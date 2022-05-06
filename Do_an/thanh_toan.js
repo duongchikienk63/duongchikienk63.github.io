@@ -129,7 +129,7 @@ function updateTotalMoney(arrs) {
   for (let i = 0; i < arrs.length; i++) {
     //Kiểm tra giá trị nhập vào có đúng là mã giảm giá
     if (valueipts == arrs[i].code) {
-      //Viết function duyệt qua mảng products giống phần 2
+      //Viết function duyệt qua mảng products
       function updateTotalProductss(arr) {
         let totalProductss = 0;
         let totalPriceProductss = 0;

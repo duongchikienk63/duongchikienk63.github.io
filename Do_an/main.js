@@ -1,12 +1,17 @@
 //Sự kiện tắt mở mục đăng nhập
 const dangNhap = document.getElementById("login");
 const loginPage = document.querySelector(".login");
+const loginPageMb = document.querySelector(".login-mb-menu");
 const loginClose = document.querySelector(".close");
-const loginSubmit = document.querySelector("login-submit");
+const loginCloseMb = document.querySelector(".close-mb");
 const nextReg = document.getElementById("next-reg");
 const nextLog = document.getElementById("next-log");
+const nextRegMb = document.getElementById("next-reg-mb");
+const nextLogMb = document.getElementById("next-log-mb");
 const loginEle = document.querySelector(".login-content");
 const regEle = document.querySelector(".registration-content");
+const loginEleMb = document.querySelector(".login-content-mb");
+const regEleMb = document.querySelector(".registration-content-mb");
 const fixedMenu = document.querySelector(".header-menu");
 const fixedMenuMB = document.querySelector(".header-menu-moblie");
 const backTop = document.querySelector(".back_top");
@@ -21,6 +26,21 @@ loginClose.addEventListener("click", function () {
   loginPage.classList.add("display-none");
 });
 
+const loginMobileBtn = document.querySelector("#login-mb");
+const loginMobile = document.querySelector(".login-mb");
+const fixMenuMobile = document.querySelector(".offcanvas-start");
+
+loginMobileBtn.addEventListener("click", function () {
+  loginMobile.classList.remove("display-none");
+  // loginPageMb.classList.remove("display-none");
+  fixMenuMobile.style.width = "100%";
+});
+
+loginCloseMb.addEventListener("click", function () {
+  fixMenuMobile.style.width = "80%";
+  loginMobile.classList.add("display-none");
+});
+
 nextReg.addEventListener("click", function () {
   loginEle.classList.add("display-none");
   regEle.classList.remove("display-none");
@@ -29,6 +49,16 @@ nextReg.addEventListener("click", function () {
 nextLog.addEventListener("click", function () {
   regEle.classList.add("display-none");
   loginEle.classList.remove("display-none");
+});
+
+nextRegMb.addEventListener("click", function () {
+  loginEleMb.classList.add("display-none");
+  regEleMb.classList.remove("display-none");
+});
+
+nextLogMb.addEventListener("click", function () {
+  regEleMb.classList.add("display-none");
+  loginEleMb.classList.remove("display-none");
 });
 
 // Sự kiện cuộn màn hình
@@ -50,16 +80,15 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-const phoneUser = document.querySelector("#phone-user");
-const btnLogin = document.querySelector(".login-submit");
+const phoneUser = document.querySelector("#phone-user").value;
 
-// btnLogin.addEventListener("click", function() {
-//   if(phoneUser.value == "") {
-//     alert("Thông tin tài khoản chưa chính xác");
-//   } else {
-//     loginEle.classList.add("display-none");
-//   }
-// })
+function checkInput() {
+  if (isNaN(phoneUser)) {
+    alert("hợp lệ");
+  } else {
+    alert("Không hợp lệ");
+  }
+}
 
 const downTh = document.getElementById("down-th");
 const upTh = document.getElementById("up-th");
@@ -125,41 +154,41 @@ const backHomeSp = document.querySelector(".back-home-sp");
 const backHomePk = document.querySelector(".back-home-pk");
 const backHomeBst = document.querySelector(".back-home-bst");
 
-clickSp.addEventListener("click", function() {
+clickSp.addEventListener("click", function () {
   indexMenu.classList.add("display-none");
   // thMenu.classList.add("display-none");
   spMenu.classList.remove("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
   offcanvasExampleLabel.innerText = "SẢN PHẨM";
-})
+});
 
-// clickTh.addEventListener("click", function() {
+// clickTh.addEventListener("click", function () {
 //   indexMenu.classList.add("display-none");
 //   thMenu.classList.remove("display-none");
 //   spMenu.classList.add("display-none");
 //   pkMenu.classList.add("display-none");
 //   bstMenu.classList.add("display-none");
 //   offcanvasExampleLabel.innerText = "THƯƠNG HIỆU";
-// })
+// });
 
-clickPk.addEventListener("click", function() {
+clickPk.addEventListener("click", function () {
   indexMenu.classList.add("display-none");
   // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.remove("display-none");
   bstMenu.classList.add("display-none");
   offcanvasExampleLabel.innerText = "PHỤ KIỆN";
-})
+});
 
-clickBst.addEventListener("click", function() {
+clickBst.addEventListener("click", function () {
   indexMenu.classList.add("display-none");
   // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.remove("display-none");
   offcanvasExampleLabel.innerText = "BỘ SƯU TẬP";
-})
+});
 
 // backHomeTh.addEventListener("click", function() {
 //   indexMenu.classList.remove("display-none");
@@ -170,60 +199,32 @@ clickBst.addEventListener("click", function() {
 //   offcanvasExampleLabel.innerText = "TRANG CHỦ";
 // })
 
-backHomeSp.addEventListener("click", function() {
+backHomeSp.addEventListener("click", function () {
   indexMenu.classList.remove("display-none");
   // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
   offcanvasExampleLabel.innerText = "TRANG CHỦ";
-})
+});
 
-backHomePk.addEventListener("click", function() {
+backHomePk.addEventListener("click", function () {
   indexMenu.classList.remove("display-none");
   // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
   offcanvasExampleLabel.innerText = "TRANG CHỦ";
-})
+});
 
-backHomeBst.addEventListener("click", function() {
+backHomeBst.addEventListener("click", function () {
   indexMenu.classList.remove("display-none");
   // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
   offcanvasExampleLabel.innerText = "TRANG CHỦ";
-})
-
-const loginMobileBtn = document.querySelector("#login-mb");
-const loginMobile = document.querySelector(".login-mb");
-const fixMenuMobile = document.querySelector(".offcanvas-start");
-
-loginMobileBtn.addEventListener("click", function() {
-  loginMobile.classList.remove("display-none");
-  loginPage.classList.remove("display-none");
-  fixMenuMobile.style.width = "100%";
-})
-
-loginClose.addEventListener("click", function() {
-  fixMenuMobile.style.width = "80%";
-  loginMobile.classList.add("display-none");
-})
-
-
-// let productsInCart = [];
-
-// const totalItems = document.querySelector(".total-item");
-// function renderTodos(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     const t = arr[i];
-//     totalItems.innerHTML = `${arr.length}`;
-//   }
-// }
-// renderTodos(productsInCart);
-
+});
 
 function setLocalStorage() {
   localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
@@ -239,7 +240,7 @@ function getDataForomLocalStorage() {
     productsInCart = JSON.parse(todosLocal);
   } else {
     productsInCart = [];
-  } 
+  }
   renderTodos(productsInCart);
 }
 

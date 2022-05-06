@@ -1,5 +1,6 @@
 let locationWeb = window.location.href.split("=");
 let idItem = locationWeb[1];
+let sizeArr = [];
 
 let products = [
   {
@@ -20,6 +21,7 @@ let products = [
     count: 1,
     id: 0,
     type: "Xám",
+    size: "",
   },
   {
     name: "Áo sơ mi dài tay nam MS-01",
@@ -39,6 +41,7 @@ let products = [
     count: 1,
     id: 1,
     type: "Trắng",
+    size: "",
   },
   {
     name: "Áo sơ mi ngắn tay nam MS-01",
@@ -58,6 +61,7 @@ let products = [
     count: 1,
     id: 2,
     type: "Trắng in kẻ",
+    size: "",
   },
   {
     name: "Áo Sơmi Ngắn Tay Nam MS-02",
@@ -77,6 +81,7 @@ let products = [
     count: 1,
     id: 3,
     type: "Xanh kẻ caro",
+    size: "",
   },
   {
     name: "Áo sơ mi dài tay nam MS-02",
@@ -96,6 +101,7 @@ let products = [
     count: 1,
     id: 4,
     type: "Xanh kẻ trắng",
+    size: "",
   },
   {
     name: "Áo sơ mi dài tay nam MS-03",
@@ -115,6 +121,7 @@ let products = [
     count: 1,
     id: 5,
     type: "Đen kẻ xanh",
+    size: "",
   },
   {
     name: "Áo sơ mi dài tay nam MS-04",
@@ -134,6 +141,7 @@ let products = [
     count: 1,
     id: 6,
     type: "Trắng kẻ xanh",
+    size: "",
   },
   {
     name: "Áo sơ mi ngắn tay nam MS-03",
@@ -153,6 +161,7 @@ let products = [
     count: 1,
     id: 7,
     type: "Xanh tím than in",
+    size: "",
   },
   {
     name: "Áo sơ mi ngắn tay nam MS-04",
@@ -172,6 +181,7 @@ let products = [
     count: 1,
     id: 8,
     type: "Xanh tím than in",
+    size: "",
   },
   {
     name: "Áo polo nam MS-01",
@@ -191,6 +201,7 @@ let products = [
     count: 1,
     id: 9,
     type: "Xanh tím than",
+    size: "",
   },
   {
     name: "Áo thun nam MS-01",
@@ -210,6 +221,7 @@ let products = [
     count: 1,
     id: 10,
     type: "Xám 32 kẻ",
+    size: "",
   },
   {
     name: "Quần short nam MS-01",
@@ -229,6 +241,7 @@ let products = [
     count: 1,
     id: 11,
     type: "Xám 288 kẻ",
+    size: "",
   },
   {
     name: "Áo sơ mi dài tay nam MS-05",
@@ -248,6 +261,7 @@ let products = [
     count: 1,
     id: 12,
     type: "Trắng",
+    size: "",
   },
   {
     name: "Áo tank-top nam MS-01",
@@ -267,6 +281,7 @@ let products = [
     count: 1,
     id: 13,
     type: "Xanh biển",
+    size: "",
   },
   {
     name: "Áo polo nam MS-02",
@@ -286,8 +301,9 @@ let products = [
     count: 1,
     id: 14,
     type: "Trắng 6 kẻ",
+    size: "",
   },
-  { 
+  {
     name: "Áo polo nam MS-03",
     price: 595000,
     image:
@@ -305,11 +321,13 @@ let products = [
     count: 1,
     id: 15,
     type: "Xanh Aqua",
+    size: "",
   },
 ];
 
 const nameProduct = document.querySelector("#name-product");
 const addItem = document.querySelector("#add_product");
+const addInforProduct = document.querySelector(".information-product");
 function fixItem(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].id == idItem) {
@@ -369,7 +387,7 @@ function fixItem(arr) {
           />
         </div>
         <div class="size_product">
-          <p>Chọn Size <a href="#">(Hướng dẫn chọn size)</a></p>
+          <p>Chọn Size:</p>
           <ul>
             <li>S</li>
             <li>M</li>
@@ -383,38 +401,61 @@ function fixItem(arr) {
           Thêm vào giỏ hàng
         </button>
         <button class="btn-buy" onclick="location.href='gio_hang.html';">Mua ngay</button>
-        <a class="list_store" href="#">Xem store còn hàng</a>
         <ul class="policy">
           <li>
             <i class="fa-solid fa-truck"></i>
             Miễn phí ship cho đơn hàng từ 1 triệu
-            <i class="fa-solid fa-angle-down"></i>
           </li>
           <li>
             <i class="fa-solid fa-credit-card"></i>
             Đa dạng phương thức thanh toán
-            <i class="fa-solid fa-angle-down"></i>
           </li>
           <li>
             <i class="fa-solid fa-repeat"></i>
             Đổi trả hàng miễn phí trong 30 ngày
-            <i class="fa-solid fa-angle-down"></i>
           </li>
         </ul>
       </div>
         `;
+      addInforProduct.innerHTML = `
+      <h3>Thông tin sản phẩm</h3>
+      <p>
+        <strong> KIỂU DÁNG: </strong>
+        SLIM FIT
+      </p>
+      <p>
+        <strong>CHI TIẾT:</strong>
+      </p>
+      <p>
+        - ${t.name} phom Slim fit ôm vừa vặn cơ thể, tôn dáng người
+        mặc.
+      </p>
+      <p>
+        - Áo thiết kế tà lượn, không túi, hiệu ứng ${t.type} trẻ
+        trung, thời thượng tạo nên diện mạo nổi bật và lịch lãm cho các quý
+        ông.
+      </p>
+      <p><strong>CHẤT LIỆU:</strong></p>
+      <p>- 50% Bamboo mang đến sự thoáng mát, thấm hút tốt.</p>
+      <p>
+        - 50% Polyspun giúp áo có khả năng đàn hồi tự nhiên và ít nhăn co
+        trong suốt quá trình sử dụng.
+      </p>
+      <p><strong>MÀU SẮC:</strong>${t.type}</p>
+      <p><strong>SIZE:</strong> S, M, L, XL, XXL</p>
+      `;
+      ;
     }
   }
 }
 fixItem(products);
 
 const vnd = document.querySelector(".vnd");
-vnd.innerHTML = Number(vnd.innerHTML).toLocaleString('vi', {style : 'currency', currency : 'VND'});
+vnd.innerHTML = Number(vnd.innerHTML).toLocaleString("vi", {
+  style: "currency",
+  currency: "VND",
+});
 
-// Thêm, bớt sản phẩm
-let btnAdd = document.querySelector("#add");
-let btnMinus = document.querySelector("#minus");
-let totalProduct = document.getElementById("total-products");
 const btnBuy = document.querySelector(".btn-buy");
 const addCart = document.querySelector(".add-cart");
 let productsInCart = [];
@@ -422,8 +463,8 @@ let productsInCart = [];
 btnBuy.addEventListener("click", function () {
   for (let i = 0; i < products.length; i++) {
     if (products[i].id == idItem) {
+      products[i].size = sizeArr[0];
       productsInCart.push(products[i]);
-      
     }
   }
   setLocalStorage();
@@ -463,6 +504,59 @@ function updateTotalProducts(arr) {
 }
 updateTotalProducts(productsInCart);
 
+const listSize = document.querySelector(".size_product ul");
+const sizeItem = listSize.querySelectorAll("li");
+
+sizeItem[0].addEventListener("click", function () {
+  sizeItem[0].classList.add("choose-size");
+  sizeItem[1].classList.remove("choose-size");
+  sizeItem[2].classList.remove("choose-size");
+  sizeItem[3].classList.remove("choose-size");
+  sizeItem[4].classList.remove("choose-size");
+  sizeArr.splice(0, 1, sizeItem[0].innerText);
+  setLocalStorages();
+});
+
+sizeItem[1].addEventListener("click", function () {
+  sizeItem[1].classList.add("choose-size");
+  sizeItem[0].classList.remove("choose-size");
+  sizeItem[2].classList.remove("choose-size");
+  sizeItem[3].classList.remove("choose-size");
+  sizeItem[4].classList.remove("choose-size");
+  sizeArr.splice(0, 1, sizeItem[1].innerText);
+  setLocalStorages();
+});
+
+sizeItem[2].addEventListener("click", function () {
+  sizeItem[2].classList.add("choose-size");
+  sizeItem[1].classList.remove("choose-size");
+  sizeItem[0].classList.remove("choose-size");
+  sizeItem[3].classList.remove("choose-size");
+  sizeItem[4].classList.remove("choose-size");
+  sizeArr.splice(0, 1, sizeItem[2].innerText);
+  setLocalStorages();
+});
+
+sizeItem[3].addEventListener("click", function () {
+  sizeItem[3].classList.add("choose-size");
+  sizeItem[1].classList.remove("choose-size");
+  sizeItem[2].classList.remove("choose-size");
+  sizeItem[0].classList.remove("choose-size");
+  sizeItem[4].classList.remove("choose-size");
+  sizeArr.splice(0, 1, sizeItem[3].innerText);
+  setLocalStorages();
+});
+
+sizeItem[4].addEventListener("click", function () {
+  sizeItem[4].classList.add("choose-size");
+  sizeItem[1].classList.remove("choose-size");
+  sizeItem[2].classList.remove("choose-size");
+  sizeItem[3].classList.remove("choose-size");
+  sizeItem[0].classList.remove("choose-size");
+  sizeArr.splice(0, 1, sizeItem[4].innerText);
+  setLocalStorages();
+});
+
 // $('.your-slider').slick('unslick');
 // $('.slider-for').slick({
 //   slidesToShow: 1,
@@ -498,6 +592,10 @@ function setLocalStorage() {
   localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
 }
 
+function setLocalStorages() {
+  localStorage.setItem("sizeArr", JSON.stringify(sizeArr));
+}
+
 // localStorage.setItem("lastname", JSON.stringify();
 // JSON.parse(lastname)
 
@@ -514,6 +612,19 @@ function getDataForomLocalStorage() {
   }
   renderTodo(productsInCart);
 }
+
+function getDataForomLocalStorages() {
+  //Lấy data thông qua key "todos"
+  let sizeArrs = localStorage.getItem("sizeArr");
+
+  //Nếu có data trong localStorage thì parse, ko thì để arr rỗng
+  if (sizeArrs) {
+    sizeArr = JSON.parse(sizeArrs);
+  } else {
+    sizeArr = [];
+  }
+}
+getDataForomLocalStorages();
 
 //Sự kiện xảy ra khi web load hết html css thì gọi vào function
 window.onload = getDataForomLocalStorage;

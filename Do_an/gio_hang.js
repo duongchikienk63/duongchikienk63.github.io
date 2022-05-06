@@ -1,28 +1,13 @@
 const productsCartItem = document.querySelector(".products-cart");
 let productsInCart = [];
 
-// function getUnique(arr, comp) {
-
-//   const unique = arr
-//   .map(e => e[comp])
-
-//   // store the keys of the unique objects
-//   .map((e, i, final) => final.indexOf(e) === i && i)
-
-//   // eliminate the dead keys & store unique objects
-//   .filter(e => arr[e]).map(e => arr[e]);
-//   setLocalStorage();
-//   return unique;
-//  }
-
-//  getUnique(productsInCart,'id')
-
 let subtotalEl = document.querySelector(".subtotal");
 let totalCount = document.querySelector(".count");
 const totalItems = document.querySelector(".total-item");
 const totalItemsMobile = document.querySelector(".total-item-mb");
+const fixSize = document.querySelector("#fix-size");
 
-function renderTodo(arr) {
+function renderTodo(arr, ) {
   //Xóa hết dữ liệu hiện có để thêm dữ liệu mới
   productsCartItem.innerHTML = "";
 
@@ -51,7 +36,7 @@ function renderTodo(arr) {
     <div class="cart-item-infor">
       <div class="cart-item-total">
         <h3>${t.name}</h3>
-        <p>${t.type} / XL</p>
+        <p id="fix-size">${t.type} / ${t.size}</p>
         <div class="total_product">
           <div class="number_product">
             <button id="minus" onclick="changeTotalProductMinus(${t.id})">
@@ -111,7 +96,7 @@ function updateTotalProducts(arr) {
 }
 updateTotalProducts(productsInCart);
 
-function deleteTodo(id) {
+function deleteTodo(id, size) {
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id == id) {
       productsInCart.splice(i, 1);
@@ -165,6 +150,7 @@ function getDataForomLocalStorage() {
   }
   renderTodo(productsInCart);
 }
+
 
 //Sự kiện xảy ra khi web load hết html css thì gọi vào function
 window.onload = getDataForomLocalStorage;

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <title>Chính Sách Bảo Mật</title>
+  </head>
+  <body>
+    <section id="header my-0">
+      <!-- <div class="banner_header">
+          <img src="./img/baner_header.jpg" alt="banner" />
+        </div> -->
+
+      <div class="header-content">
+        <div class="header-advertisement">
+          <div class="qc">
+            <p>Tặng Voucher 100K Cho Hóa Đơn Từ 1 Triệu</p>
+          </div>
+        </div>
+        <div class="user">
+          <button>
+            <i class="fa-solid fa-phone"></i>
+            0705155283
+          </button>
+
+          <button id="login">
+            Đăng Nhập
+            <i class="fa-regular fa-circle-user"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./img/DCK.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="header-menu_item">
+          <ul>
+            <li>
+              <a href="./index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+            </li>
+            <li>
+              <a href="./san_pham.html">SẢN PHẨM</a>
+              <div class="list-item">
+                <p><a href="./phan_loai_sp.html">Áo thun</a></p>
+                <p><a href="./Ao-somi.html">Áo sơmi</a></p>
+                <p><a href="./quan-au.html">Quần âu</a></p>
+                <p><a href="./quan-jeans.html">Quần jeans</a></p>
+                <p><a href="./quan-short.html">Quần Short</a></p>
+              </div>
+            </li>
+            <li>
+              <a href="./phu-kien.html">PHỤ KIỆN</a>
+              <div class="list-item">
+                <p><a href="./ví-nam.html">Ví Nam</a></p>
+                <p><a href="./that-lung.html">Thắt Lưng</a></p>
+                <p><a href="./giay-da.html">Giày Da</a></p>
+                <p><a href="./ca-vat.html">Cà Vạt</a></p>
+              </div>
+            </li>
+            <li>
+              <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
+              <div class="list-item">
+                <p><a href="./bo-suu-tap.html">BỘ SƯU TẬP XUÂN HÈ</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Tìm kiếm" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <a href="gio_hang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="total-item">0</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="header-menu-moblie">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./img/DCK.png" alt="logo" />
+        </div>
+
+        <div class="cart-moblie">
+          <a href="./gio_hang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="total-item-mb">0</div>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+          <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        </div>
+        <div class="offcanvas-body index-menu">
+          <ul>
+            <li>
+              <a href="./index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+            </li>
+            <li>
+              <a href="./san_pham.html">SẢN PHẨM</a>
+              <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li>
+              <a href="./phu-kien.html">PHỤ KIỆN</a>
+              <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li>
+              <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
+              <span id="click-bst"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+          </ul>
+
+          <div class="login-mobile">
+            <button id="login-mb">
+              <i class="fa-regular fa-circle-user"></i>
+              Đăng Nhập
+            </button>
+            <button>
+              <i class="fa-solid fa-phone"></i>
+              0705155283
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas-body sp-menu display-none">
+          <ul>
+            <li>
+              <a href="./phan_loai_sp.html">Áo Thun</a>
+            </li>
+            <li>
+              <a href="./Ao-somi.html">Áo Sơ Mi</a>
+            </li>
+            <li>
+              <a href="./quan-au.html">Quần Âu</a>
+            </li>
+            <li>
+              <a href="./quan-jeans.html">Quần Jeans</a>
+            </li>
+            <li>
+              <a href="./quan-short.html">Quần Short</a>
+            </li>
+          </ul>
+
+          <button class="back-home-sp">Quay lại</button>
+        </div>
+        <div class="offcanvas-body pk-menu display-none">
+          <ul>
+            <li>
+              <a href="./ví-nam.html">Ví Nam</a>
+            </li>
+            <li>
+              <a href="./that-lung.html">Thắt Lưng</a>
+            </li>
+            <li>
+              <a href="./giay-da.html">Giày Da</a>
+            </li>
+            <li>
+              <a href="./ca-vat.html">Cà Vạt</a>
+            </li>
+          </ul>
+
+          <button class="back-home-pk">Quay lại</button>
+        </div>
+        <div class="offcanvas-body bst-menu display-none">
+          <ul>
+            <li>
+              <a href="./bo-suu-tap.html">Bộ Sưu Tập Xuân Hè</a>
+            </li>
+          </ul>
+
+          <button class="back-home-bst">Quay lại</button>
+        </div>
+        <div class="offcanvas-body login-mb-menu">
+          <!-- Mục hiển thị đăng nhập, đăng ký -->
+          <div class="login-mb display-none">
+            <button class="close-mb">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Đăng nhập -->
+            <div class="login-content-mb">
+              <form>
+                <h3>ĐĂNG NHẬP</h3>
+                <input
+                  type="text"
+                  id="phone-user"
+                  placeholder="Nhập số điện thoại"
+                />
+                <button class="login-submit">ĐĂNG NHẬP</button>
+              </form>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="login-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>
+                Bạn chưa có tài khoản? <a href="#" id="next-reg-mb">Đăng ký</a>
+              </p>
+            </div>
+
+            <!-- Đăng ký -->
+            <div class="registration-content-mb display-none">
+              <form>
+                <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+                <input type="text" placeholder="Họ và tên" />
+                <input type="text" placeholder="Số điện thoại" />
+                <input type="text" placeholder="Nhập email để nhận ưu đãi" />
+                <button>ĐĂNG KÝ</button>
+              </form>
+              <p class="policy">
+                Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo
+                mật và chia sẻ thông tin của DCK Store.
+              </p>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="registration-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>
+                Bạn đã có tài khoản? <a href="#" id="next-log-mb">Đăng nhập</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="move">
+        <a href="./index.html">Home /</a>
+        <a href="#">Chính sách bảo mật</a>
+      </div>
+      <!-- <div class="banner_trangsp">
+        <img src="./img/banner_trangsp.jpg" alt="banner" />
+      </div> -->
+    </section>
+
+    <!-- Mục hiển thị đăng nhập, đăng ký -->
+    <div class="login display-none">
+      <button class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Đăng nhập -->
+      <div class="login-content">
+        <form>
+          <h3>ĐĂNG NHẬP</h3>
+          <input type="text" placeholder="Nhập số điện thoại" />
+          <button class="login-submit">ĐĂNG NHẬP</button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
+      </div>
+
+      <!-- Đăng ký -->
+      <div class="registration-content display-none">
+        <form>
+          <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+          <input type="text" placeholder="Họ và tên" />
+          <input type="text" placeholder="Số điện thoại" />
+          <input type="text" placeholder="Nhập email để nhận ưu đãi" />
+          <button>ĐĂNG KÝ</button>
+        </form>
+        <p class="policy">
+          Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật và
+          chia sẻ thông tin của DCK Store.
+        </p>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="registration-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn đã có tài khoản? <a href="#" id="next-log">Đăng nhập</a></p>
+      </div>
+    </div>
+
+    <section id="list-products" class="margin_top margin_top-th">
+      <div class="container">
+        <!-- <h2>TẤT CẢ SẢN PHẨM</h2> -->
+        <div class="row mb-2" id="list-product_item">
+          <div class="col-12">
+            <div class="layout_post">
+              <div class="layout_post__heading">
+                <div class="text-category">Chính sách bảo mật</div>
+                <h1 class="text-name">Chính sách bảo mật</h1>
+              </div>
+              <div class="layout_post__body">
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: center"
+                >
+                  <span style="font-size: 20px"
+                    ><strong>CHÍNH SÁCH BẢO MẬT</strong></span
+                  >
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <strong
+                    >Aristino.com cam kết sẽ bảo mật những thông tin mang tính
+                    riêng tư của Khách hàng. Quý khách vui lòng đọc bản “Chính
+                    sách bảo mật” dưới đây để hiểu rõ hơn những cam kết mà chúng
+                    tôi thực hiện, nhằm tôn trọng và bảo vệ quyền lợi của Khách
+                    hàng:</strong
+                  >
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>1. Thu thập thông tin cá nhân:</strong></em
+                  >&nbsp;Các thông tin thu thập thông qua
+                  website&nbsp;<strong>Aristino.com</strong>&nbsp;sẽ giúp chúng
+                  tôi
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Hỗ trợ Khách hàng khi mua sản phẩm&nbsp;
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Giải đáp thắc mắc của Khách hàng
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Cung cấp cho Khách hàng các thông tin mới nhất trên Website
+                  của chúng tôi
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Xem xét và nâng cấp nội dung và giao diện của Website
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Thực hiện các bản khảo sát khách hàng
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Thực hiện các hoạt động quảng bá liên quan đến các sản phẩm
+                  và dịch vụ của&nbsp;<strong>Aristino.com</strong>.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Để truy cập và sử dụng một số dịch vụ
+                  tại&nbsp;<strong>Aristino.com</strong>&nbsp;, Quý khách có thể
+                  sẽ được yêu cầu đăng ký với chúng tôi thông tin cá nhân
+                  (Email, Họ tên, Số điện thoại liên lạc…). Mọi thông tin khai
+                  báo phải đảm bảo tính chính xác và hợp
+                  pháp.&nbsp;<strong>Aristino.com</strong>&nbsp;không chịu mọi
+                  trách nhiệm liên quan đến pháp luật của thông tin khai báo.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Chúng tôi cũng có thể thu thập thông tin về số lần viếng thăm,
+                  bao gồm số trang Quý khách xem, số links (liên kết) bạn click
+                  và những thông tin khác liên quan đến việc kết nối
+                  đến&nbsp;<strong>Aristino.com</strong>. Chúng tôi cũng thu
+                  thập các thông tin mà trình duyệt Web (Browser) Quý khách sử
+                  dụng mỗi khi truy cập vào
+                  website&nbsp;<strong>Aristino.com</strong>, bao gồm: địa chỉ
+                  IP, loại Browser, ngôn ngữ sử dụng, thời gian và những địa chỉ
+                  mà Browser truy xuất đến.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>2. Sử dụng thông tin cá nhân:</strong></em>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  -&nbsp;<strong>Aristino.com</strong>&nbsp;thu thập và sử dụng
+                  thông tin cá nhân quý khách với mục đích phù hợp và hoàn toàn
+                  tuân thủ nội dung của “Chính sách bảo mật” này.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Khi cần thiết, chúng tôi có thể sử dụng những thông tin này
+                  để liên hệ trực tiếp với Quý khách dưới các hình thức như: gửi
+                  thư ngỏ, thư cảm ơn, thông tin về khuyến mại, thông tin về kỹ
+                  thuật và bảo mật. Quý khách có thể nhận được thư định kỳ cung
+                  cấp thông tin sản phẩm, dịch vụ mới, thông tin về các sự kiện
+                  sắp tới hoặc thông tin tuyển dụng nếu quý khách đăng kí nhận
+                  email thông báo.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>3. Chia sẻ thông tin cá nhân:</strong></em>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Ngoại trừ các trường hợp về sử dụng thông tin cá nhân như đã
+                  nêu trong chính sách này, chúng tôi cam kết sẽ không tiết lộ
+                  thông tin cá nhân của Quý khách ra ngoài.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Trong một số trường hợp, chúng tôi có thể thuê một đơn vị
+                  độc lập để tiến hành các dự án nghiên cứu thị trường và khi đó
+                  thông tin của Quý khách sẽ được cung cấp cho đơn vị này để
+                  tiến hành dự án. Bên thứ ba này sẽ bị ràng buộc bởi một thỏa
+                  thuận về bảo mật mà theo đó họ chỉ được phép sử dụng những
+                  thông tin được cung cấp cho mục đích hoàn thành dự án.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Chúng tôi có thể tiết lộ hoặc cung cấp thông tin cá nhân của
+                  Quý khách trong các trường hợp thật sự cần thiết như sau:
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  (a) Khi có yêu cầu của các cơ quan pháp luật;
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  (b) Trong trường hợp mà chúng tôi tin rằng điều đó sẽ giúp
+                  chúng tôi bảo vệ quyền lợi chính đáng của mình trước pháp
+                  luật;
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  (c) Tình huống khẩn cấp và cần thiết để bảo vệ quyền an toàn
+                  cá nhân Khách hàng của&nbsp;<strong>Aristino.com</strong>.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>4. Truy xuất thông tin cá nhân:&nbsp;</strong></em
+                  >Bất cứ thời điểm nào Quý khách cũng có thể truy cập và chỉnh
+                  sửa những thông tin cá nhân của mình theo các liên kết
+                  (website's links) thích hợp mà chúng tôi cung cấp.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>5. Bảo mật thông tin cá nhân:</strong></em>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Khi Quý khách gửi thông tin cá nhân của Quý khách cho chúng
+                  tôi, Quý khách đã đồng ý với các điều khoản mà chúng tôi đã
+                  nêu ở trên,&nbsp;<strong>Aristino.com</strong>&nbsp;cam kết
+                  bảo mật thông tin cá nhân của Quý khách bằng mọi cách thức có
+                  thể. Chúng tôi sẽ sử dụng nhiều công nghệ bảo mật thông tin
+                  khác nhau như: chuẩn quốc tế PCI, SSL… nhằm bảo vệ thông tin
+                  này không bị truy lục, sử dụng, hoặc tiết lộ ngoài ý muốn.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Tuy nhiên do hạn chế về mặt kỹ thuật, không một dữ liệu nào
+                  có thể được truyền trên đường truyền internet mà có thể được
+                  bảo mật 100%. Do vậy, chúng tôi không thể đưa ra một cam kết
+                  chắc chắn rằng thông tin Quý khách cung cấp cho chúng tôi sẽ
+                  được bảo mật một cách tuyệt đối an toàn, và chúng tôi không
+                  thể chịu trách nhiệm trong trường hợp có sự truy cập trái phép
+                  thông tin cá nhân của Quý khách như các trường hợp Quý khách
+                  tự ý chia sẻ thông tin với người khác…. Nếu Quý khách không
+                  đồng ý với các điều khoản như đã mô tả ở trên, Chúng tôi
+                  khuyên Quý khách không nên gửi thông tin đến cho chúng tôi.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Vì vậy,&nbsp;<strong>Aristino.com</strong>&nbsp;cũng khuyến
+                  cáo Quý khách nên bảo mật các thông tin liên quan đến mật khẩu
+                  truy xuất của Quý khách và không nên chia sẻ với bất kỳ người
+                  nào khác.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Nếu sử dụng máy tính chung nhiều người, Quý khách nên đăng
+                  xuất, hoặc thoát hết tất cả cửa sổ Website đang mở.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>6. Sử dụng “Cookie”</strong></em>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  -&nbsp;<strong>Aristino.com</strong>&nbsp;dùng "Cookie" để
+                  giúp cá nhân hóa và nâng cao tối đa hiệu quả sử dụng thời gian
+                  trực tuyến của Quý khách.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Một cookie là một file văn bản được đặt trên đĩa cứng của
+                  Quý khách bởi một máy chủ của trang web. Cookie không được
+                  dùng để chạy chương trình hay đưa virus vào máy tính của Quý
+                  khách. Cookie được chỉ định vào máy tính của Quý khách và chỉ
+                  có thể được đọc bởi một máy chủ trang web trên miền được đưa
+                  ra cookie cho Quý khách.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Một trong những mục đích của Cookie là cung cấp những tiện
+                  ích để tiết kiệm thời gian của Quý khách khi truy cập tại
+                  website&nbsp;<strong>Aristino.com</strong>&nbsp;hoặc viếng
+                  thăm website&nbsp;<strong>Aristino.com</strong>&nbsp;lần nữa
+                  mà không cần đăng ký lại thông tin sẵn có.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Quý khách có thể chấp nhận hoặc từ chối dùng cookie. Hầu hết
+                  những Browser tự động chấp nhận cookie, nhưng Quý khách có thể
+                  thay đổi những cài đặt để từ chối tất cả những cookie nếu quý
+                  khách thích. Tuy nhiên, nếu Quý khách chọn từ chối cookie,
+                  điều đó có thể gây cản trở và ảnh hưởng không tốt đến một số
+                  dịch vụ và tính năng phụ thuộc vào cookie tại
+                  website&nbsp;<strong>Aristino.com</strong>.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>7. Quy định về “Spam”:</strong></em>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  -&nbsp;<strong>Aristino.com</strong>&nbsp;thực sự quan ngại
+                  đến vấn nạn Spam (thư rác), các Email giả mạo danh tín chúng
+                  tôi gởi đi. Do
+                  đó,&nbsp;<strong>Aristino.com</strong>&nbsp;khẳng định chỉ gởi
+                  Email đến Quý khách khi và chỉ khi Quý khách có đăng ký hoặc
+                  sử dụng dịch vụ từ hệ thống của chúng tôi.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  -&nbsp;<strong>Aristino.com</strong>&nbsp;cam kết không bán,
+                  thuê lại hoặc cho thuê email của quý khách từ bên thứ ba. Nếu
+                  quý khách vô tình nhận được Email không theo yêu cầu từ hệ
+                  thống chúng tôi do một nguyên nhân ngoài ý muốn, xin vui lòng
+                  nhấn vào link từ chối nhận Email này kèm theo, hoặc thông báo
+                  trực tiếp đến ban quản trị Website.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <em><strong>8. Thay đổi về chính sách:</strong></em>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Chúng tôi hoàn toàn có thể thay đổi nội dung trong trang này
+                  mà không cần phải thông báo trước, để phù hợp với các nhu cầu
+                  của&nbsp;<strong>Aristino.com</strong>&nbsp;cũng như nhu cầu
+                  và sự phản hồi từ khách hàng nếu có. Khi cập nhật nội dung
+                  chính sách này, chúng tôi sẽ chỉnh sửa lại thời gian “Cập nhật
+                  lần cuối” bên dưới.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Nội dung “Chính sách bảo mật” này chỉ áp dụng
+                  tại<strong>&nbsp;Aristino.com</strong>, không bao gồm hoặc
+                  liên quan đến các bên thứ ba đặt quảng cáo hay có links
+                  tại&nbsp;<strong>Aristino.com</strong>. Chúng tôi khuyến khích
+                  Quý khách đọc kỹ chính sách An toàn và Bảo mật của các trang
+                  web của bên thứ ba trước khi cung cấp thông tin cá nhân cho
+                  các trang web đó. Chúng tôi không chịu trách nhiệm dưới bất kỳ
+                  hình thức nào về nội dung và tính pháp lý của trang web thuộc
+                  bên thứ ba.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Vì vậy, Quý khách đã đồng ý rằng, khi Quý khách sử dụng
+                  website của chúng tôi sau khi chỉnh sửa nghĩa là Quý khách đã
+                  thừa nhận, đồng ý tuân thủ cũng như tin tưởng vào sự chỉnh sửa
+                  này. Do đó, chúng tôi đề nghị Quý khách nên xem trước nội dung
+                  trang này trước khi truy cập các nội dung khác trên website
+                  cũng như Quý khách nên đọc và tham khảo kỹ nội dung “Chính
+                  sách bảo mật” của từng website mà Quý khách đang truy cập.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  &nbsp;<em><strong>9. Thông tin liên hệ:&nbsp;</strong></em
+                  >Chúng tôi luôn hoan nghênh các ý kiến đóng góp, liên hệ và
+                  phản hồi thông tin từ Quý khách về “Chính sách bảo mật” này.
+                  Nếu Quý khách có những thắc mắc liên quan xin vui lòng liên hệ
+                  theo địa chỉ Email: ……
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-4 col-md-4">
+                  <div id="thuong_hieu-content">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <i id="down-th" class="fa-solid fa-angle-down"></i>
+                    <i id="up-th" class="fa-solid fa-angle-up display-none"></i>
+                  </div>
+                  <ul id="thuong_hieu">
+                    <li>
+                      <a href="./cau-chuyen-thuong-hieu.html">Câu chuyện thương hiệu</a>
+                    </li>
+                    <li>
+                      <a href="./tin-tuc.html">Tin tức</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div id="chinh_sach-content">
+                    <h3>CHÍNH SÁCH BÁN HÀNG</h3>
+                    <i id="down-cs" class="fa-solid fa-angle-down"></i>
+                    <i id="up-cs" class="fa-solid fa-angle-up display-none"></i>
+                  </div>
+                  <ul id="chinh_sach">
+                    <li>
+                      <a href="./chinh-sach-doi-tra.html">Chính sách đổi hàng</a>
+                    </li>
+                    <li>
+                      <a href="./cs-baohanh.html">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                      <a href="./cs-baomat.html">Chính sách bảo mật</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div id="tu_van-content">
+                    <h3>TƯ VẤN</h3>
+                    <i id="down-tv" class="fa-solid fa-angle-down"></i>
+                    <i id="up-tv" class="fa-solid fa-angle-up display-none"></i>
+                  </div>
+                  <ul id="tu_van">
+                    <li>
+                      <a href="./hoi-dap.html">Hỏi đáp</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="payment">
+                  <p>Phương thức thanh toán</p>
+                  <img src="./img/payment.png" alt="payment" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
+              <div class="uu_dai">
+                <input type="text" placeholder="Nhập email của bạn..." />
+                <button>ĐĂNG KÝ</button>
+              </div>
+              <div class="connect">
+                <p>Kết nối với chúng tôi</p>
+                <div class="connect-icon">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="license">Bản Quyền Thuộc DCK Store</div>
+      </section>
+
+    <div class="mess">
+      <img src="./img/facebook_mesenger.svg" alt="mess" />
+    </div>
+
+    <div class="back_top">
+      <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+    <script src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./cart.js"></script>
+  </body>
+</html>

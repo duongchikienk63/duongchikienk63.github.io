@@ -210,7 +210,8 @@ ul {
   color: white;
 }
 
-.login {
+.login,
+.login-mb {
   width: 400px;
   height: 100%;
   position: absolute;
@@ -218,6 +219,9 @@ ul {
   right: 0;
   background-color: white;
   z-index: 200;
+}
+
+.login {
   transform-origin: 100% 5%;
   animation: headernotifyGrowth ease-in 0.5s;
   will-change: opacity, transform;
@@ -234,7 +238,8 @@ ul {
   }
 }
 
-.close {
+.close,
+.close-mb {
   background-color: white;
   color: black;
   border: none;
@@ -246,7 +251,8 @@ ul {
   right: 20px;
 }
 
-.close i {
+.close i,
+.close-mb i {
   font-size: 24px;
   position: absolute;
   right: 4px;
@@ -254,7 +260,7 @@ ul {
 }
 
 .login-content,
-.registration-content {
+.registration-content{
   width: 400px;
   padding: 40px;
   display: flex;
@@ -264,8 +270,28 @@ ul {
   text-align: center;
 }
 
+.login-content-mb,
+.registration-content-mb {
+  width: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.registration-content-mb {
+  margin-top: 20px;
+}
+
+.login-content-mb {
+  margin-top: 100px;
+}
+
 .login-content input,
-.registration-content input {
+.login-content-mb input,
+.registration-content input,
+.registration-content-mb input  {
   width: 100%;
   height: 57px;
   padding: 6px 12px;
@@ -275,7 +301,9 @@ ul {
 }
 
 .login-content button,
-.registration-content button {
+.login-content-mb button,
+.registration-content button,
+.registration-content-mb button {
   width: 100%;
   height: 57px;
   padding: 6px 12px;
@@ -284,13 +312,16 @@ ul {
   border: none;
 }
 
-.login h3 {
+.login h3,
+.login-mb h3 {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
 .login-content p,
-.registration-content p {
+.login-content-mb p,
+.registration-content p,
+.registration-content-mb p {
   margin: 15px 0;
   color: gray;
 }
@@ -321,17 +352,23 @@ ul {
 }
 
 .login-content a,
-.registration-content a {
+.login-content-mb a,
+.registration-content a,
+.registration-content-mb a {
   color: #0d6efd;
 }
 
 .login-content p:last-child,
-.registration-content p:last-child {
+.login-content-mb p:last-child,
+.registration-content p:last-child,
+.registration-content-mb p:last-child {
   color: black;
 }
 
 .login-content input:focus,
-.registration-content input:focus {
+.login-content-mb input:focus,
+.registration-content input:focus,
+.registration-content-mb input:focus {
   outline: 0;
 }
 
@@ -723,8 +760,8 @@ ul {
   border: 1px solid transparent;
 }
 
-.size_product li:hover {
-  border-bottom-color: black;
+.choose-size {
+  border-bottom-color: black !important;
 }
 
 .total_product {
@@ -1348,6 +1385,23 @@ form p {
 
 .post-item {
   cursor: pointer;
+}
+
+.layout_post__heading .text-category {
+  font-weight: bold;
+  font-size: 16px;
+  color: #BD7509;
+  margin-bottom: 5px;
+}
+
+.layout_post__heading .text-name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #3D4352;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1400px) {

@@ -229,15 +229,15 @@
 
         <button class="back-home-bst">Quay lại</button>
       </div>
-      <div class="offcanvas-body login-mb display-none">
+      <div class="offcanvas-body login-mb-menu">
         <!-- Mục hiển thị đăng nhập, đăng ký -->
-        <div class="login">
-          <button class="close">
+        <div class="login-mb display-none">
+          <button class="close-mb">
             <i class="fa-solid fa-xmark"></i>
           </button>
 
           <!-- Đăng nhập -->
-          <div class="login-content">
+          <div class="login-content-mb">
             <form>
               <h3>ĐĂNG NHẬP</h3>
               <input
@@ -263,42 +263,13 @@
                 />Facebook
               </button>
             </div>
-            <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
+            <p>
+              Bạn chưa có tài khoản? <a href="#" id="next-reg-mb">Đăng ký</a>
+            </p>
           </div>
-
-          <!-- <div class="login-content accuracy">
-        <form>
-          <h3>XÁC THỰC</h3>
-          <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
-          <div class="accuracy-code">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-          </div>
-          <button class="login-submit">XÁC THỰC</button>
-        </form>
-        <p>Hoặc đăng nhập bằng</p>
-        <div class="login-item">
-          <button>
-            <img
-              src="https://aristino.com/Content/pc/images/icon/google.svg"
-              alt="google"
-            />
-            Google
-          </button>
-          <button>
-            <img
-              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
-              alt="facebook"
-            />Facebook
-          </button>
-        </div>
-        <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
-      </div> -->
 
           <!-- Đăng ký -->
-          <div class="registration-content display-none">
+          <div class="registration-content-mb display-none">
             <form>
               <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
               <input type="text" placeholder="Họ và tên" />
@@ -326,7 +297,9 @@
                 />Facebook
               </button>
             </div>
-            <p>Bạn đã có tài khoản? <a href="#" id="next-log">Đăng nhập</a></p>
+            <p>
+              Bạn đã có tài khoản? <a href="#" id="next-log-mb">Đăng nhập</a>
+            </p>
           </div>
         </div>
       </div>
@@ -368,9 +341,9 @@
       <div class="registration-content display-none">
         <form>
           <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-          <input type="text" placeholder="Họ và tên" />
-          <input type="text" placeholder="Số điện thoại" />
-          <input type="text" placeholder="Nhập email để nhận ưu đãi" />
+          <input type="text" placeholder="Họ và tên" required/>
+          <input type="text" placeholder="Số điện thoại" required/>
+          <input type="text" placeholder="Nhập email để nhận ưu đãi" required/>
           <button>ĐĂNG KÝ</button>
         </form>
         <p class="policy">
@@ -399,6 +372,7 @@
 
     <section id="detail-product" class="margin_top">
       <div class="container">
+        <form action="#">
         <div class="row">
           <div class="col-lg-8">
             <h2>GIAO HÀNG VÀ THANH TOÁN</h2>
@@ -406,19 +380,19 @@
               <p>Thông tin giao hàng</p>
               <div class="row receiver_information">
                 <div class="col-lg-12">
-                  <input type="text" placeholder="Họ và tên người nhận" />
+                  <input type="text" placeholder="Họ và tên người nhận" required/>
                 </div>
                 <div class="col-lg-6">
-                  <input type="text" placeholder="Số điện thoại" />
+                  <input type="text" placeholder="Số điện thoại" required/>
                 </div>
                 <div class="col-lg-6">
-                  <input type="text" placeholder="Email người nhận hàng" />
+                  <input type="text" placeholder="Email người nhận hàng" required/>
                 </div>
                 <div class="col-lg-12">
-                  <input type="text" placeholder="Tỉnh/Thành phố, Quận/Huyện" />
+                  <input type="text" placeholder="Tỉnh/Thành phố, Quận/Huyện" required/>
                 </div>
                 <div class="col-lg-12">
-                  <input type="text" placeholder="Địa chỉ giao hàng cụ thể" />
+                  <input type="text" placeholder="Địa chỉ giao hàng cụ thể" required/>
                 </div>
               </div>
               <div class="note">
@@ -498,10 +472,11 @@
                 <span>Thành tiền:</span>
                 <p id="count-total">0đ</p>
               </div>
-              <button id="btn-confirm">XÁC NHẬN ĐẶT HÀNG</button>
+              <button id="btn-confirm" type="submit">XÁC NHẬN ĐẶT HÀNG</button>
             </div>
           </div>
         </div>
+        </form>>
       </div>
     </section>
 
@@ -518,16 +493,10 @@
                 </div>
                 <ul id="thuong_hieu">
                   <li>
-                    <a href="#">Câu chuyện thương hiệu</a>
+                    <a href="./cau-chuyen-thuong-hieu.html">Câu chuyện thương hiệu</a>
                   </li>
                   <li>
-                    <a href="#">Tin tức</a>
-                  </li>
-                  <li>
-                    <a href="#">Đôi Cánh Yêu Thương</a>
-                  </li>
-                  <li>
-                    <a href="#">Liên hệ</a>
+                    <a href="./tin-tuc.html">Tin tức</a>
                   </li>
                 </ul>
               </div>
@@ -539,22 +508,13 @@
                 </div>
                 <ul id="chinh_sach">
                   <li>
-                    <a href="#">Chính sách đổi hàng</a>
+                    <a href="./chinh-sach-doi-tra.html">Chính sách đổi hàng</a>
                   </li>
                   <li>
-                    <a href="#">Chính sách bảo hành</a>
+                    <a href="./cs-baohanh.html">Chính sách bảo hành</a>
                   </li>
                   <li>
-                    <a href="#">Chính sách hội viên</a>
-                  </li>
-                  <li>
-                    <a href="#">Chính sách giao nhận</a>
-                  </li>
-                  <li>
-                    <a href="#">Hướng dẫn mua hàng</a>
-                  </li>
-                  <li>
-                    <a href="#">Chính sách bảo mật</a>
+                    <a href="./cs-baomat.html">Chính sách bảo mật</a>
                   </li>
                 </ul>
               </div>
@@ -566,13 +526,7 @@
                 </div>
                 <ul id="tu_van">
                   <li>
-                    <a href="#">Tư vấn phong cách</a>
-                  </li>
-                  <li>
-                    <a href="#">Tư vấn chọn size</a>
-                  </li>
-                  <li>
-                    <a href="#">Hỏi đáp</a>
+                    <a href="./hoi-dap.html">Hỏi đáp</a>
                   </li>
                 </ul>
               </div>
