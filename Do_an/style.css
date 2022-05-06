@@ -1293,6 +1293,7 @@ form p {
 .post-tintuc-content h4 {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .post-content h3,
@@ -1300,8 +1301,16 @@ form p {
   color: #8f8f19;
 }
 
+.post-tintuc-content h3 {
+  margin: 10px 0;
+}
+
 .post-content h4 {
   font-weight: 700;
+}
+
+.container .col-lg-4 h2 {
+  margin-bottom: 15px;
 }
 
 .post-content p {
@@ -1318,6 +1327,10 @@ form p {
 
 .margin_top-th {
   margin-top: 40px !important;
+}
+
+.post-tintuc-content {
+  margin-top: 10px;
 }
 
 .bst-content {
