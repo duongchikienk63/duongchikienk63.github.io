@@ -20,6 +20,7 @@ let productsInCart = [];
 let subtotalEl = document.querySelector(".subtotal");
 let totalCount = document.querySelector(".count");
 const totalItems = document.querySelector(".total-item");
+const totalItemsMobile = document.querySelector(".total-item-mb");
 
 function renderTodo(arr) {
   //Xóa hết dữ liệu hiện có để thêm dữ liệu mới
@@ -72,6 +73,7 @@ function renderTodo(arr) {
     `;
     totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${arr.length})`;
     totalItems.innerHTML = arr.length;
+    totalItemsMobile.innerHTML = arr.length;
   }
 
   //Chèn dữ liệu mới để hiển thị
@@ -101,6 +103,7 @@ function updateTotalProducts(arr) {
   }
   totalCount.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${totalProducts})`;
   totalItems.innerHTML = totalProducts;
+  totalItemsMobile.innerHTML = totalProducts;
   payTotal.innerHTML = totalPriceProducts.toLocaleString("vi", {
     style: "currency",
     currency: "VND",

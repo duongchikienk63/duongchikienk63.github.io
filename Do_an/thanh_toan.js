@@ -2,6 +2,7 @@ let productsInCart = [];
 const paymentList = document.querySelector(".payment-list");
 const order = document.querySelector("#order");
 const totalItems = document.querySelector(".total-item");
+const totalItemsMobile = document.querySelector(".total-item-mb");
 
 function renderProducts(arr) {
   //Xóa hết dữ liệu hiện có để thêm dữ liệu mới
@@ -41,6 +42,7 @@ function renderProducts(arr) {
       `;
       order.innerHTML = "ĐƠN HÀNG " + `(${arr.length})`;
       totalItems.innerHTML = arr.length;
+      totalItemsMobile.innerHTML = arr.length;
   }
 
   //Chèn dữ liệu mới để hiển thị
@@ -78,6 +80,7 @@ function updateTotalProducts(arr) {
   }
   order.innerHTML = "GIỎ HÀNG CỦA BẠN " + `(${totalProducts})`;
   totalItems.innerHTML = totalProducts;
+  totalItemsMobile.innerHTML = totalProducts;
   countListProdust.innerHTML = totalPriceProducts.toLocaleString("vi", {
     style: "currency",
     currency: "VND",

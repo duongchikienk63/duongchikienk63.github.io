@@ -449,11 +449,13 @@ addCart.addEventListener("click", function () {
 });
 
 const totalItems = document.querySelector(".total-item");
+const totalItemsMobile = document.querySelector(".total-item-mb");
 
 function renderTodo(arr) {
   //Hiển thị danh sách công việc ra ngoài giao diện
   for (let i = 0; i < arr.length; i++) {
     totalItems.innerHTML = arr.length;
+    totalItemsMobile.innerHTML = arr.length;
   }
   updateTotalProducts(productsInCart);
 }
@@ -466,6 +468,7 @@ function updateTotalProducts(arr) {
     totalProducts += arr[i].count;
   }
   totalItems.innerHTML = totalProducts;
+  totalItemsMobile.innerHTML = totalProducts;
 }
 updateTotalProducts(productsInCart);
 

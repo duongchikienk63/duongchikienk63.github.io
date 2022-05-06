@@ -26,7 +26,12 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
     <title>Trang Chủ</title>
   </head>
   <body>
@@ -66,13 +71,7 @@
               <a href="#">TRANG CHỦ</a>
             </li>
             <li>
-              <a href="#">THƯƠNG HIỆU</a>
-              <div class="list-item">
-                <p><a href="#">Tin tức</a></p>
-                <p><a href="#">Phong cách</a></p>
-                <p><a href="#">Bài viết</a></p>
-                <p><a href="#">Ưu đãi liên kết</a></p>
-              </div>
+              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
             </li>
             <li>
               <a href="./san_pham.html">SẢN PHẨM</a>
@@ -93,15 +92,11 @@
                 <p><a href="./ca-vat.html">Cà Vạt</a></p>
               </div>
             </li>
-            </li>
             <li>
-              <a href="#">BỘ SƯU TẬP</a>
+              <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
               <div class="list-item">
-                <p><a href="#">BỘ SƯU TẬP XUÂN HÈ</a></p>
+                <p><a href="./bo-suu-tap.html">BỘ SƯU TẬP XUÂN HÈ</a></p>
               </div>
-            </li>
-            <li>
-              <a href="#">SALE</a>
             </li>
           </ul>
         </div>
@@ -122,7 +117,13 @@
       </div>
 
       <div class="header-menu-moblie">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -133,13 +134,18 @@
         <div class="cart-moblie">
           <a href="./gio_hang.html">
             <i class="fa-solid fa-cart-shopping"></i>
-            <div class="total-item">0</div>
+            <div class="total-item-mb">0</div>
           </a>
         </div>
       </div>
     </section>
-    
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
         <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
@@ -150,28 +156,25 @@
             <a href="#">TRANG CHỦ</a>
           </li>
           <li>
-            <a href="#">THƯƠNG HIỆU</a>
-            <span id = "click-th"><i class="fa-solid fa-angle-right"></i></span>
+            <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+            <span id="click-th"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="./san_pham.html">SẢN PHẨM</a>
-            <span id = "click-sp"><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
-            <a href="#">PHỤ KIỆN</a>
-            <span id = "click-pk"><i class="fa-solid fa-angle-right"></i></span>
+            <a href="./phu-kien.html">PHỤ KIỆN</a>
+            <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
-            <a href="#">BỘ SƯU TẬP</a>
-            <span id = "click-bst"><i class="fa-solid fa-angle-right"></i></span>
-          </li>
-          <li>
-            <a href="#">SALE</a>
+            <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
+            <span id="click-bst"><i class="fa-solid fa-angle-right"></i></span>
           </li>
         </ul>
-  
+
         <div class="login-mobile">
-          <button id="login">
+          <button id="login-mb">
             <i class="fa-regular fa-circle-user"></i>
             Đăng Nhập
           </button>
@@ -180,26 +183,6 @@
             0705155283
           </button>
         </div>
-      </div>
-      <div class="offcanvas-body th-menu display-none">
-        <ul>
-          <li>
-            <a href="#">Tin Tức</a>
-          </li>
-          <li>
-            <a href="#">Phong cách</a>
-          </li>
-          <li>
-            <a href="#">Bài Viết</a>
-          </li>
-          <li>
-            <a href="#">Ưu Đãi Liên Kết</a>           
-          </li>
-        </ul>
-
-        <button class="back-home-th">
-          Quay lại
-        </button>
       </div>
       <div class="offcanvas-body sp-menu display-none">
         <ul>
@@ -213,16 +196,14 @@
             <a href="./quan-au.html">Quần Âu</a>
           </li>
           <li>
-            <a href="./quan-jeans.html">Quần Jeans</a>           
+            <a href="./quan-jeans.html">Quần Jeans</a>
           </li>
           <li>
-            <a href="./quan-short.html">Quần Short</a>           
+            <a href="./quan-short.html">Quần Short</a>
           </li>
         </ul>
 
-        <button class="back-home-sp">
-          Quay lại
-        </button>
+        <button class="back-home-sp">Quay lại</button>
       </div>
       <div class="offcanvas-body pk-menu display-none">
         <ul>
@@ -240,20 +221,118 @@
           </li>
         </ul>
 
-        <button class="back-home-pk">
-          Quay lại
-        </button>
+        <button class="back-home-pk">Quay lại</button>
       </div>
       <div class="offcanvas-body bst-menu display-none">
         <ul>
           <li>
-            <a href="#">Bộ Sưu Tập Xuân Hè</a>
+            <a href="./bo-suu-tap.html">Bộ Sưu Tập Xuân Hè</a>
           </li>
         </ul>
 
-        <button class="back-home-bst">
-          Quay lại
-        </button>
+        <button class="back-home-bst">Quay lại</button>
+      </div>
+
+      <div class="offcanvas-body login-mb display-none">
+        <!-- Mục hiển thị đăng nhập, đăng ký -->
+        <div class="login">
+          <button class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <!-- Đăng nhập -->
+          <div class="login-content">
+            <form>
+              <h3>ĐĂNG NHẬP</h3>
+              <input
+                type="text"
+                id="phone-user"
+                placeholder="Nhập số điện thoại"
+              />
+              <button class="login-submit">ĐĂNG NHẬP</button>
+            </form>
+            <p>Hoặc đăng nhập bằng</p>
+            <div class="login-item">
+              <button>
+                <img
+                  src="https://aristino.com/Content/pc/images/icon/google.svg"
+                  alt="google"
+                />
+                Google
+              </button>
+              <button>
+                <img
+                  src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                  alt="facebook"
+                />Facebook
+              </button>
+            </div>
+            <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
+          </div>
+
+          <!-- <div class="login-content accuracy">
+        <form>
+          <h3>XÁC THỰC</h3>
+          <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+          <div class="accuracy-code">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+          </div>
+          <button class="login-submit">XÁC THỰC</button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
+      </div> -->
+
+          <!-- Đăng ký -->
+          <div class="registration-content display-none">
+            <form>
+              <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+              <input type="text" placeholder="Họ và tên" />
+              <input type="text" placeholder="Số điện thoại" />
+              <input type="text" placeholder="Nhập email để nhận ưu đãi" />
+              <button>ĐĂNG KÝ</button>
+            </form>
+            <p class="policy">
+              Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật
+              và chia sẻ thông tin của DCK Store.
+            </p>
+            <p>Hoặc đăng nhập bằng</p>
+            <div class="registration-item">
+              <button>
+                <img
+                  src="https://aristino.com/Content/pc/images/icon/google.svg"
+                  alt="google"
+                />
+                Google
+              </button>
+              <button>
+                <img
+                  src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                  alt="facebook"
+                />Facebook
+              </button>
+            </div>
+            <p>Bạn đã có tài khoản? <a href="#" id="next-log">Đăng nhập</a></p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -359,7 +438,7 @@
         <h2>DANH MỤC NỔI BẬT</h2>
         <div class="row carousel">
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
@@ -370,7 +449,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./quan-au.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
@@ -381,7 +460,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./phu-kien.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
@@ -392,7 +471,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
@@ -403,7 +482,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
@@ -414,7 +493,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./quan-jeans.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
@@ -425,7 +504,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./phu-kien.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
@@ -436,7 +515,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
@@ -450,7 +529,7 @@
 
         <div class="row carousel_mb">
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
@@ -461,7 +540,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
@@ -472,7 +551,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./phu-kien.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
@@ -483,7 +562,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
@@ -494,7 +573,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
@@ -505,7 +584,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
@@ -516,7 +595,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./phu-kien.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
@@ -527,7 +606,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
@@ -541,7 +620,7 @@
 
         <div class="row carousel_tablet">
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
@@ -552,7 +631,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
@@ -563,7 +642,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./phu-kien.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
@@ -574,7 +653,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
@@ -585,7 +664,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
@@ -644,7 +723,7 @@
         <h2>SẢN PHẨM MỚI</h2>
         <div class="row carousel">
           <div class="list-img-products">
-            <a href="#">
+            <a href="./phan_loai_sp.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
@@ -655,7 +734,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
@@ -666,7 +745,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
@@ -677,7 +756,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./quan-au.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
@@ -688,7 +767,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
@@ -699,7 +778,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
@@ -710,7 +789,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
@@ -721,7 +800,7 @@
             </a>
           </div>
           <div class="list-img-products">
-            <a href="#">
+            <a href="./san_pham.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"

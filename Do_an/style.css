@@ -195,7 +195,8 @@ ul {
   font-size: 24px;
 }
 
-.total-item {
+.total-item,
+.total-item-mb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -1078,7 +1079,7 @@ form p {
 .provisional p,
 .ship p,
 .confirm-price-total p,
-.count-voucher p  {
+.count-voucher p {
   border: none;
   font-size: 16px !important;
   font-weight: 400 !important;
@@ -1284,11 +1285,18 @@ form p {
 
 .post-content h3,
 .post-content h4,
-.post-content p {
+.post-content p,
+.post-tintuc-content h3,
+.post-tintuc-content p {
   font-size: 16px;
 }
+.post-tintuc-content h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
 
-.post-content h3 {
+.post-content h3,
+.post-tintuc-content h3 {
   color: #8f8f19;
 }
 
@@ -1304,8 +1312,29 @@ form p {
   -webkit-line-clamp: 2;
 }
 
+.img-tintuc img {
+  width: 100%;
+}
+
 .margin_top-th {
   margin-top: 40px !important;
+}
+
+.bst-content {
+  text-align: center;
+}
+
+.bst-content h1 {
+  margin: 30px 0;
+  font-size: 24px;
+}
+
+.bst-content p {
+  font-size: 16px;
+}
+
+.post-item {
+  cursor: pointer;
 }
 
 @media (max-width: 1400px) {
@@ -1424,7 +1453,7 @@ form p {
   .confirm {
     margin-top: 50px;
     margin-left: 0;
-}
+  }
 }
 
 @media (max-width: 740px) {
@@ -1481,7 +1510,7 @@ form p {
     gap: 0 !important;
   }
 
-  .total-item {
+  .total-item-mb {
     right: 6px;
     top: 2px;
   }
@@ -1574,7 +1603,7 @@ form p {
   .offcanvas-backdrop.show {
     opacity: 0.5;
   }
- 
+
   .end_product li {
     padding: 5px;
   }
@@ -1585,5 +1614,9 @@ form p {
 
   .move {
     padding: 0px 15px;
-}
+  }
+
+  .payment img {
+    width: 100%;
+  }
 }

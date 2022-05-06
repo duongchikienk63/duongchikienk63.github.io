@@ -127,25 +127,25 @@ const backHomeBst = document.querySelector(".back-home-bst");
 
 clickSp.addEventListener("click", function() {
   indexMenu.classList.add("display-none");
-  thMenu.classList.add("display-none");
+  // thMenu.classList.add("display-none");
   spMenu.classList.remove("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
   offcanvasExampleLabel.innerText = "SẢN PHẨM";
 })
 
-clickTh.addEventListener("click", function() {
-  indexMenu.classList.add("display-none");
-  thMenu.classList.remove("display-none");
-  spMenu.classList.add("display-none");
-  pkMenu.classList.add("display-none");
-  bstMenu.classList.add("display-none");
-  offcanvasExampleLabel.innerText = "THƯƠNG HIỆU";
-})
+// clickTh.addEventListener("click", function() {
+//   indexMenu.classList.add("display-none");
+//   thMenu.classList.remove("display-none");
+//   spMenu.classList.add("display-none");
+//   pkMenu.classList.add("display-none");
+//   bstMenu.classList.add("display-none");
+//   offcanvasExampleLabel.innerText = "THƯƠNG HIỆU";
+// })
 
 clickPk.addEventListener("click", function() {
   indexMenu.classList.add("display-none");
-  thMenu.classList.add("display-none");
+  // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.remove("display-none");
   bstMenu.classList.add("display-none");
@@ -154,25 +154,25 @@ clickPk.addEventListener("click", function() {
 
 clickBst.addEventListener("click", function() {
   indexMenu.classList.add("display-none");
-  thMenu.classList.add("display-none");
+  // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.remove("display-none");
   offcanvasExampleLabel.innerText = "BỘ SƯU TẬP";
 })
 
-backHomeTh.addEventListener("click", function() {
-  indexMenu.classList.remove("display-none");
-  thMenu.classList.add("display-none");
-  spMenu.classList.add("display-none");
-  pkMenu.classList.add("display-none");
-  bstMenu.classList.add("display-none");
-  offcanvasExampleLabel.innerText = "TRANG CHỦ";
-})
+// backHomeTh.addEventListener("click", function() {
+//   indexMenu.classList.remove("display-none");
+//   thMenu.classList.add("display-none");
+//   spMenu.classList.add("display-none");
+//   pkMenu.classList.add("display-none");
+//   bstMenu.classList.add("display-none");
+//   offcanvasExampleLabel.innerText = "TRANG CHỦ";
+// })
 
 backHomeSp.addEventListener("click", function() {
   indexMenu.classList.remove("display-none");
-  thMenu.classList.add("display-none");
+  // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
@@ -181,7 +181,7 @@ backHomeSp.addEventListener("click", function() {
 
 backHomePk.addEventListener("click", function() {
   indexMenu.classList.remove("display-none");
-  thMenu.classList.add("display-none");
+  // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
@@ -190,11 +190,26 @@ backHomePk.addEventListener("click", function() {
 
 backHomeBst.addEventListener("click", function() {
   indexMenu.classList.remove("display-none");
-  thMenu.classList.add("display-none");
+  // thMenu.classList.add("display-none");
   spMenu.classList.add("display-none");
   pkMenu.classList.add("display-none");
   bstMenu.classList.add("display-none");
   offcanvasExampleLabel.innerText = "TRANG CHỦ";
+})
+
+const loginMobileBtn = document.querySelector("#login-mb");
+const loginMobile = document.querySelector(".login-mb");
+const fixMenuMobile = document.querySelector(".offcanvas-start");
+
+loginMobileBtn.addEventListener("click", function() {
+  loginMobile.classList.remove("display-none");
+  loginPage.classList.remove("display-none");
+  fixMenuMobile.style.width = "100%";
+})
+
+loginClose.addEventListener("click", function() {
+  fixMenuMobile.style.width = "80%";
+  loginMobile.classList.add("display-none");
 })
 
 
