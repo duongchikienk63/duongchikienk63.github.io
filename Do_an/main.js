@@ -5,12 +5,16 @@ const loginPageMb = document.querySelector(".login-mb-menu");
 const loginClose = document.querySelector(".close");
 const loginCloseMb = document.querySelector(".close-mb");
 const nextReg = document.getElementById("next-reg");
+const nextRegAccuracy = document.getElementById("next-reg-accuracy");
+const nextRegAccuracyMb = document.getElementById("next-reg-accuracy-mb");
 const nextLog = document.getElementById("next-log");
 const nextRegMb = document.getElementById("next-reg-mb");
 const nextLogMb = document.getElementById("next-log-mb");
-const loginEle = document.querySelector(".login-content");
+const loginEle = document.querySelector(".login-user");
+const accuracyEle = document.querySelector(".accuracy");
+const accuracyEleMb = document.querySelector(".accuracy-mb");
 const regEle = document.querySelector(".registration-content");
-const loginEleMb = document.querySelector(".login-content-mb");
+const loginEleMb = document.querySelector(".login-user-mb");
 const regEleMb = document.querySelector(".registration-content-mb");
 const fixedMenu = document.querySelector(".header-menu");
 const fixedMenuMB = document.querySelector(".header-menu-moblie");
@@ -44,21 +48,37 @@ loginCloseMb.addEventListener("click", function () {
 nextReg.addEventListener("click", function () {
   loginEle.classList.add("display-none");
   regEle.classList.remove("display-none");
+  accuracyEle.classList.add("display-none");
+});
+
+nextRegAccuracy.addEventListener("click", function () {
+  loginEle.classList.add("display-none");
+  accuracyEle.classList.add("display-none");
+  regEle.classList.remove("display-none");
 });
 
 nextLog.addEventListener("click", function () {
   regEle.classList.add("display-none");
   loginEle.classList.remove("display-none");
+  accuracyEle.classList.add("display-none");
 });
 
 nextRegMb.addEventListener("click", function () {
   loginEleMb.classList.add("display-none");
+  regEleMb.classList.remove("display-none");
+  accuracyEleMb.classList.add("display-none");
+});
+
+nextRegAccuracyMb.addEventListener("click", function () {
+  loginEleMb.classList.add("display-none");
+  accuracyEleMb.classList.add("display-none");
   regEleMb.classList.remove("display-none");
 });
 
 nextLogMb.addEventListener("click", function () {
   regEleMb.classList.add("display-none");
   loginEleMb.classList.remove("display-none");
+  accuracyEleMb.classList.add("display-none");
 });
 
 // Sự kiện cuộn màn hình
@@ -80,15 +100,15 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-const phoneUser = document.querySelector("#phone-user").value;
+// const phoneUser = document.querySelector("#phone-user").value;
 
-function checkInput() {
-  if (isNaN(phoneUser)) {
-    alert("hợp lệ");
-  } else {
-    alert("Không hợp lệ");
-  }
-}
+// function checkInput() {
+//   if (isNaN(phoneUser)) {
+//     alert("hợp lệ");
+//   } else {
+//     alert("Không hợp lệ");
+//   }
+// }
 
 const downTh = document.getElementById("down-th");
 const upTh = document.getElementById("up-th");
@@ -246,3 +266,92 @@ function getDataForomLocalStorage() {
 
 //Sự kiện xảy ra khi web load hết html css thì gọi vào function
 window.onload = getDataForomLocalStorage;
+
+const phoneUserLogin = document.querySelector("#phone-user-login");
+const phoneUserLoginMb = document.querySelector("#phone-user-login-mb");
+const nameUserRegist = document.querySelector("#name-user-registration");
+const phoneUserRegist = document.querySelector("#phone-user-registration");
+const emailUserRegist = document.querySelector("#email-user-registration");
+const nameUserRegistMb = document.querySelector("#name-user-registration-mb");
+const phoneUserRegistMb = document.querySelector("#phone-user-registration-mb");
+const emailUserRegistMb = document.querySelector("#email-user-registration-mb");
+
+function isNum(number) {
+  return /^[0-9]*$/.test(number);
+}
+
+function checkInputLogin() {
+  phoneUserLoginValue = phoneUserLogin.value;
+
+  if (!isNum(phoneUserLoginValue)) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserLoginValue.length != 10) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserLoginValue[0] != 0) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else {
+    loginEle.classList.add("display-none");
+    accuracyEle.classList.remove("display-none");
+  }
+}
+
+function checkInputLoginMb() {
+  phoneUserLoginMbValue = phoneUserLoginMb.value;
+
+  if (!isNum(phoneUserLoginMbValue)) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserLoginMbValue.length != 10) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserLoginMbValue[0] != 0) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else {
+    loginEleMb.classList.add("display-none");
+    accuracyEleMb.classList.remove("display-none");
+  }
+}
+
+function checkInputRegist() {
+  phoneUserRegistValue = phoneUserRegist.value;
+  nameUserRegistValue = nameUserRegist.value;
+  emailUserRegistValue = emailUserRegist.value;
+
+  if (nameUserRegistValue == "") {
+    alert("Tên khách hàng không được để trống");
+  } else if (!isNum(phoneUserRegistValue)) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserRegistValue.length != 10) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserRegistValue[0] != 0) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (emailUserRegistValue == "") {
+    alert("email không được để trống");
+  } else {
+    loginEle.classList.remove("display-none");
+    accuracyEle.classList.add("display-none");
+    regEle.classList.add("display-none");
+    alert("Đăng ký thành công mời bạn đăng nhập");
+  }
+}
+
+function checkInputRegistMb() {
+  phoneUserRegistMbValue = phoneUserRegistMb.value;
+  nameUserRegistMbValue = nameUserRegistMb.value;
+  emailUserRegistMbValue = emailUserRegistMb.value;
+
+  if (nameUserRegistMbValue == "") {
+    alert("Tên khách hàng không được để trống");
+  } else if (!isNum(phoneUserRegistMbValue)) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserRegistMbValue.length != 10) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserRegistMbValue[0] != 0) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (emailUserRegistMbValue == "") {
+    alert("email không được để trống");
+  } else {
+    loginEleMb.classList.remove("display-none");
+    accuracyEleMb.classList.add("display-none");
+    regEleMb.classList.add("display-none");
+    alert("Đăng ký thành công mời bạn đăng nhập");
+  }
+}

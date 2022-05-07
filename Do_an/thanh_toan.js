@@ -183,3 +183,20 @@ function getDataForomLocalStorage() {
 
 //Sự kiện xảy ra khi web load hết html css thì gọi vào function
 window.onload = getDataForomLocalStorage;
+
+const numberPhoneUser = document.querySelector("#number-phone-user");
+
+function isNum(number) {
+  return /^[0-9]*$/.test(number);
+}
+
+function checkValidate() {
+  numberPhoneUserValue = numberPhoneUser.value;
+  if (!isNum(numberPhoneUserValue)) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (numberPhoneUserValue.length != 10) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  } else if (phoneUserLoginValue[0] != 0) {
+    alert("Số điện thoại bạn nhập chưa đúng");
+  }
+}

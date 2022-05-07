@@ -21,7 +21,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>Chi Tiết Sản Phẩm</title>
   </head>
   <body>
@@ -104,11 +116,16 @@
             <div class="total-item">0</div>
           </a>
         </div>
-
       </div>
 
       <div class="header-menu-moblie">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -131,7 +148,12 @@
       </div>
     </section>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
         <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
@@ -146,18 +168,18 @@
           </li>
           <li>
             <a href="./san_pham.html">SẢN PHẨM</a>
-            <span id = "click-sp"><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="./phu-kien.html">PHỤ KIỆN</a>
-            <span id = "click-pk"><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
           </li>
           <li>
             <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
-            <span id = "click-bst"><i class="fa-solid fa-angle-right"></i></span>
+            <span id="click-bst"><i class="fa-solid fa-angle-right"></i></span>
           </li>
         </ul>
-  
+
         <div class="login-mobile">
           <button id="login-mb">
             <i class="fa-regular fa-circle-user"></i>
@@ -181,16 +203,14 @@
             <a href="./quan-au.html">Quần Âu</a>
           </li>
           <li>
-            <a href="./quan-jeans.html">Quần Jeans</a>           
+            <a href="./quan-jeans.html">Quần Jeans</a>
           </li>
           <li>
-            <a href="./quan-short.html">Quần Short</a>           
+            <a href="./quan-short.html">Quần Short</a>
           </li>
         </ul>
 
-        <button class="back-home-sp">
-          Quay lại
-        </button>
+        <button class="back-home-sp">Quay lại</button>
       </div>
       <div class="offcanvas-body pk-menu display-none">
         <ul>
@@ -208,9 +228,7 @@
           </li>
         </ul>
 
-        <button class="back-home-pk">
-          Quay lại
-        </button>
+        <button class="back-home-pk">Quay lại</button>
       </div>
       <div class="offcanvas-body bst-menu display-none">
         <ul>
@@ -219,9 +237,7 @@
           </li>
         </ul>
 
-        <button class="back-home-bst">
-          Quay lại
-        </button>
+        <button class="back-home-bst">Quay lại</button>
       </div>
       <div class="offcanvas-body login-mb-menu">
         <!-- Mục hiển thị đăng nhập, đăng ký -->
@@ -231,15 +247,22 @@
           </button>
 
           <!-- Đăng nhập -->
-          <div class="login-content-mb">
+          <div class="login-content-mb login-user-mb">
             <form>
               <h3>ĐĂNG NHẬP</h3>
               <input
                 type="text"
-                id="phone-user"
+                id="phone-user-login-mb"
                 placeholder="Nhập số điện thoại"
+                required
               />
-              <button class="login-submit">ĐĂNG NHẬP</button>
+              <button
+                class="login-submit"
+                onclick="checkInputLoginMb()"
+                type="submit"
+              >
+                ĐĂNG NHẬP
+              </button>
             </form>
             <p>Hoặc đăng nhập bằng</p>
             <div class="login-item">
@@ -262,14 +285,62 @@
             </p>
           </div>
 
+          <div class="login-content-mb accuracy-mb display-none">
+            <form>
+              <h3>XÁC THỰC</h3>
+              <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+              <div class="accuracy-code">
+                <input type="text" required />
+                <input type="text" required />
+                <input type="text" required />
+                <input type="text" required />
+              </div>
+              <button class="login-submit" type="submit">XÁC THỰC</button>
+            </form>
+            <p>Hoặc đăng nhập bằng</p>
+            <div class="login-item">
+              <button>
+                <img
+                  src="https://aristino.com/Content/pc/images/icon/google.svg"
+                  alt="google"
+                />
+                Google
+              </button>
+              <button>
+                <img
+                  src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                  alt="facebook"
+                />Facebook
+              </button>
+            </div>
+            <p>
+              Bạn chưa có tài khoản?
+              <a href="#" id="next-reg-accuracy-mb">Đăng ký</a>
+            </p>
+          </div>
+
           <!-- Đăng ký -->
           <div class="registration-content-mb display-none">
             <form>
               <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-              <input type="text" placeholder="Họ và tên" />
-              <input type="text" placeholder="Số điện thoại" />
-              <input type="text" placeholder="Nhập email để nhận ưu đãi" />
-              <button>ĐĂNG KÝ</button>
+              <input
+                type="text"
+                id="name-user-registration-mb"
+                placeholder="Họ và tên"
+              />
+              <input
+                type="text"
+                id="phone-user-registration-mb"
+                placeholder="Số điện thoại"
+              />
+              <input
+                type="text"
+                id="email-user-registration-mb"
+                placeholder="Nhập email để nhận ưu đãi"
+              />
+              <button onclick="checkInputRegistMb()" type="button">
+                ĐĂNG KÝ
+              </button>
             </form>
             <p class="policy">
               Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật
@@ -306,11 +377,22 @@
       </button>
 
       <!-- Đăng nhập -->
-      <div class="login-content">
+      <div class="login-content login-user">
         <form>
           <h3>ĐĂNG NHẬP</h3>
-          <input type="text" placeholder="Nhập số điện thoại" />
-          <button class="login-submit">ĐĂNG NHẬP</button>
+          <input
+            type="text"
+            id="phone-user-login"
+            placeholder="Nhập số điện thoại"
+            required
+          />
+          <button
+            class="login-submit"
+            onclick="checkInputLogin()"
+            type="submit"
+          >
+            ĐĂNG NHẬP
+          </button>
         </form>
         <p>Hoặc đăng nhập bằng</p>
         <div class="login-item">
@@ -331,14 +413,60 @@
         <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
       </div>
 
+      <!-- Xác thực tài khoản -->
+      <div class="login-content accuracy display-none">
+        <form>
+          <h3>XÁC THỰC</h3>
+          <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+          <div class="accuracy-code">
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
+          </div>
+          <button class="login-submit" type="submit">XÁC THỰC</button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>
+          Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy">Đăng ký</a>
+        </p>
+      </div>
+
       <!-- Đăng ký -->
       <div class="registration-content display-none">
         <form>
           <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-          <input type="text" placeholder="Họ và tên" />
-          <input type="text" placeholder="Số điện thoại" />
-          <input type="text" placeholder="Nhập email để nhận ưu đãi" />
-          <button>ĐĂNG KÝ</button>
+          <input
+            type="text"
+            id="name-user-registration"
+            placeholder="Họ và tên"
+          />
+          <input
+            type="text"
+            id="phone-user-registration"
+            placeholder="Số điện thoại"
+          />
+          <input
+            type="text"
+            id="email-user-registration"
+            placeholder="Nhập email để nhận ưu đãi"
+          />
+          <button onclick="checkInputRegist()" type="button">ĐĂNG KÝ</button>
         </form>
         <p class="policy">
           Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật và
@@ -369,7 +497,7 @@
         <div class="row" id="add_product">
           <div class="col-lg-8">
             <div class="img-group">
-              <div class="img-list">
+              <div class="img-list slider-nav">
                 <div class="img-list-item">
                   <img
                     src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x90x90x4.jpg"
@@ -401,7 +529,7 @@
                   />
                 </div>
               </div>
-              <div class="img-grow">
+              <div class="img-grow slider-for">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x900x900x4.jpg"
                   alt="anh"
@@ -430,27 +558,15 @@
               </ul>
             </div>
 
-            <!-- <div class="total_product">
-              <p>Số lượng</p>
-              <div class="number_product">
-                <button id="minus">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <span id="total-products">1</span>
-                <button id="add">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </div> -->
-
             <button class="add-cart">
               <i class="fa-solid fa-cart-plus"></i>
               Thêm vào giỏ hàng
             </button>
 
-
             <!-- onclick="location.href='gio_hang.html';" -->
-            <button class="btn-buy" onclick="location.href='gio_hang.html';">Mua ngay</button>
+            <button class="btn-buy" onclick="location.href='gio_hang.html';">
+              Mua ngay
+            </button>
 
             <a class="list_store" href="#">Xem store còn hàng</a>
 
@@ -629,7 +745,9 @@
                 </div>
                 <ul id="thuong_hieu">
                   <li>
-                    <a href="./cau-chuyen-thuong-hieu.html">Câu chuyện thương hiệu</a>
+                    <a href="./cau-chuyen-thuong-hieu.html"
+                      >Câu chuyện thương hiệu</a
+                    >
                   </li>
                   <li>
                     <a href="./tin-tuc.html">Tin tức</a>
@@ -704,9 +822,53 @@
     <script src="./main.js"></script>
     <script src="./chi-tiet.js"></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var $jq = jQuery.noConflict();
+        $(".slider-for").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: ".slider-nav",
+        });
+        $(".slider-nav").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: ".slider-for",
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+        });
+      });
+    </script>
   </body>
 </html>

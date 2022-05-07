@@ -1404,6 +1404,16 @@ form p {
   margin-bottom: 30px;
 }
 
+.accuracy-code {
+  display: flex;
+  gap: 20px;
+}
+
+.accuracy-code input {
+  border: 1px solid transparent;
+  border-bottom-color: black;
+}
+
 @media (max-width: 1400px) {
   .header-menu_item li {
     font-size: 16px;

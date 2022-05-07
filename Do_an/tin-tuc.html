@@ -235,15 +235,15 @@
             </button>
   
             <!-- Đăng nhập -->
-            <div class="login-content-mb">
+            <div class="login-content-mb login-user-mb">
               <form>
                 <h3>ĐĂNG NHẬP</h3>
                 <input
                   type="text"
-                  id="phone-user"
-                  placeholder="Nhập số điện thoại"
+                  id="phone-user-login-mb"
+                  placeholder="Nhập số điện thoại" required
                 />
-                <button class="login-submit">ĐĂNG NHẬP</button>
+                <button class="login-submit" onclick="checkInputLoginMb()" type="submit">ĐĂNG NHẬP</button>
               </form>
               <p>Hoặc đăng nhập bằng</p>
               <div class="login-item">
@@ -266,14 +266,45 @@
               </p>
             </div>
   
+            <div class="login-content-mb accuracy-mb display-none">
+              <form>
+                <h3>XÁC THỰC</h3>
+                <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+                <div class="accuracy-code">
+                  <input type="text" required>
+                  <input type="text" required>
+                  <input type="text" required>
+                  <input type="text" required>
+                </div>
+                <button class="login-submit" type="submit">XÁC THỰC</button>
+              </form>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="login-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy-mb">Đăng ký</a></p>
+            </div>
+  
             <!-- Đăng ký -->
             <div class="registration-content-mb display-none">
               <form>
                 <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-                <input type="text" placeholder="Họ và tên" />
-                <input type="text" placeholder="Số điện thoại" />
-                <input type="text" placeholder="Nhập email để nhận ưu đãi" />
-                <button>ĐĂNG KÝ</button>
+                <input type="text" id="name-user-registration-mb" placeholder="Họ và tên" />
+                <input type="text" id="phone-user-registration-mb" placeholder="Số điện thoại" />
+                <input type="text" id="email-user-registration-mb" placeholder="Nhập email để nhận ưu đãi"/>
+                <button onclick="checkInputRegistMb()" type="button">ĐĂNG KÝ</button>
               </form>
               <p class="policy">
                 Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật
@@ -319,11 +350,11 @@
       </button>
 
       <!-- Đăng nhập -->
-      <div class="login-content">
+      <div class="login-content login-user">
         <form>
           <h3>ĐĂNG NHẬP</h3>
-          <input type="text" placeholder="Nhập số điện thoại" />
-          <button class="login-submit">ĐĂNG NHẬP</button>
+          <input type="text" id="phone-user-login" placeholder="Nhập số điện thoại" required/>
+          <button class="login-submit" onclick="checkInputLogin()" type="submit">ĐĂNG NHẬP</button>
         </form>
         <p>Hoặc đăng nhập bằng</p>
         <div class="login-item">
@@ -344,14 +375,46 @@
         <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
       </div>
 
+      <!-- Xác thực tài khoản -->
+      <div class="login-content accuracy display-none">
+        <form>
+          <h3>XÁC THỰC</h3>
+          <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+          <div class="accuracy-code">
+            <input type="text" required>
+            <input type="text" required>
+            <input type="text" required>
+            <input type="text" required>
+          </div>
+          <button class="login-submit" type="submit">XÁC THỰC</button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy">Đăng ký</a></p>
+      </div>
+
       <!-- Đăng ký -->
       <div class="registration-content display-none">
         <form>
           <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-          <input type="text" placeholder="Họ và tên" />
-          <input type="text" placeholder="Số điện thoại" />
-          <input type="text" placeholder="Nhập email để nhận ưu đãi" />
-          <button>ĐĂNG KÝ</button>
+          <input type="text" id="name-user-registration" placeholder="Họ và tên" />
+          <input type="text" id="phone-user-registration" placeholder="Số điện thoại" />
+          <input type="text" id="email-user-registration" placeholder="Nhập email để nhận ưu đãi"/>
+          <button onclick="checkInputRegist()" type="button">ĐĂNG KÝ</button>
         </form>
         <p class="policy">
           Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật và
