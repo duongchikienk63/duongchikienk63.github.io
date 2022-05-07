@@ -280,6 +280,10 @@ function isNum(number) {
   return /^[0-9]*$/.test(number);
 }
 
+function isText(name) {
+  return /^[a-zA-Z ]{2,}$/g.test(removeAscent(name));
+}
+
 function checkInputLogin() {
   phoneUserLoginValue = phoneUserLogin.value;
 
@@ -317,6 +321,8 @@ function checkInputRegist() {
 
   if (nameUserRegistValue == "") {
     alert("Tên khách hàng không được để trống");
+  } else if (!isText(nameUserRegistValue)) {
+    alert("Tên khách hàng bạn nhập chưa đúng");
   } else if (!isNum(phoneUserRegistValue)) {
     alert("Số điện thoại bạn nhập chưa đúng");
   } else if (phoneUserRegistValue.length != 10) {
@@ -340,6 +346,8 @@ function checkInputRegistMb() {
 
   if (nameUserRegistMbValue == "") {
     alert("Tên khách hàng không được để trống");
+  } else if (!isText(nameUserRegistValue)) {
+    alert("Tên khách hàng bạn nhập chưa đúng");
   } else if (!isNum(phoneUserRegistMbValue)) {
     alert("Số điện thoại bạn nhập chưa đúng");
   } else if (phoneUserRegistMbValue.length != 10) {

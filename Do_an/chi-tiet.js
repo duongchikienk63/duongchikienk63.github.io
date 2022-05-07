@@ -557,37 +557,6 @@ sizeItem[4].addEventListener("click", function () {
   setLocalStorages();
 });
 
-// $('.your-slider').slick('unslick');
-// $('.slider-for').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider-nav'
-// });
-// $('.slider-nav').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   asNavFor: '.slider-for',
-//   dots: true,
-//   centerMode: true,
-//   focusOnSelect: true
-// });
-
-// function getUnique(arr, comp) {
-//   const unique = arr
-//     .map((e) => e[comp])
-
-//     // store the keys of the unique objects
-//     .map((e, i, final) => final.indexOf(e) === i && i)
-
-//     // eliminate the dead keys & store unique objects
-//     .filter((e) => arr[e])
-//     .map((e) => arr[e]);
-
-//   return unique;
-// }
-
 function setLocalStorage() {
   localStorage.setItem("productsInCart", JSON.stringify(productsInCart));
 }

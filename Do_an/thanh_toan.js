@@ -185,14 +185,39 @@ function getDataForomLocalStorage() {
 window.onload = getDataForomLocalStorage;
 
 const numberPhoneUser = document.querySelector("#number-phone-user");
+const NameUserTT = document.querySelector("#name-user-tt");
 
 function isNum(number) {
   return /^[0-9]*$/.test(number);
 }
 
+function isText(name) {
+  return /^[a-zA-Z ]{2,}$/g.test(removeAscent(name));
+}
+
+function removeAscent (str) {
+  if (str === null || str === undefined) return str;
+   str = str.toLowerCase();
+   str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+   str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+   str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+   str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+   str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+   str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+   str = str.replace(/đ/g, "d");
+   return str;
+}
+
 function checkValidate() {
   numberPhoneUserValue = numberPhoneUser.value;
-  if (!isNum(numberPhoneUserValue)) {
+  NameUserTTValue = NameUserTT.value;
+  if (NameUserTTValue == "") {
+    alert("Bạn chưa nhập tên người nhận");
+  }else if (!isText(NameUserTTValue)) {
+    alert("Họ và tên bạn nhập chưa đúng");
+  } else if (numberPhoneUserValue == "") {
+    alert("Bạn chưa nhập số điện thoại");
+  } else if (!isNum(numberPhoneUserValue)) {
     alert("Số điện thoại bạn nhập chưa đúng");
   } else if (numberPhoneUserValue.length != 10) {
     alert("Số điện thoại bạn nhập chưa đúng");
