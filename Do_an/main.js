@@ -379,7 +379,23 @@ function checkInputRegistMb() {
   }
 }
 
+const fixRemove = document.querySelector(".user");
+
 function accuracy() {
   userActive.classList.add("display-none");
-  dangNhap.innerHTML = "Hi, Dương Chí Kiên";
+  fixRemove.innerHTML = `          <button>
+  <i class="fa-solid fa-phone"></i>
+  0705155283
+</button>
+
+<span id="righteous"> </span>
+
+<button>
+Dương Chí Kiên
+</button>`;
 }
+
+// const removeUser = document.querySelector("#remove-user");
+// removeUser.addEventListener("click", function() {
+//   userActive.classList.add("display-none");
+// })
