@@ -52,6 +52,8 @@
             0705155283
           </button>
 
+          <span id="righteous"> </span>
+          
           <button id="login">
             Đăng Nhập
             <i class="fa-regular fa-circle-user"></i>
@@ -339,7 +341,7 @@
     </div>
 
     <!-- Mục hiển thị đăng nhập, đăng ký -->
-    <div class="login display-none">
+    <div class="login display-none" id="user-active">
       <button class="close">
         <i class="fa-solid fa-xmark"></i>
       </button>
@@ -381,7 +383,7 @@
             <input type="text" required>
             <input type="text" required>
           </div>
-          <button class="login-submit" type="submit">XÁC THỰC</button>
+          <button class="login-submit" onclick="accuracy()" id="accuracy-user" type="submit">XÁC THỰC</button>
         </form>
         <p>Hoặc đăng nhập bằng</p>
         <div class="login-item">

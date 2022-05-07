@@ -275,9 +275,24 @@ const emailUserRegist = document.querySelector("#email-user-registration");
 const nameUserRegistMb = document.querySelector("#name-user-registration-mb");
 const phoneUserRegistMb = document.querySelector("#phone-user-registration-mb");
 const emailUserRegistMb = document.querySelector("#email-user-registration-mb");
+const accuracyUser = document.querySelector("#accuracy-user");
+const userActive = document.querySelector("#user-active");
 
 function isNum(number) {
   return /^[0-9]*$/.test(number);
+}
+
+function removeAscent (str) {
+  if (str === null || str === undefined) return str;
+   str = str.toLowerCase();
+   str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+   str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+   str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+   str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+   str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+   str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+   str = str.replace(/đ/g, "d");
+   return str;
 }
 
 function isText(name) {
@@ -362,4 +377,9 @@ function checkInputRegistMb() {
     regEleMb.classList.add("display-none");
     alert("Đăng ký thành công mời bạn đăng nhập");
   }
+}
+
+function accuracy() {
+  userActive.classList.add("display-none");
+  dangNhap.innerHTML = "Hi, Dương Chí Kiên"
 }

@@ -88,10 +88,16 @@ ul {
   font-size: 16px;
   font-weight: 300;
   margin-right: 80px;
-  gap: 12px;
+  gap: 8px;
 }
 
-.user::after {
+#righteous {
+  width: 2px;
+  height: 20px;
+  background-color: white;
+}
+
+/* .user::after {
   content: "";
   border-width: 8px 0.1px;
   border-style: solid;
@@ -99,7 +105,7 @@ ul {
   position: absolute;
   top: 10px;
   right: 104px;
-}
+} */
 
 .user button {
   background-color: black;
@@ -1485,9 +1491,9 @@ form p {
     margin-right: 30px;
   }
 
-  .user::after {
+  /* .user::after {
     right: 92px;
-  }
+  } */
 
   .qc p {
     font-size: 14px;
