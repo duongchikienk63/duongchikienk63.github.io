@@ -381,5 +381,5 @@ function checkInputRegistMb() {
 
 function accuracy() {
   userActive.classList.add("display-none");
-  dangNhap.innerHTML = "Hi, Dương Chí Kiên"
+  dangNhap.innerHTML = "Hi, Dương Chí Kiên";
 }

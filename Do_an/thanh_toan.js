@@ -208,7 +208,8 @@ function removeAscent (str) {
    return str;
 }
 
-function checkValidate() {
+function checkValidate(e) {
+  e.preventDefault();
   numberPhoneUserValue = numberPhoneUser.value;
   NameUserTTValue = NameUserTT.value;
   if (NameUserTTValue == "") {
@@ -221,7 +222,11 @@ function checkValidate() {
     alert("Số điện thoại bạn nhập chưa đúng");
   } else if (numberPhoneUserValue.length != 10) {
     alert("Số điện thoại bạn nhập chưa đúng");
-  } else if (phoneUserLoginValue[0] != 0) {
+  } else if (numberPhoneUserValue[0] != 0) {
     alert("Số điện thoại bạn nhập chưa đúng");
+  }else {
+    window.location.href = "./index.html";
+    alert("Cảm ơn quý khách đã tin tưởng đặt hàng")
   }
+
 }
