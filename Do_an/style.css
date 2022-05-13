@@ -626,6 +626,7 @@ ul {
   display: flex;
   align-items: center;
   margin: 0;
+  padding: 0 10px;
 }
 
 .end_product li {
@@ -1312,10 +1313,10 @@ form p {
   overflow-y: scroll;
 }
 
-.payment-list {
+/* .payment-list {
   height: 150px;
   overflow-y: scroll;
-}
+} */
 
 .img-post img {
   max-width: 100%;
@@ -1418,6 +1419,11 @@ form p {
 .accuracy-code input {
   border: 1px solid transparent;
   border-bottom-color: black;
+}
+
+.payment_option label,
+.choose_delivery label {
+  padding-right: 70%;
 }
 
 @media (max-width: 1400px) {
@@ -1642,7 +1648,7 @@ form p {
   }
 
   .img-group {
-    display: grid;
+    flex-direction: column-reverse;
   }
 
   .img-list {
@@ -1706,4 +1712,8 @@ form p {
   .payment img {
     width: 100%;
   }
+
+  .payment_option label, .choose_delivery label {
+    padding-right: 40%;
+}
 }

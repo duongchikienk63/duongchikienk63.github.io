@@ -53,7 +53,7 @@
           </button>
 
           <span id="righteous"> </span>
-          
+
           <button id="login">
             Đăng Nhập
             <i class="fa-regular fa-circle-user"></i>
@@ -97,7 +97,7 @@
             <li>
               <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
               <div class="list-item">
-                <p><a href="./bo-suu-tap.html">BỘ SƯU TẬP XUÂN HÈ</a></p>
+                <p><a href="./bo-suu-tap.html">XUÂN HÈ</a></p>
               </div>
             </li>
           </ul>
@@ -227,13 +227,13 @@
       <div class="offcanvas-body bst-menu display-none">
         <ul>
           <li>
-            <a href="./bo-suu-tap.html">Bộ Sưu Tập Xuân Hè</a>
+            <a href="./bo-suu-tap.html">Xuân Hè</a>
           </li>
         </ul>
 
         <button class="back-home-bst">Quay lại</button>
       </div>
-      <div class="offcanvas-body login-mb-menu">
+      <div class="offcanvas-body login-mb-menu" id="user-active-mb">
         <!-- Mục hiển thị đăng nhập, đăng ký -->
         <div class="login-mb display-none">
           <button class="close-mb">
@@ -247,9 +247,16 @@
               <input
                 type="text"
                 id="phone-user-login-mb"
-                placeholder="Nhập số điện thoại" required
+                placeholder="Nhập số điện thoại"
+                required
               />
-              <button class="login-submit" onclick="checkInputLoginMb()" type="submit">ĐĂNG NHẬP</button>
+              <button
+                class="login-submit"
+                onclick="checkInputLoginMb()"
+                type="submit"
+              >
+                ĐĂNG NHẬP
+              </button>
             </form>
             <p>Hoặc đăng nhập bằng</p>
             <div class="login-item">
@@ -277,12 +284,12 @@
               <h3>XÁC THỰC</h3>
               <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
               <div class="accuracy-code">
-                <input type="text" required>
-                <input type="text" required>
-                <input type="text" required>
-                <input type="text" required>
+                <input type="text" />
+                <input type="text" />
+                <input type="text"/>
+                <input type="text" />
               </div>
-              <button class="login-submit" type="submit">XÁC THỰC</button>
+              <button class="login-submit" onclick="accuracyMb()" type="button">XÁC THỰC</button>
             </form>
             <p>Hoặc đăng nhập bằng</p>
             <div class="login-item">
@@ -300,17 +307,34 @@
                 />Facebook
               </button>
             </div>
-            <p>Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy-mb">Đăng ký</a></p>
+            <p>
+              Bạn chưa có tài khoản?
+              <a href="#" id="next-reg-accuracy-mb">Đăng ký</a>
+            </p>
           </div>
 
           <!-- Đăng ký -->
           <div class="registration-content-mb display-none">
             <form>
               <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-              <input type="text" id="name-user-registration-mb" placeholder="Họ và tên" />
-              <input type="text" id="phone-user-registration-mb" placeholder="Số điện thoại" />
-              <input type="text" id="email-user-registration-mb" placeholder="Nhập email để nhận ưu đãi"/>
-              <button onclick="checkInputRegistMb()" type="button">ĐĂNG KÝ</button>
+              <input
+                type="text"
+                id="name-user-registration-mb"
+                placeholder="Họ và tên"
+              />
+              <input
+                type="text"
+                id="phone-user-registration-mb"
+                placeholder="Số điện thoại"
+              />
+              <input
+                type="text"
+                id="email-user-registration-mb"
+                placeholder="Nhập email để nhận ưu đãi"
+              />
+              <button onclick="checkInputRegistMb()" type="button">
+                ĐĂNG KÝ
+              </button>
             </form>
             <p class="policy">
               Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật
@@ -350,8 +374,18 @@
       <div class="login-content login-user">
         <form>
           <h3>ĐĂNG NHẬP</h3>
-          <input type="text" id="phone-user-login" placeholder="Nhập số điện thoại" required/>
-          <button class="login-submit" onclick="checkInputLogin()" type="submit">ĐĂNG NHẬP</button>
+          <input
+            type="text"
+            id="phone-user-login"
+            placeholder="Nhập số điện thoại"
+          />
+          <button
+            class="login-submit"
+            onclick="checkInputLogin()"
+            type="button"
+          >
+            ĐĂNG NHẬP
+          </button>
         </form>
         <p>Hoặc đăng nhập bằng</p>
         <div class="login-item">
@@ -378,12 +412,19 @@
           <h3>XÁC THỰC</h3>
           <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
           <div class="accuracy-code">
-            <input type="text" required>
-            <input type="text" required>
-            <input type="text" required>
-            <input type="text" required>
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
           </div>
-          <button class="login-submit" onclick="accuracy()" id="accuracy-user" type="submit">XÁC THỰC</button>
+          <button
+            class="login-submit"
+            onclick="accuracy()"
+            id="accuracy-user"
+            type="submit"
+          >
+            XÁC THỰC
+          </button>
         </form>
         <p>Hoặc đăng nhập bằng</p>
         <div class="login-item">
@@ -401,16 +442,30 @@
             />Facebook
           </button>
         </div>
-        <p>Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy">Đăng ký</a></p>
+        <p>
+          Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy">Đăng ký</a>
+        </p>
       </div>
 
       <!-- Đăng ký -->
       <div class="registration-content display-none">
         <form>
           <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
-          <input type="text" id="name-user-registration" placeholder="Họ và tên" />
-          <input type="text" id="phone-user-registration" placeholder="Số điện thoại" />
-          <input type="text" id="email-user-registration" placeholder="Nhập email để nhận ưu đãi"/>
+          <input
+            type="text"
+            id="name-user-registration"
+            placeholder="Họ và tên"
+          />
+          <input
+            type="text"
+            id="phone-user-registration"
+            placeholder="Số điện thoại"
+          />
+          <input
+            type="text"
+            id="email-user-registration"
+            placeholder="Nhập email để nhận ưu đãi"
+          />
           <button onclick="checkInputRegist()" type="button">ĐĂNG KÝ</button>
         </form>
         <p class="policy">
@@ -443,13 +498,13 @@
         <h2>DANH MỤC NỔI BẬT</h2>
         <div class="row carousel">
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="./san_pham.html">
+            <a href="./Ao-somi.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
                   alt="img-item"
                 />
-                <p>Áo</p>
+                <p>Áo Sơmi</p>
               </div>
             </a>
           </div>
@@ -460,255 +515,40 @@
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
                   alt="img-item"
                 />
-                <p>Quần</p>
+                <p>Quần Âu</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="./phu-kien.html">
+            <a href="./ví-nam.html">
               <div class="products-item">
                 <img
                   src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
                   alt="img-item"
                 />
-                <p>Phụ Kiện</p>
+                <p>Ví Nam</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="./san_pham.html">
+            <a href="./ca-vat.html">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
+                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/bst-man-in-legend-04x500x500x4.jpg"
                   alt="img-item"
                 />
-                <p>Đồ Thể Thao</p>
+                <p>Cà Vạt</p>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="./san_pham.html">
+            <a href="./bo-suu-tap.html">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
+                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/man-in-sunshine-2x500x500x4.jpg"
                   alt="img-item"
                 />
-                <p>Áo</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="./quan-jeans.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="./phu-kien.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Phụ Kiện</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Đồ Thể Thao</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row carousel_mb">
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
-                  alt="img-item"
-                />
-                <p>Áo</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./phu-kien.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Phụ Kiện</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Đồ Thể Thao</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
-                  alt="img-item"
-                />
-                <p>Áo</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./phu-kien.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Phụ Kiện</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Đồ Thể Thao</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row carousel_tablet">
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
-                  alt="img-item"
-                />
-                <p>Áo</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./phu-kien.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Phụ Kiện</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Đồ Thể Thao</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-3x500x500x4.webp"
-                  alt="img-item"
-                />
-                <p>Áo</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-2x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-4x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Phụ Kiện</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/adv/slide-home-1/banner-chong-dich-6x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Đồ Thể Thao</p>
+                <p>Bộ Sưu Tập</p>
               </div>
             </a>
           </div>
@@ -728,272 +568,68 @@
         <h2>SẢN PHẨM MỚI</h2>
         <div class="row carousel">
           <div class="list-img-products">
-            <a href="./phan_loai_sp.html">
+            <a href="./chi_tiet_sp.html?id=0">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
+                  src="./img/quan-jean-nam.jpg"
                   alt="img-item"
                 />
-                <p>Áo Thun Ngắn Tay</p>
+                <p>Quần jeans nam MS-01</p>
               </div>
             </a>
           </div>
           <div class="list-img-products">
-            <a href="./san_pham.html">
+            <a href="./chi_tiet_sp.html?id=1">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
+                  src="./img/ao-so-mi-nam-dai.jpg"
                   alt="img-item"
                 />
-                <p>Áo Tank Top Nam</p>
+                <p>Áo sơmi nam dài tay MS-01</p>
               </div>
             </a>
           </div>
           <div class="list-img-products">
-            <a href="./san_pham.html">
+            <a href="./chi_tiet_sp.html?id=2">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
+                  src="./img/ao-so-mi-nam-ngan.jpg"
                   alt="img-item"
                 />
-                <p>Áo Thun Nam</p>
+                <p>Áo sơmi nam ngắn tay MS-01</p>
               </div>
             </a>
           </div>
           <div class="list-img-products">
-            <a href="./quan-au.html">
+            <a href="./chi_tiet_sp.html?id=3">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
+                  src="./img/ao-so-mi-nam-ngan-1.jpg"
                   alt="img-item"
                 />
-                <p>Quần Âu Nam</p>
+                <p>Áo sơmi nam ngắn tay MS-02</p>
               </div>
             </a>
           </div>
           <div class="list-img-products">
-            <a href="./san_pham.html">
+            <a href="./chi_tiet_sp.html?id=4">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
+                  src="./img/ao-so-mi-nam-dai-1.jpg"
                   alt="img-item"
                 />
-                <p>Áo Thun Ngắn Tay</p>
+                <p>Áo sơmi nam dài tay MS-02</p>
               </div>
             </a>
           </div>
           <div class="list-img-products">
-            <a href="./san_pham.html">
+            <a href="./chi_tiet_sp.html?id=5">
               <div class="products-item">
                 <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
+                  src="./img/2ao-so-mi-nam-dai-2.jpg"
                   alt="img-item"
                 />
-                <p>Áo Tank Top Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="./san_pham.html">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần Âu Nam</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row carousel_mb">
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Ngắn Tay</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Tank Top Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần Âu Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Ngắn Tay</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Tank Top Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần Âu Nam</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row carousel_tablet">
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Ngắn Tay</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Tank Top Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần Âu Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/atsr06/ao-thun-nam-aristino-ATSR06-04x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Ngắn Tay</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tanktop/att008s2/ao-tank-top-nam-aristino-ATT008S2-09x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Tank Top Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/ao-tshirt/ats010s2/ao-thun-nam-aristino-ATS010S2-01x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Áo Thun Nam</p>
-              </div>
-            </a>
-          </div>
-          <div class="list-img-products">
-            <a href="#">
-              <div class="products-item">
-                <img
-                  src="https://aristino.com/Data/ResizeImage/images/product/quan-au/atr04502/quan-au-nam-aristino-ATR04502-07x500x500x4.jpg"
-                  alt="img-item"
-                />
-                <p>Quần Âu Nam</p>
+                <p>Áo sơmi nam dài tay MS-03</p>
               </div>
             </a>
           </div>
@@ -1021,7 +657,9 @@
                 </div>
                 <ul id="thuong_hieu">
                   <li>
-                    <a href="./cau-chuyen-thuong-hieu.html">Câu chuyện thương hiệu</a>
+                    <a href="./cau-chuyen-thuong-hieu.html"
+                      >Câu chuyện thương hiệu</a
+                    >
                   </li>
                   <li>
                     <a href="./tin-tuc.html">Tin tức</a>
@@ -1133,7 +771,7 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
 
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+  
 
     <script type="text/javascript">
       var $jq = jQuery.noConflict();

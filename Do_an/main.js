@@ -275,24 +275,24 @@ const emailUserRegist = document.querySelector("#email-user-registration");
 const nameUserRegistMb = document.querySelector("#name-user-registration-mb");
 const phoneUserRegistMb = document.querySelector("#phone-user-registration-mb");
 const emailUserRegistMb = document.querySelector("#email-user-registration-mb");
-const accuracyUser = document.querySelector("#accuracy-user");
 const userActive = document.querySelector("#user-active");
+const userActiveMb = document.querySelector("#user-active-mb");
 
 function isNum(number) {
   return /^[0-9]*$/.test(number);
 }
 
-function removeAscent (str) {
+function removeAscent(str) {
   if (str === null || str === undefined) return str;
-   str = str.toLowerCase();
-   str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
-   str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
-   str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
-   str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
-   str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
-   str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
-   str = str.replace(/đ/g, "d");
-   return str;
+  str = str.toLowerCase();
+  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+  str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+  str = str.replace(/đ/g, "d");
+  return str;
 }
 
 function isText(name) {
@@ -302,7 +302,9 @@ function isText(name) {
 function checkInputLogin() {
   phoneUserLoginValue = phoneUserLogin.value;
 
-  if (!isNum(phoneUserLoginValue)) {
+  if (phoneUserLoginValue == "") {
+    alert("Số điện thoại không được để trống");
+  } else if (!isNum(phoneUserLoginValue)) {
     alert("Số điện thoại bạn nhập chưa đúng");
   } else if (phoneUserLoginValue.length != 10) {
     alert("Số điện thoại bạn nhập chưa đúng");
@@ -317,7 +319,9 @@ function checkInputLogin() {
 function checkInputLoginMb() {
   phoneUserLoginMbValue = phoneUserLoginMb.value;
 
-  if (!isNum(phoneUserLoginMbValue)) {
+  if (phoneUserLoginMbValue == "") {
+    alert("Số điện thoại không được để trống");
+  } else if (!isNum(phoneUserLoginMbValue)) {
     alert("Số điện thoại bạn nhập chưa đúng");
   } else if (phoneUserLoginMbValue.length != 10) {
     alert("Số điện thoại bạn nhập chưa đúng");
@@ -361,7 +365,7 @@ function checkInputRegistMb() {
 
   if (nameUserRegistMbValue == "") {
     alert("Tên khách hàng không được để trống");
-  } else if (!isText(nameUserRegistValue)) {
+  } else if (!isText(nameUserRegistMbValue)) {
     alert("Tên khách hàng bạn nhập chưa đúng");
   } else if (!isNum(phoneUserRegistMbValue)) {
     alert("Số điện thoại bạn nhập chưa đúng");
@@ -380,6 +384,7 @@ function checkInputRegistMb() {
 }
 
 const fixRemove = document.querySelector(".user");
+const loginMobileFix = document.querySelector(".login-mobile");
 
 function accuracy() {
   userActive.classList.add("display-none");
@@ -391,11 +396,17 @@ function accuracy() {
 <span id="righteous"> </span>
 
 <button>
-Dương Chí Kiên
+Hi, Dương Chí Kiên
 </button>`;
 }
 
-// const removeUser = document.querySelector("#remove-user");
-// removeUser.addEventListener("click", function() {
-//   userActive.classList.add("display-none");
-// })
+function accuracyMb() {
+  userActiveMb.classList.add("display-none");
+  loginMobileFix.innerHTML = `<button>
+  Hi, Dương Chí Kiên
+</button>
+<button>
+  <i class="fa-solid fa-phone"></i>
+  0705155283
+</button>`;
+}
