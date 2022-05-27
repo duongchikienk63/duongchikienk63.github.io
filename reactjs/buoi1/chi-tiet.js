@@ -14,7 +14,7 @@ fetch("https://fakestoreapi.com/products")
               <img class = "img" src="${json[i].image}" alt="anh">
               </div>
               <p>${json[i].description}</p>
-              <span class = "price-product" >Giá: ${json[i].price}$</span>
+              <span class = "price-product" >Price: ${json[i].price}$</span>
               <div class = "back">
               <a href = "./index.html"> Quay Lại </a> 
               </div>

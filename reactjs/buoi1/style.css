@@ -84,7 +84,7 @@ div img {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     margin: 20px 0;
     width: 600px;
 }
@@ -95,7 +95,9 @@ p {
 }
 
 .back {
-    margin-top: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .back a{
