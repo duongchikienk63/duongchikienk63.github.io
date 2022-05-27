@@ -16,7 +16,7 @@ fetch("https://fakestoreapi.com/products")
               <p>${json[i].description}</p>
               <span class = "price-product" >Price: ${json[i].price}$</span>
               <div class = "back">
-              <a href = "./index.html"> Quay Lại </a> 
+              <a href = "./index.html"> Back home </a> 
               </div>
               `
           }
