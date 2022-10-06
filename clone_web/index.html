@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //   const ul = React.createElement(
+      //     "ul",
+      //     null,
+      //     React.createElement("li", null, "js"),
+      //     React.createElement("li", null, "reactjs")
+      //   );
+
+      // const list = [
+      //     {
+      //         name: 'HTML, CSS'
+      //     },
+      //     {
+      //         name: 'javascript'
+      //     },
+      //     {
+      //         name: 'reactjs'
+      //     }
+      // ]
+
+      // const ul = <ul>
+      //     <li>js</li>
+      //     <li>reactjs</li>
+      //     </ul>
+
+      // const jsx = (
+      //     <ul>
+      //         {list.map((list, index) =>
+      //             <li key = {index}>{list.name}</li> )}
+      //     </ul>
+      // )
+
+      const jsx = (
+        <React.Fragment>
+          <h1>HTML</h1>
+          <h2>CSS</h2>
+        </React.Fragment>
+      );
+
+      const container = document.getElementById("root");
+
+      const root = ReactDOM.createRoot(container);
+      root.render(jsx);
+    </script>
+  </body>
+</html>

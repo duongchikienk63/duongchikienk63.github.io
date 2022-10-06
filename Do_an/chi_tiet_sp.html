@@ -526,10 +526,24 @@
                 </div>
               </div>
               <div class="img-grow slider-for">
-                <img
+                <div class="img-grow-item">
+                  <img
                   src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x900x900x4.jpg"
                   alt="anh"
                 />
+                </div>
+                <div class="img-grow-item">
+                  <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x900x900x4.jpg"
+                  alt="anh"
+                />
+                </div>
+                <div class="img-grow-item">
+                  <img
+                  src="https://aristino.com/Data/ResizeImage/images/product/so-mi-ngan-tay/ass212s2/ao-so-mi-nam-aristino-ASS212S2-02x900x900x4.jpg"
+                  alt="anh"
+                />
+                </div>
               </div>
             </div>
           </div>
@@ -832,7 +846,7 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script
+    <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
     ></script>
@@ -869,5 +883,23 @@
         });
       });
     </script> -->
+
+    <script>
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".slider-nav",
+      });
+      $(".slider-nav").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: ".slider-for",
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+      });
+    </script>
   </body>
 </html>

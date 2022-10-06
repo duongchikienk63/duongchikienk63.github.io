@@ -473,6 +473,7 @@ btnBuy.addEventListener("click", function () {
 addCart.addEventListener("click", function () {
   for (let i = 0; i < products.length; i++) {
     if (products[i].id == idItem) {
+      products[i].size = sizeArr[0];
       productsInCart.push(products[i]);
       alert("Bạn đã thêm sản phẩm thành công vào giỏ hàng")
     }
