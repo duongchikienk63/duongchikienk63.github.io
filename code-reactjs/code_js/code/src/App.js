@@ -2,7 +2,11 @@ import { useStore, actions } from "./store";
 
 function App() {
   const [state, dispatch] = useStore();
-  const [todos, todoInput] = state;
+  const { todos, todoInput } = state;
+
+  const handleAdd = () => {
+    dispatch(actions.addTodo(todoInput));
+  };
 
   return (
     <div>
@@ -13,6 +17,13 @@ function App() {
           dispatch(actions.setTodoInput(e.target.value));
         }}
       />
+      <button onClick={handleAdd}>Add</button>
+      {todos.map((todo, index) => (
+        <li key={index}>
+          {todo}
+          <span style={{ padding: "0 10px" }}>&times;</span>
+        </li>
+      ))}
     </div>
   );
 }

@@ -1,8 +1,8 @@
 
-import { SET_TODO_INPUT } from "./constants"
+import { ADD_TODO, SET_TODO_INPUT } from "./constants"
 
 const initState = {
-    todo: [],
+    todos: [],
     todoInput: '',
 }
 
@@ -13,6 +13,11 @@ function reducer(state, action) {
                 ...state,
                 todoInput: action.payload
             }
+            case ADD_TODO:
+                return {
+                    ...state,
+                    todos: [...state.todos, action.payload]
+                }
             default:
                 throw new Error('Invalid action.')
 
