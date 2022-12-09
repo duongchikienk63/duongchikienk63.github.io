@@ -3,10 +3,18 @@
 
 :root {
     --primary: #fe2c55;
+    --black: #000;
+
+    // DefaultLayout 
+    --Default-layout-header-height: 60px;
+    --Default-layout-container-width: 1150px;
+    --Default-layout-horizontal-spacer: 24px;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -18,4 +26,9 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+a[href] {
+    color: #000;
+    text-decoration: none;
 }

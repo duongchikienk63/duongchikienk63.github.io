@@ -52,7 +52,7 @@ function renderTodo(arr) {
 
   //Danh sách công việc trống
   if (arr.length == 0) {
-    todoListEl.innerHTML = "Không có công việc nào trong danh sách";
+    todoListEl.innerHTML = "<div class= pad-todo >Không có công việc nào trong danh sách</div>";
     return;
   }
 
