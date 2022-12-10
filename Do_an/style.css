@@ -266,7 +266,7 @@ ul {
 }
 
 .login-content,
-.registration-content{
+.registration-content {
   width: 400px;
   padding: 40px;
   display: flex;
@@ -297,7 +297,7 @@ ul {
 .login-content input,
 .login-content-mb input,
 .registration-content input,
-.registration-content-mb input  {
+.registration-content-mb input {
   width: 100%;
   height: 57px;
   padding: 6px 12px;
@@ -1319,7 +1319,7 @@ form p {
 
 #style-1::-webkit-scrollbar {
   width: 5px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 #style-1::-webkit-scrollbar-thumb {
@@ -1328,8 +1328,8 @@ form p {
 }
 
 #style-1::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
 /* .payment-list {
@@ -1416,7 +1416,7 @@ form p {
 .layout_post__heading .text-category {
   font-weight: bold;
   font-size: 16px;
-  color: #BD7509;
+  color: #bd7509;
   margin-bottom: 5px;
 }
 
@@ -1426,7 +1426,7 @@ form p {
   line-height: 36px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #3D4352;
+  color: #3d4352;
   margin-bottom: 30px;
 }
 
@@ -1565,6 +1565,14 @@ form p {
   .confirm {
     margin-top: 50px;
     margin-left: 0;
+  }
+
+  .mess {
+    bottom: 50px;
+  }
+
+  .back_top {
+    bottom: 110px;
   }
 }
 
@@ -1732,7 +1740,16 @@ form p {
     width: 100%;
   }
 
-  .payment_option label, .choose_delivery label {
+  .payment_option label,
+  .choose_delivery label {
     padding-right: 40%;
-}
+  }
+
+  .mess {
+    bottom: 30px;
+  }
+
+  .back_top {
+    bottom: 90px;
+  }
 }
