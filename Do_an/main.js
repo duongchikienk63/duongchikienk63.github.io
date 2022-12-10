@@ -93,9 +93,7 @@ window.addEventListener("scroll", (e) => {
 });
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY < 1200) {
-    backTop.classList.add("display-none");
-  } else {
+  if (window.scrollY > 1200) {
     backTop.classList.remove("display-none");
   }
 });
