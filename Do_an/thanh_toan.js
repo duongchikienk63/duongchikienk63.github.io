@@ -8,7 +8,7 @@ function renderProducts(arr) {
   //Xóa hết dữ liệu hiện có để thêm dữ liệu mới
   paymentList.innerHTML = "";
 
-  //Danh sách công việc trống
+  //Danh sách giỏ trống
   if (arr.length == 0) {
     paymentList.innerHTML = "Bạn chưa có sản phẩm nào để thanh toán";
     return;
