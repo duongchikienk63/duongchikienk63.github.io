@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <title>Chính Sách Bảo Hành</title>
+  </head>
+  <body>
+    <section id="header my-0">
+      <!-- <div class="banner_header">
+          <img src="./img/baner_header.jpg" alt="banner" />
+        </div> -->
+
+      <div class="header-content">
+        <div class="header-advertisement">
+          <div class="qc">
+            <p>Tặng Voucher 100K Cho Hóa Đơn Từ 1 Triệu</p>
+          </div>
+        </div>
+        <div class="user">
+          <button>
+            <i class="fa-solid fa-phone"></i>
+            0705155283
+          </button>
+          <span id="righteous"> </span>
+
+          <button id="login">
+            Đăng Nhập
+            <i class="fa-regular fa-circle-user"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./img/DCK.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="header-menu_item">
+          <ul>
+            <li>
+              <a href="./index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+            </li>
+            <li>
+              <a href="./san_pham.html">SẢN PHẨM</a>
+              <div class="list-item">
+                <p><a href="./phan_loai_sp.html">Áo thun</a></p>
+                <p><a href="./Ao-somi.html">Áo sơmi</a></p>
+                <p><a href="./quan-au.html">Quần âu</a></p>
+                <p><a href="./quan-jeans.html">Quần jeans</a></p>
+                <p><a href="./quan-short.html">Quần Short</a></p>
+              </div>
+            </li>
+            <li>
+              <a href="./phu-kien.html">PHỤ KIỆN</a>
+              <div class="list-item">
+                <p><a href="./ví-nam.html">Ví Nam</a></p>
+                <p><a href="./that-lung.html">Thắt Lưng</a></p>
+                <p><a href="./giay-da.html">Giày Da</a></p>
+                <p><a href="./ca-vat.html">Cà Vạt</a></p>
+              </div>
+            </li>
+            <li>
+              <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
+              <div class="list-item">
+                <p><a href="./bo-suu-tap.html">XUÂN HÈ</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <!-- <form>
+            <input type="text" placeholder="Tìm kiếm" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form> -->
+
+          <a href="gio_hang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="total-item">0</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="header-menu-moblie">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./img/DCK.png" alt="logo" />
+        </div>
+
+        <div class="cart-moblie">
+          <a href="./gio_hang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="total-item-mb">0</div>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+          <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        </div>
+        <div class="offcanvas-body index-menu">
+          <ul>
+            <li>
+              <a href="./index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+            </li>
+            <li>
+              <a href="./san_pham.html">SẢN PHẨM</a>
+              <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li>
+              <a href="./phu-kien.html">PHỤ KIỆN</a>
+              <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li>
+              <a href="./bo-suu-tap.html">BỘ SƯU TẬP</a>
+              <span id="click-bst"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+          </ul>
+
+          <div class="login-mobile">
+            <button id="login-mb">
+              <i class="fa-regular fa-circle-user"></i>
+              Đăng Nhập
+            </button>
+            <button>
+              <i class="fa-solid fa-phone"></i>
+              0705155283
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas-body sp-menu display-none">
+          <ul>
+            <li>
+              <a href="./phan_loai_sp.html">Áo Thun</a>
+            </li>
+            <li>
+              <a href="./Ao-somi.html">Áo Sơ Mi</a>
+            </li>
+            <li>
+              <a href="./quan-au.html">Quần Âu</a>
+            </li>
+            <li>
+              <a href="./quan-jeans.html">Quần Jeans</a>
+            </li>
+            <li>
+              <a href="./quan-short.html">Quần Short</a>
+            </li>
+          </ul>
+
+          <button class="back-home-sp">Quay lại</button>
+        </div>
+        <div class="offcanvas-body pk-menu display-none">
+          <ul>
+            <li>
+              <a href="./ví-nam.html">Ví Nam</a>
+            </li>
+            <li>
+              <a href="./that-lung.html">Thắt Lưng</a>
+            </li>
+            <li>
+              <a href="./giay-da.html">Giày Da</a>
+            </li>
+            <li>
+              <a href="./ca-vat.html">Cà Vạt</a>
+            </li>
+          </ul>
+
+          <button class="back-home-pk">Quay lại</button>
+        </div>
+        <div class="offcanvas-body bst-menu display-none">
+          <ul>
+            <li>
+              <a href="./bo-suu-tap.html">Xuân Hè</a>
+            </li>
+          </ul>
+
+          <button class="back-home-bst">Quay lại</button>
+        </div>
+        <div class="offcanvas-body login-mb-menu">
+          <!-- Mục hiển thị đăng nhập, đăng ký -->
+          <div class="login-mb display-none">
+            <button class="close-mb">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+  
+            <!-- Đăng nhập -->
+            <div class="login-content-mb login-user-mb">
+              <form>
+                <h3>ĐĂNG NHẬP</h3>
+                <input
+                  type="text"
+                  id="phone-user-login-mb"
+                  placeholder="Nhập số điện thoại" required
+                />
+                <button class="login-submit" onclick="checkInputLoginMb()" type="submit">ĐĂNG NHẬP</button>
+              </form>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="login-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>
+                Bạn chưa có tài khoản? <a href="#" id="next-reg-mb">Đăng ký</a>
+              </p>
+            </div>
+  
+            <div class="login-content-mb accuracy-mb display-none">
+              <form>
+                <h3>XÁC THỰC</h3>
+                <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+                <div class="accuracy-code">
+                  <input type="text" required>
+                  <input type="text" required>
+                  <input type="text" required>
+                  <input type="text" required>
+                </div>
+                <button class="login-submit" type="submit">XÁC THỰC</button>
+              </form>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="login-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy-mb">Đăng ký</a></p>
+            </div>
+  
+            <!-- Đăng ký -->
+            <div class="registration-content-mb display-none">
+              <form>
+                <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+                <input type="text" id="name-user-registration-mb" placeholder="Họ và tên" />
+                <input type="text" id="phone-user-registration-mb" placeholder="Số điện thoại" />
+                <input type="text" id="email-user-registration-mb" placeholder="Nhập email để nhận ưu đãi"/>
+                <button onclick="checkInputRegistMb()" type="button">ĐĂNG KÝ</button>
+              </form>
+              <p class="policy">
+                Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật
+                và chia sẻ thông tin của DCK Store.
+              </p>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="registration-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>
+                Bạn đã có tài khoản? <a href="#" id="next-log-mb">Đăng nhập</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="move">
+        <a href="./index.html">Home /</a>
+        <a href="#">Chính sách bảo hành</a>
+      </div>
+      <!-- <div class="banner_trangsp">
+        <img src="./img/banner_trangsp.jpg" alt="banner" />
+      </div> -->
+    </section>
+
+    <!-- Mục hiển thị đăng nhập, đăng ký -->
+    <div class="login display-none" id="user-active">
+      <button class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Đăng nhập -->
+      <div class="login-content login-user">
+        <form>
+          <h3>ĐĂNG NHẬP</h3>
+          <input
+            type="text"
+            id="phone-user-login"
+            placeholder="Nhập số điện thoại"
+          />
+          <button
+            class="login-submit"
+            onclick="checkInputLogin()"
+            type="button"
+          >
+            ĐĂNG NHẬP
+          </button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
+      </div>
+
+      <!-- Xác thực tài khoản -->
+      <div class="login-content accuracy display-none">
+        <form>
+          <h3>XÁC THỰC</h3>
+          <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+          <div class="accuracy-code">
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
+          </div>
+          <button
+            class="login-submit"
+            onclick="accuracy()"
+            id="accuracy-user"
+            type="submit"
+          >
+            XÁC THỰC
+          </button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>
+          Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy">Đăng ký</a>
+        </p>
+      </div>
+
+      <!-- Đăng ký -->
+      <div class="registration-content display-none">
+        <form>
+          <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+          <input
+            type="text"
+            id="name-user-registration"
+            placeholder="Họ và tên"
+          />
+          <input
+            type="text"
+            id="phone-user-registration"
+            placeholder="Số điện thoại"
+          />
+          <input
+            type="text"
+            id="email-user-registration"
+            placeholder="Nhập email để nhận ưu đãi"
+          />
+          <button onclick="checkInputRegist()" type="button">ĐĂNG KÝ</button>
+        </form>
+        <p class="policy">
+          Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật và
+          chia sẻ thông tin của DCK Store.
+        </p>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="registration-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn đã có tài khoản? <a href="#" id="next-log">Đăng nhập</a></p>
+      </div>
+    </div>
+
+    <section id="list-products" class="margin_top margin_top-th">
+      <div class="container">
+        <!-- <h2>TẤT CẢ SẢN PHẨM</h2> -->
+        <div class="row mb-2" id="list-product_item">
+          <div class="col-12">
+            <div class="layout_post">
+              <div class="layout_post__heading">
+                <div class="text-category">Chính sách bảo hành</div>
+                <h1 class="text-name">Chính sách bảo hành</h1>
+              </div>
+              <div class="layout_post__body">
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: center"
+                >
+                  <span style="font-size: 20px"
+                    ><strong>CHÍNH SÁCH BẢO HÀNH</strong></span
+                  >
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <strong>Phạm vi và địa điểm bảo hành</strong>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <strong>- Sản phẩm bảo hành:&nbsp;</strong>Sản phẩm chính hãng
+                  của Aristino được phân phối chính thức tại hệ thống gian hàng
+                  và showroom trên toàn quốc bị lỗi kỹ thuật (không bao gồm các
+                  lỗi sản phẩm mà khách hàng đã được thông báo trước khi quyết
+                  định mua hàng) hoặc lỗi phát sinh trong quá trình khách hàng
+                  sử dụng có thể khắc phục sửa chữa được.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <strong>- Địa điểm nhận bảo hành:</strong>&nbsp;Showroom
+                  Aristino trên toàn quốc hoặc Phòng Dịch Vụ CSKH của K&amp;G.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <strong>- Thời hạn bảo hành</strong>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Nhóm hàng Áo da thật, túi xách da thật<br />
+                  + Thời gian bảo hành: 12 tháng<br />
+                  + Chi tiết lỗi: Lỗi tuột chỉ, bục chỉ do thắt nút lỏng hoặc
+                  chất lượng chỉ kém, da bị hỏng do chất lượng da kém
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Nhóm hàng Ví da, Clutch, dây lưng, giày nam<br />
+                  + Thời gian bảo hành: 6 tháng<br />
+                  +Chi tiết lỗi: Lỗi tuột chỉ, bục chỉ do thắt nút lỏng hoặc
+                  chất lượng chỉ kém, da bị hỏng do chất lượng da kém, chốt mặt
+                  dây lưng
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Nhóm hàng Sản phẩm phụ kiện kim loại (caflink, khóa kéo, móc
+                  khóa, chốt mặt dây lưng)<br />
+                  + Thời gian bảo hành: 6 tháng<br />
+                  + Chi tiết lỗi: Lỗi kẹt khóa, trượt khóa, gãy khóa, hỏng chốt
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Nhóm hàng Áo giả da, áo vest, jacket, lông vũ, dạ ( dòng cao
+                  cấp)<br />
+                  + Thời gian bảo hành: 30 ngày<br />
+                  + Chi tiết lỗi: Lỗi vải, lỗi may, lỗi phụ liệu, các lớp dập
+                  ép, khóa, móc kéo, logo bị hư hỏng.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Nhóm hàng Áo Polo, T-shirt, tanktop, quần Sooc, Bộ đồ , Áo sơ
+                  mi, áo Len. Quần âu, quần Khaki<br />
+                  + Thời gian bảo hành: 30&nbsp;ngày<br />
+                  + Chi tiết lỗi: Lỗi vải, lỗi may, lỗi phụ liệu, các lớp dập
+                  ép, khóa, móc kéo, logo bị hư hỏng.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Nhóm hàng Sản phẩm phụ kiện đồ vải (cà vạt)<br />
+                  + Thời gian bảo hành: 30&nbsp;ngày<br />
+                  + Chi tiết lỗi: Lỗi vải, lỗi may.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  Nhóm hàng: Sản phẩm phụ kiện đồ da: Lót giày<br />
+                  + Thời gian bảo hành: 30 ngày từ ngày mua<br />
+                  + Chi tiết lỗi: Lỗi tuột chỉ, bục chỉ do thắt nút lỏng hoặc
+                  chất lượng chỉ kém, da bị hỏng do chất lượng da kém
+                </p>
+
+                <p style="text-align: justify">
+                  <strong>Điều kiện bảo hành miễn phí</strong>
+                </p>
+
+                <p style="text-align: justify">
+                  - Sản phẩm đó còn thời hạn bảo hành được tính kể từ ngày mua
+                  hàng trên chứng từ xuất bán của K&amp;G
+                </p>
+
+                <p style="text-align: justify">
+                  -&nbsp;Sản phẩm lỗi và được sử dụng đúng cách theo mục hướng
+                  dẫn sử dụng đi kèm sản phẩm
+                </p>
+
+                <p style="text-align: justify">
+                  -&nbsp;Tất cả các sự cố về mặt kỹ thuật của nhà sản xuất
+                  như:&nbsp;
+                </p>
+
+                <p
+                  data-mce-style="padding-left: 30px;"
+                  style="text-align: justify"
+                >
+                  * Lỗi tuột chỉ, bục chỉ do thắt nút lỏng hoặc chất lượng chỉ
+                  kém (không bảo hành về lỗi đứt chỉ do ngoại lực tác động)
+                </p>
+
+                <p
+                  data-mce-style="padding-left: 30px;"
+                  style="text-align: justify"
+                >
+                  * Trường hợp da/ vải bị hỏng do chất lượng da/vải kém, (không
+                  bảo hành về lỗi hỏng da/vải do ngoại lực tác động, da/vải mòn
+                  do cọ sát nhiều, da/vải mục hỏng do khách hàng bảo quản không
+                  đúng cách, để sản phẩm trong môi trường bất lợi cho đồ da/vải)
+                </p>
+
+                <p
+                  data-mce-style="padding-left: 30px;"
+                  style="text-align: justify"
+                >
+                  * Lớp keo dán, keo ép nhiệt bị bong, logo bị hỏng.
+                </p>
+
+                <p style="text-align: justify">
+                  -&nbsp;Lỗi do quá trình vận chuyển (có biên bản giao nhận đi
+                  kèm)
+                </p>
+
+                <p style="text-align: justify">
+                  <strong>Trường hợp không được bảo hành</strong>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Không bảo hành phụ kiện: phụ kiện bị hỏng va đập hoặc làm
+                  mất, bị hao mòn hoặc cháy trong quá trình sử dụng, hoặc do môi
+                  trường gây ra
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Không nhận các sản phẩm đã quá cũ (da/vải và đế&nbsp;bị lão
+                  hóa, không còn độ bám dính của keo, chỉ, hoặc không có phụ
+                  kiện để thay thế).
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Những thiệt hại trong quá trình sử dụng: sản phẩm bị rách,
+                  trầy xước do người sử dụng (va quệt, rạch, co kéo, đựng quá
+                  nặng, ẩm mốc, ố vàng, bạc màu do tiếp xúc với mồ hôi, nước
+                  mưa…)
+                </p>
+
+                <p style="text-align: justify">
+                  - Sản phẩm bị biến dạng, giảm giá, hoặc không có chứng từ mua
+                  hàng.
+                </p>
+
+                <p style="text-align: justify">
+                  - Sản phẩm đã được sửa chữa ở một nơi khác.
+                </p>
+
+                <p style="text-align: justify">
+                  <strong>Thời hạn bảo hành chi tiết sản phẩm&nbsp;</strong>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Bảo hành lên tới 12 tháng đối với sản phẩm đồ da (theo quy
+                  định của từng loại và từng chi tiết của sản phẩm) kể từ ngày
+                  mua hàng được ghi trên hóa đơn bán hàng
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Bảo hành lên tới 30 ngày đối với sản phẩm đồ vải (theo quy
+                  định của từng nhóm sản phẩm và từng chi tiết của sản phẩm) kể
+                  từ ngày mua hàng được ghi trên hóa đơn bán hàng
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Showroom không nhận sửa chữa những sản phẩm quá cũ, da/ vải
+                  bị lão hóa, bị nhão, không còn độ bám dính của keo, chỉ hoặc
+                  không còn phụ kiện thay thế- Trong trường hợp lỗi da/ vải
+                  ngoại quan, Aristino không thể xử lý sẽ được đổi sang một sản
+                  phẩm khác cùng mặt hàng, nếu cùng một mặt hàng không có sẵn để
+                  thay thế, Aristino sẽ đổi sản phẩm bằng hoặc thấp hơn giá trị
+                  ban đầu của sản phẩm.&nbsp;
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Với sản phẩm lỗi kỹ thuật đã quá thời gian quy định đổi hàng
+                  của chính sách, Aristino sẽ tiến hành bảo hành, thay thế theo
+                  hiện trạng lỗi của phụ kiện, trên chính phụ kiện đó (ví dụ:
+                  dây lưng hỏng mặt, hỏng chốt, Aristino sẽ bảo hành hoặc thay
+                  thế mặt và chốt)
+                </p>
+
+                <p style="text-align: justify">
+                  <strong>Thời hạn bảo dưỡng</strong>
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  - Bảo dưỡng sản phẩm trọn đời.<strong
+                    >&nbsp;"Một lần mua - Bảo dưỡng trọn đời"</strong
+                  >&nbsp;với các quá trình làm mới, làm sạch, làm bóng, làm mềm
+                  sản phẩm.
+                </p>
+
+                <p
+                  data-mce-style="text-align: justify;"
+                  style="text-align: justify"
+                >
+                  <strong>Quy định về tính phí vận chuyển</strong>
+                </p>
+
+                <p style="text-align: justify">
+                  - Trường hợp khách hàng chuyển sản phẩm muốn bảo hành tới
+                  Showroom hoặc phòng CSKH, vui lòng gọi trước tới tổng đài hệ
+                  thống 1800 6226 hoặc Hotline tại Showroom để được tư vấn và hỗ
+                  trợ.
+                </p>
+
+                <p style="text-align: justify">
+                  - Trường hợp đã bảo hành xong, công ty chuyển trả sản phẩm cho
+                  showroom hoặc cho khách hàng: công ty K&amp;G sẽ chịu phí vận
+                  chuyển nếu có phát sinh.
+                </p>
+
+                <p style="text-align: justify">
+                  - Trường hợp hỗ trợ bảo hành ngoài chính sách cho khách hàng:
+                  Quý khách vui lòng chịu phí vận chuyển 2 chiều.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-4 col-md-4">
+                  <div id="thuong_hieu-content">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <i id="down-th" class="fa-solid fa-angle-down"></i>
+                    <i id="up-th" class="fa-solid fa-angle-up display-none"></i>
+                  </div>
+                  <ul id="thuong_hieu">
+                    <li>
+                      <a href="./cau-chuyen-thuong-hieu.html">Câu chuyện thương hiệu</a>
+                    </li>
+                    <li>
+                      <a href="./tin-tuc.html">Tin tức</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div id="chinh_sach-content">
+                    <h3>CHÍNH SÁCH BÁN HÀNG</h3>
+                    <i id="down-cs" class="fa-solid fa-angle-down"></i>
+                    <i id="up-cs" class="fa-solid fa-angle-up display-none"></i>
+                  </div>
+                  <ul id="chinh_sach">
+                    <li>
+                      <a href="./chinh-sach-doi-tra.html">Chính sách đổi hàng</a>
+                    </li>
+                    <li>
+                      <a href="./cs-baohanh.html">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                      <a href="./cs-baomat.html">Chính sách bảo mật</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div id="tu_van-content">
+                    <h3>TƯ VẤN</h3>
+                    <i id="down-tv" class="fa-solid fa-angle-down"></i>
+                    <i id="up-tv" class="fa-solid fa-angle-up display-none"></i>
+                  </div>
+                  <ul id="tu_van">
+                    <li>
+                      <a href="./hoi-dap.html">Hỏi đáp</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="payment">
+                  <p>Phương thức thanh toán</p>
+                  <img src="./img/payment.png" alt="payment" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
+              <div class="uu_dai">
+                <input type="text" placeholder="Nhập email của bạn..." />
+                <button>ĐĂNG KÝ</button>
+              </div>
+              <div class="connect">
+                <p>Kết nối với chúng tôi</p>
+                <div class="connect-icon">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="license">Bản Quyền Thuộc DCK Store</div>
+      </section>
+
+    <div class="mess">
+      <img src="./img/facebook_mesenger.svg" alt="mess" />
+    </div>
+
+    <div class="back_top">
+      <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

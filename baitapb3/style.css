@@ -1,75 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
+.login {
+  background: url("https://humg.edu.vn/content/PublishingImages/header-moi.png")
+    center 0 no-repeat rgba(0, 0, 0, 0) !important;
+  height: 130px;
 }
 
-h1 {
-    margin: 20px;
-    text-align: center;
-    font-size: 50px;
-    max-width: 100%;
-}
-
-.san-pham {
+.item-login {
     display: flex;
+    float: right;
+    margin-right: 110px;
     align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-
-.item {
-    max-width: calc(33.33333% - 10px);
-    border: 0.5px solid #cbcbcb;
-    margin-bottom: 20px;
-}
-
-img {
-    max-width: 100%;
-    margin-top: 20px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    width: 100%;
-}
-
-p {
-    font-size: 40px;
-    width: 100%;
-}
-
-.bia {
-    display: flex;
-    align-items: center;
-}
-
-.bia-img {
-    max-width: 500px;
-}
-
-.back-link {
-    margin-left: 155px;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 5px;
-    background-color: #dfd4d4;
-}
-
-span {
-    padding: 5px;
-}
-
-.price {
-    font-size: 25px;
-    margin-bottom: 20px;
     margin-top: 10px;
+}
+
+.item-login p {
+    margin: 0 5px;
+    color: #663399;
+}
+
+.item-login input {
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+    background-color: #0c4ca3;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    height: 100%;
+}
+
+li {
+    height: 100%;
+    color: white;
+    padding: 0 11px;
+    border-right: 1px solid rgb(17 13 13 / 29%);
+    align-items: center;
+    display: flex;
+}
+
+.container, .row {
+    padding: 0;
+}
+
+.carousel-12 {
+    margin-bottom: 20px;
+}
+
+.col-2 {
+    padding:0 0 0 15px;
+}
+
+.col-2 img {
+    width: 100%;
+    border: 1px solid #ccc;
 }

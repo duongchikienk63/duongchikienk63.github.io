@@ -1,0 +1,27 @@
+@import "bootstrap/scss/bootstrap";
+
+.product-item{
+    cursor: pointer !important;
+}
+
+.products-item, img {
+    width: 100%;
+}
+
+.col-lg-3 {
+    margin-bottom: 3rem !important;
+    padding: 12px;
+}
+
+.name {
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+}
+
+.price {
+    font-size: 18px !important;
+    font-weight: 700;
+}

@@ -1,0 +1,165 @@
+.payment {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border: 1px solid;
+    border-color: transparent transparent #cdcdcd transparent;
+    padding-bottom: 30px;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+.container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+form p {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.note {
+    margin-bottom: 80px;
+}
+
+.note input {
+    width: 100%;
+    padding: 10px 10px 100px 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.payment_option {
+    margin-bottom: 15px;
+}
+
+.payment_option div,
+.choose_delivery div {
+    width: 100%;
+    border: 1px solid #767676;
+    padding: 10px;
+}
+
+.payment_option label,
+.choose_delivery label {
+    padding-right: 70%;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.choose_delivery {
+    margin-bottom: 50px;
+}
+
+.confirm {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.confirm-voucher {
+    margin-bottom: 15px;
+}
+
+.voucher {
+    margin-bottom: 30px;
+}
+
+.voucher input {
+    padding: 10px;
+    width: 230px;
+    float: left;
+    font-size: 16px;
+}
+
+.voucher button {
+    width: 97px;
+    height: 48px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+}
+
+.order {
+    padding-bottom: 5px;
+    border: 2px solid;
+    border-color: transparent transparent black transparent;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.provisional,
+.ship,
+.confirm-price-total,
+.count-voucher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border: 2px solid;
+    border-color: transparent transparent #eee transparent;
+}
+
+.provisional span,
+.ship span,
+.confirm-price-total span,
+.count-voucher span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.provisional p,
+.ship p,
+.confirm-price-total p,
+.count-voucher p {
+    border: none;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.confirm-price-total {
+    margin-bottom: 20px;
+}
+
+.btn-confirm {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.scroller {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+}
+
+.btn-infor {
+    padding: 5px 10px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    border: none;
+}

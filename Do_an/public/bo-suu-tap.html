@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <title>Bộ Sưu Tập</title>
+  </head>
+  <body>
+    <section id="header my-0">
+      <!-- <div class="banner_header">
+          <img src="./img/baner_header.jpg" alt="banner" />
+        </div> -->
+
+      <div class="header-content">
+        <div class="header-advertisement">
+          <div class="qc">
+            <p>Tặng Voucher 100K Cho Hóa Đơn Từ 1 Triệu</p>
+          </div>
+        </div>
+        <div class="user">
+          <button>
+            <i class="fa-solid fa-phone"></i>
+            0705155283
+          </button>
+          <span id="righteous"> </span>
+
+          <button id="login">
+            Đăng Nhập
+            <i class="fa-regular fa-circle-user"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./img/DCK.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="header-menu_item">
+          <ul>
+            <li>
+              <a href="./index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+            </li>
+            <li>
+              <a href="./san_pham.html">SẢN PHẨM</a>
+              <div class="list-item">
+                <p><a href="./phan_loai_sp.html">Áo thun</a></p>
+                <p><a href="./Ao-somi.html">Áo sơmi</a></p>
+                <p><a href="./quan-au.html">Quần âu</a></p>
+                <p><a href="./quan-jeans.html">Quần jeans</a></p>
+                <p><a href="./quan-short.html">Quần Short</a></p>
+              </div>
+            </li>
+            <li>
+              <a href="./phu-kien.html">PHỤ KIỆN</a>
+              <div class="list-item">
+                <p><a href="./ví-nam.html">Ví Nam</a></p>
+                <p><a href="./that-lung.html">Thắt Lưng</a></p>
+                <p><a href="./giay-da.html">Giày Da</a></p>
+                <p><a href="./ca-vat.html">Cà Vạt</a></p>
+              </div>
+            </li>
+            <li  class="active">
+              <a href="#">BỘ SƯU TẬP</a>
+              <div class="list-item">
+                <p><a href="#">XUÂN HÈ</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <!-- <form>
+            <input type="text" placeholder="Tìm kiếm" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form> -->
+
+          <a href="gio_hang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="total-item">0</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="header-menu-moblie">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./img/DCK.png" alt="logo" />
+        </div>
+
+        <div class="cart-moblie">
+          <a href="./gio_hang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="total-item-mb">0</div>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+          <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        </div>
+        <div class="offcanvas-body index-menu">
+          <ul>
+            <li>
+              <a href="./index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="./thuong-hieu.html">THƯƠNG HIỆU</a>
+            </li>
+            <li>
+              <a href="./san_pham.html">SẢN PHẨM</a>
+              <span id="click-sp"><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li>
+              <a href="./phu-kien.html">PHỤ KIỆN</a>
+              <span id="click-pk"><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li>
+              <a href="#">BỘ SƯU TẬP</a>
+              <span id="click-bst"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </li>
+          </ul>
+
+          <div class="login-mobile">
+            <button id="login-mb">
+              <i class="fa-regular fa-circle-user"></i>
+              Đăng Nhập
+            </button>
+            <button>
+              <i class="fa-solid fa-phone"></i>
+              0705155283
+            </button>
+          </div>
+        </div>
+
+        <div class="offcanvas-body sp-menu display-none">
+          <ul>
+            <li>
+              <a href="./phan_loai_sp.html">Áo Thun</a>
+            </li>
+            <li>
+              <a href="./Ao-somi.html">Áo Sơ Mi</a>
+            </li>
+            <li>
+              <a href="./quan-au.html">Quần Âu</a>
+            </li>
+            <li>
+              <a href="./quan-jeans.html">Quần Jeans</a>
+            </li>
+            <li>
+              <a href="./quan-short.html">Quần Short</a>
+            </li>
+          </ul>
+
+          <button class="back-home-sp">Quay lại</button>
+        </div>
+        <div class="offcanvas-body pk-menu display-none">
+          <ul>
+            <li>
+              <a href="./ví-nam.html">Ví Nam</a>
+            </li>
+            <li>
+              <a href="./that-lung.html">Thắt Lưng</a>
+            </li>
+            <li>
+              <a href="./giay-da.html">Giày Da</a>
+            </li>
+            <li>
+              <a href="./ca-vat.html">Cà Vạt</a>
+            </li>
+          </ul>
+
+          <button class="back-home-pk">Quay lại</button>
+        </div>
+        <div class="offcanvas-body bst-menu display-none">
+          <ul>
+            <li>
+              <a href="#">Xuân Hè</a>
+            </li>
+          </ul>
+
+          <button class="back-home-bst">Quay lại</button>
+        </div>
+        <div class="offcanvas-body login-mb-menu">
+          <!-- Mục hiển thị đăng nhập, đăng ký -->
+          <div class="login-mb display-none">
+            <button class="close-mb">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+  
+            <!-- Đăng nhập -->
+            <div class="login-content-mb login-user-mb">
+              <form>
+                <h3>ĐĂNG NHẬP</h3>
+                <input
+                  type="text"
+                  id="phone-user-login-mb"
+                  placeholder="Nhập số điện thoại" required
+                />
+                <button class="login-submit" onclick="checkInputLoginMb()" type="submit">ĐĂNG NHẬP</button>
+              </form>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="login-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>
+                Bạn chưa có tài khoản? <a href="#" id="next-reg-mb">Đăng ký</a>
+              </p>
+            </div>
+  
+            <div class="login-content-mb accuracy-mb display-none">
+              <form>
+                <h3>XÁC THỰC</h3>
+                <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+                <div class="accuracy-code">
+                  <input type="text" required>
+                  <input type="text" required>
+                  <input type="text" required>
+                  <input type="text" required>
+                </div>
+                <button class="login-submit" type="submit">XÁC THỰC</button>
+              </form>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="login-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy-mb">Đăng ký</a></p>
+            </div>
+  
+            <!-- Đăng ký -->
+            <div class="registration-content-mb display-none">
+              <form>
+                <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+                <input type="text" id="name-user-registration-mb" placeholder="Họ và tên" />
+                <input type="text" id="phone-user-registration-mb" placeholder="Số điện thoại" />
+                <input type="text" id="email-user-registration-mb" placeholder="Nhập email để nhận ưu đãi"/>
+                <button onclick="checkInputRegistMb()" type="button">ĐĂNG KÝ</button>
+              </form>
+              <p class="policy">
+                Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật
+                và chia sẻ thông tin của DCK Store.
+              </p>
+              <p>Hoặc đăng nhập bằng</p>
+              <div class="registration-item">
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+                <button>
+                  <img
+                    src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+                    alt="facebook"
+                  />Facebook
+                </button>
+              </div>
+              <p>
+                Bạn đã có tài khoản? <a href="#" id="next-log-mb">Đăng nhập</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="move">
+        <a href="./index.html">Home /</a>
+        <a href="#">Bộ sưu tập /</a>
+        <a href="#">Xuân hè</a>
+      </div>
+      <div class="banner_trangsp">
+        <img src="./img/banner_trangsp.jpg" alt="banner" />
+      </div>
+    </section>
+
+    <!-- Mục hiển thị đăng nhập, đăng ký -->
+    <div class="login display-none" id="user-active">
+      <button class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Đăng nhập -->
+      <div class="login-content login-user">
+        <form>
+          <h3>ĐĂNG NHẬP</h3>
+          <input
+            type="text"
+            id="phone-user-login"
+            placeholder="Nhập số điện thoại"
+          />
+          <button
+            class="login-submit"
+            onclick="checkInputLogin()"
+            type="button"
+          >
+            ĐĂNG NHẬP
+          </button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn chưa có tài khoản? <a href="#" id="next-reg">Đăng ký</a></p>
+      </div>
+
+      <!-- Xác thực tài khoản -->
+      <div class="login-content accuracy display-none">
+        <form>
+          <h3>XÁC THỰC</h3>
+          <p>Nhập mã xác minh vừa được gửi đến số điện thoại</p>
+          <div class="accuracy-code">
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
+            <input type="text" required />
+          </div>
+          <button
+            class="login-submit"
+            onclick="accuracy()"
+            id="accuracy-user"
+            type="submit"
+          >
+            XÁC THỰC
+          </button>
+        </form>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="login-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>
+          Bạn chưa có tài khoản? <a href="#" id="next-reg-accuracy">Đăng ký</a>
+        </p>
+      </div>
+
+      <!-- Đăng ký -->
+      <div class="registration-content display-none">
+        <form>
+          <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+          <input
+            type="text"
+            id="name-user-registration"
+            placeholder="Họ và tên"
+          />
+          <input
+            type="text"
+            id="phone-user-registration"
+            placeholder="Số điện thoại"
+          />
+          <input
+            type="text"
+            id="email-user-registration"
+            placeholder="Nhập email để nhận ưu đãi"
+          />
+          <button onclick="checkInputRegist()" type="button">ĐĂNG KÝ</button>
+        </form>
+        <p class="policy">
+          Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo mật và
+          chia sẻ thông tin của DCK Store.
+        </p>
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="registration-item">
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/google.svg"
+              alt="google"
+            />
+            Google
+          </button>
+          <button>
+            <img
+              src="https://aristino.com/Content/pc/images/icon/facebook.svg"
+              alt="facebook"
+            />Facebook
+          </button>
+        </div>
+        <p>Bạn đã có tài khoản? <a href="#" id="next-log">Đăng nhập</a></p>
+      </div>
+    </div>
+
+    <section id="list-products" class="margin_top">
+      <div class="container">
+        <h2>XUÂN HÈ</h2>
+        <div class="row mb-2" id="list-product_item">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=8">
+                  <div class="products-item">
+                    <img src="./img/ao-so-mi-nam-ngan-3.jpg" alt="img-item" />
+                    <p>Áo sơmi nam ngắn tay MS-04</p>
+                    <p class="price">695.000đ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=9">
+                  <div class="products-item">
+                    <img src="./img/ao-polo-nam.jpg" alt="img-item" />
+                    <p>Áo polo nam MS-01</p>
+                    <p class="price">585.000đ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=10">
+                  <div class="products-item">
+                    <img src="./img/ao-thun-nam.jpg" alt="img-item" />
+                    <p>Áo thun nam MS-01</p>
+                    <p class="price">350.000đ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=11">
+                  <div class="products-item">
+                    <img src="./img/quan-short-nam-1.jpg" alt="img-item" />
+                    <p>Quần short nam MS-01</p>
+                    <p class="price">695.000đ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=7">
+                  <div class="products-item">
+                    <img src="./img/ao-so-mi-nam-ngan-2.jpg" alt="img-item" />
+                    <p>Áo sơmi nam ngắn tay MS-03</p>
+                    <p class="price">695.000đ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=13">
+                  <div class="products-item">
+                    <img src="./img/ao-tank-top-nam.jpg" alt="img-item" />
+                    <p>Áo tank-top nam MS-01</p>
+                    <p class="price">275.000đ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=14">
+                  <div class="products-item">
+                    <img src="./img/ao-polo-nam-1.jpg" alt="img-item" />
+                    <p>Áo polo nam MS-02</p>
+                    <p class="price">650.000đ</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="./chi_tiet_sp.html?id=15">
+                  <div class="products-item">
+                    <img src="./img/ao-polo-nam-2.jpg" alt="img-item" />
+                    <p>Áo polo nam MS-03</p>
+                    <p class="price">595.000đ</p>
+                  </div>
+                </a>
+              </div>
+        </div>
+        <div class="bst-content">
+          <h1>MAN IN INNOVATION</h1>
+          <p>
+            Khi thời tiết bắt đầu chuyển mình để đón nắng gió mùa hè cũng là
+            thời điểm hoàn hảo để bắt đầu hành trình làm mới phong cách cá nhân.
+            𝐌𝐚𝐧 𝐢𝐧 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧 là bản hoà tấu sôi động đánh dấu sự trở lại đầu
+            tiên của Aristino trên sàn diễn thời trang Xuân - Hè 2022 với nhiều
+            đột phá mới. Sự trở mình và cách tân linh hoạt của các chi tiết
+            thêu, các hoạ tiết dệt kẻ sắc màu trên nền màu trung
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div id="thuong_hieu-content">
+                  <h3>VỀ CHÚNG TÔI</h3>
+                  <i id="down-th" class="fa-solid fa-angle-down"></i>
+                  <i id="up-th" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="thuong_hieu">
+                  <li>
+                    <a href="./cau-chuyen-thuong-hieu.html">Câu chuyện thương hiệu</a>
+                  </li>
+                  <li>
+                    <a href="./tin-tuc.html">Tin tức</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div id="chinh_sach-content">
+                  <h3>CHÍNH SÁCH BÁN HÀNG</h3>
+                  <i id="down-cs" class="fa-solid fa-angle-down"></i>
+                  <i id="up-cs" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="chinh_sach">
+                  <li>
+                    <a href="./chinh-sach-doi-tra.html">Chính sách đổi hàng</a>
+                  </li>
+                  <li>
+                    <a href="./cs-baohanh.html">Chính sách bảo hành</a>
+                  </li>
+                  <li>
+                    <a href="./cs-baomat.html">Chính sách bảo mật</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div id="tu_van-content">
+                  <h3>TƯ VẤN</h3>
+                  <i id="down-tv" class="fa-solid fa-angle-down"></i>
+                  <i id="up-tv" class="fa-solid fa-angle-up display-none"></i>
+                </div>
+                <ul id="tu_van">
+                  <li>
+                    <a href="./hoi-dap.html">Hỏi đáp</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="payment">
+                <p>Phương thức thanh toán</p>
+                <img src="./img/payment.png" alt="payment" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
+            <div class="uu_dai">
+              <input type="text" placeholder="Nhập email của bạn..." />
+              <button>ĐĂNG KÝ</button>
+            </div>
+            <div class="connect">
+              <p>Kết nối với chúng tôi</p>
+              <div class="connect-icon">
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="license">Bản Quyền Thuộc DCK Store</div>
+    </section>
+
+    <div class="mess">
+      <img src="./img/facebook_mesenger.svg" alt="mess" />
+    </div>
+
+    <div class="back_top">
+      <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

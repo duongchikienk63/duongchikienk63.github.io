@@ -1,0 +1,42 @@
+.confirm-product {
+    display: flex;
+}
+
+.confirm-product_img {
+    width: 75px;
+    margin-right: 10px;
+}
+
+.confirm-product_img img {
+    max-width: 100%;
+}
+
+.confirm-product-infor h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.confirm-product-infor p {
+    font-size: 14px !important;
+    border: none;
+    color: #7f828c;
+    font-weight: 400 !important;
+    margin-bottom: 10px !important;
+    padding: 0;
+}
+
+.confirm-price {
+    border: 2px solid;
+    border-color: transparent transparent #eee transparent;
+    margin-bottom: 20px;
+}
+
+.confirm-price p {
+    font-size: 14px !important;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}

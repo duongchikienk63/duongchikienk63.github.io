@@ -1,0 +1,37 @@
+.post-item {
+    cursor: pointer;
+}
+
+.img-post img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.post-content h3, .post-tintuc-content h3 {
+    color: #8f8f19;
+}
+
+.post-content h3, .post-content h4, .post-content p, .post-tintuc-content h3, .post-tintuc-content p {
+    font-size: 16px;
+}
+
+.post-content h4 {
+    font-weight: 700;
+}
+
+.post-content p {
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

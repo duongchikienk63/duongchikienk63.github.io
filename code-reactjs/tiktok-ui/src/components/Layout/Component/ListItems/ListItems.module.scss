@@ -1,0 +1,32 @@
+@import "bootstrap/scss/bootstrap";
+
+.margin_top {
+    margin: 85px 0;
+    border: 1px solid;
+    border-color: transparent transparent #cdcdcd transparent;
+    padding-bottom: 30px;
+}
+
+.row {
+    margin-bottom: 0.5rem !important;
+}
+
+.bst-content {
+    text-align: center;
+}
+
+.bst-content h1 {
+    margin: 30px 0;
+    font-size: 24px;
+}
+
+.bst-content p {
+    font-size: 16px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+

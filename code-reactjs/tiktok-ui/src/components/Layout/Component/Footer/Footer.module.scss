@@ -1,0 +1,64 @@
+@import "bootstrap/scss/bootstrap";
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer h3 {
+    font-size: 16px;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+}
+
+.uu_dai {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.footer input {
+    padding: 14px 24px;
+    margin-right: -2px !important;
+    font-size: 16px !important;
+}
+
+.uu_dai button {
+    width: 120px;
+    height: 56px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.payment {
+    margin: 30px 0 100px;
+}
+
+.connect-icon a {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.license {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: blue;
+    border: 1px solid;
+    border-color: #ccc transparent transparent transparent;
+}
+
+ul {
+    padding: 0 !important;
+}

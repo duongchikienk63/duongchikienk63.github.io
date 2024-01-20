@@ -4,74 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Danh sách sản phẩm</title>
+    <title>Document</title>
   </head>
   <body>
+    <div class="login">
+      <div class="item-login">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUMwNDlGNUE3RjU0MTFFNjgwODVCQzNBOUUwODAxNkIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUMwNDlGNTk3RjU0MTFFNjgwODVCQzNBOUUwODAxNkIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9IjMyRDUxRjBFMTkxNzE4QjgzOTU2MzJGRUNFOERBODgwIiBzdFJlZjpkb2N1bWVudElEPSIzMkQ1MUYwRTE5MTcxOEI4Mzk1NjMyRkVDRThEQTg4MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plo4PfEAAAVOSURBVHjatFVbbBRVGP7OmRm2XbrbG7tAaGlBqCF0hVSNNxaMslXxgk8EadOk0RjCS60vNkQ0KqLRxKbRSCDEKskCvsklCC3wYIspmNTQUkjqhZZtoXSLUnrZbmfmHP9zZlujgvHFJrMz/c+c7//+7//+M0xKif/rj90N3BEIjrsi5mMsmmWyCgqVMYiQBE8yKXonHNZpS7TlmKzV5Lj9n8HHbNQETFRJhsqB4XG0d11H38gkJAVMuLh3aRjRyDwU+C04krVQoniuhf3/Cj7lolhC1mdzVtd+6QbfFb+A73quQRIklwKMMYJmtIme6f1nHyrC9i0VKC/NEylXNnHGGrMNJP4BroCpvHcMhto39v2A3Ucuw1sxCFrAJdbBwByMjk+BU8xlLv0ytYI3N9+PhpdWYtxlzRR7eyYBn8lCQPUmULutqR17DvdQgBNTQ68QM/R88SIGD2zCiQ9iCORQJYJDUEIGCzsPdmFr0znMNVjttIv6GUwNfmsaNdlM1jU0/4ivTl8hNhYtCNBu0tnFwbeewOJQjt7w2MqF+PjlB8C41LwhbaoMOHT6V+w50gPSvm4kLWo0uHJF0EJVV/8o/+ybHlUwMSZcbkBJtuqeEIoLs2aqIx2Bpx4t0tp7MQ6HfikN3j14Af3JMR4weZVNuPy2I2OcicrdlFU1TJUp9MvURqrr6vCo1h0ZYMDG0LUUyaICTKfQytPi2MQ0Pj96GT4DlaM24dK2qCB946f7qGlCM2DchUkPqomjYy7iZ65A9V0ytWrhva+7Mo0i3tJjz6Wje3S8Y0hXSFfU9NOAfH/puseUaEjSGa5yA9mNkoIzNOw9j77k71i7sggHzvyEYx1XwYmAkOo9qkttYSbdGa7cuIXE0DiCBf4KbjGU9V9PUS6hGUjueBIQi6r1S3D7cBUO7FiHxI0UPjzUjZJwEBf3bUQivgWLw356j5CFq++O9MyXGEkhi/MyU8IN9d+coI7TgJAzmKTeE+vieUF89MqD9L+LaPkCfakGazACURLtfS2KDQ0nICxoZ4HZmUFz4TNFiIbKSEZKCmBrK1AHSERVwY7N5QhmWwRiaDt61bCMe5VXONaUh1AdW05SGp4ZVFJNgHo1xZN83HZ6ixf4Yag9CkQwlIYD2BRbRgSVGxwvqQRmDwo9XEIHXt24XIOpgVIVq/TRFfPJU+jl04J3ri7NJxnm6nIV8+ceLibzCWhzSD0q2hlsFl0NPdex1aWFyPWb2pDKmpEl+VA+TQu3k3qONsWgav0ynVkQ87wcz9cu984W5QblGuVxb1y4FyMwJcN9S+cRB1vHt72wQt9Nxtt4nsVb065s2fZ8BPn+LK1oW/eQrkKxl96UeDIwy9N1Jk7AA8kJen9QA64qCaL6yaX4LS1aCn2sVZ+KQ1OiJpSF5rMXR/iG7S2adTQSxrrIfE9nkRl1rZOCscjXNizy+ZenfkGCzvz8uRaO7YpRFQVicFLWLvKz/bNH7nBafhL2sfr4qZ+x9dNzxFD5QZlKZsqnKVSy6dNSzCYEc5Ab8OPY+zGsXpyP/rTbWJJtvP6XIzdgoHFkSjYr7c82PY2icJYGVk6QwiFgOp6Espv8swrDxdrIIhzfWUmNzcUw7Q9ZvPGOX6JJRxbTJ64+nC3rVOL4qT582zGAo+cTHliGrZJgzaqFqH68BM88UgKXToLBtGwKzWGNZJzZL5Hu9t+vwUlRk0y5J+mZjhpbOnS/NTYt27qHpReTs/ehSfvkwISouRPOXb/+6jy+mRYxVyJqcF7hY6LMYSzEJUumHNFLWzsNLttCPt5q3eXr/4cAAwCGOKYGQ6heLwAAAABJRU5ErkJggg=="
+          alt=""
+        />
+        <p>Đăng nhập</p>
+        <input placeholder="Tìm kiếm..."/>
+        <img src="https://humg.edu.vn/Publishing_Resources/web/images/en-EN.png" alt="">
+      </div>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <img src="https://humg.edu.vn/Publishing_Resources/web/images/icon-home.png" alt="home">
+        </li>
+        <li>Giới thiệu</li>
+        <li>Tuyển sinh</li>
+        <li>Tin tức</li>
+        <li>Đào tạo-ĐBCLGD</li>
+        <li>Khoa học-Công nghệ</li>
+        <li>Hợp tác-Đối ngoại</li>
+        <li>Sinh viên</li>
+        <li>HĐ Giáo sư cơ sở</li>
+      </ul>
+    </div>
     <div class="container">
-      <h1>Danh sách sản phẩm</h1>
-
-      <div class="san-pham">
-        <div class="item">
-          <a href="bia333.html">
-            <img src="img/bia333.jpg" alt="bia 333" title="bia 333" />
+      <div class="carousel-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://humg.edu.vn/content/tintuc/PublishingImages/asset%201@3x-100.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://humg.edu.vn/content/tintuc/PublishingImages/banner%20su%20mang,tam%20nhin.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://humg.edu.vn/content/tintuc/PublishingImages/asset%207@3x-100.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
           </a>
-          <p>
-            <a href="bia333.html">Bia 333</a>
-          </p>
-          <p class="price">Giá bán: 11.000đ</p>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-
-        <div class="item">
-          <a href="biasaigon.html">
-            <img src="img/biasaigon.jpg" alt="bia saigon" title="bia saigon" />
-          </a>
-          <p>
-            <a href="biasaigon.html">Bia saigon</a>
-          </p>
-          <p class="price">Giá bán: 13.000đ</p>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img src="https://humg.edu.vn/content/quangcao/AnhQuangCao/WebDangbo-v4.png" alt="">
         </div>
-
-        <div class="item">
-          <a href="biatiger.html">
-            <img src="img/biatiger.jpg" alt="bia tiger" title="bia tiger" />
-          </a>
-          <p>
-            <a href="biatiger.html">Bia tiger</a>
-          </p>
-          <p class="price">Giá bán: 17.000đ</p>
+        <div class="col-2">
+          <img src="https://humg.edu.vn/content/quangcao/AnhQuangCao/WebDangbo-v4.png" alt="">
         </div>
-
-        <div class="item">
-          <a href="bia333.html">
-            <img src="img/bia333.jpg" alt="bia 333" title="bia 333" />
-          </a>
-          <p>
-            <a href="bia333.html">Bia 333</a>
-          </p>
-          <p class="price">Giá bán: 11.000đ</p>
+        <div class="col-2">
+          <img src="https://humg.edu.vn/content/quangcao/AnhQuangCao/WebDangbo-v4.png" alt="">
         </div>
-
-        <div class="item">
-          <a href="biasaigon.html">
-            <img src="img/biasaigon.jpg" alt="bia saigon" title="bia saigon" />
-          </a>
-          <p>
-            <a href="biasaigon.html">Bia saigon</a>
-          </p>
-          <p class="price">Giá bán: 13.000đ</p>
+        <div class="col-2">
+          <img src="https://humg.edu.vn/content/quangcao/AnhQuangCao/WebDangbo-v4.png" alt="">
         </div>
-
-        <div class="item">
-          <a href="biatiger.html">
-            <img src="img/biatiger.jpg" alt="bia tiger" title="bia tiger" />
-          </a>
-          <p>
-            <a href="biatiger.html">Bia tiger</a>
-          </p>
-          <p class="price">Giá bán: 17.000đ</p>
+        <div class="col-2">
+          <img src="https://humg.edu.vn/content/quangcao/AnhQuangCao/WebDangbo-v4.png" alt="">
+        </div>
+        <div class="col-2">
+          <img src="https://humg.edu.vn/content/quangcao/AnhQuangCao/WebDangbo-v4.png" alt="">
         </div>
       </div>
     </div>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 </html>

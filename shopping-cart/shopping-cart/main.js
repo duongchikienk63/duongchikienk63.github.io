@@ -60,7 +60,7 @@ function renderProducts(arr) {
             <div class="description">
             ${t.description}
             </div>
-            <div class="price">${t.price} VND</div>
+            <div class="price">${t.price}</div>
         </div>
     </div>
 
@@ -211,3 +211,13 @@ function updateTotalMoney(arrs) {
 btnPromotion.addEventListener("click", function () {
   updateTotalMoney(promotionCode);
 });
+
+
+let xaaa = document.getElementsByClassName('price')
+
+let u = 0;
+
+for(let i = 0; i < xaaa.length; i++) {
+  u += Number(xaaa[i].innerHTML)
+}
+
