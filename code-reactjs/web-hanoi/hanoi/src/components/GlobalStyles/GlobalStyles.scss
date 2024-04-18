@@ -1,0 +1,41 @@
+@import "normalize.css";
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap");
+
+// :root {
+//   --primary: #fe2c55;
+//   --black: #000;
+
+//   // DefaultLayout
+//   // --Default-layout-header-height: 60px;
+//   // --Default-layout-container-width: 1150px;
+//   // --Default-layout-horizontal-spacer: 24px;
+// }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  //   font-family: "Roboto", sans-serif;
+  // font-size: 1.6rem;
+  // line-height: 1.5;
+  // text-rendering: optimizeSpeed;
+  font-family: "Playfair Display", serif;
+  //   font-optical-sizing: auto;
+  //   font-weight: 400;
+  //   font-weight: 500;
+  //   font-weight: 600;
+  font-style: normal;
+}
+
+a[href] {
+  color: #000;
+  text-decoration: none;
+}
