@@ -10,9 +10,211 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Home</title>
   </head>
+
   <body>
+    <div>
+      <div class="header">
+        <div class="header-menu">
+          <p>
+            <a class="color1" href="/"> Trang Chủ </a>
+          </p>
+          <p>
+            <a class="color2" href="/culturalHistory.html">Lịch Sử - Văn Hoá</a>
+          </p>
+          <p>
+            <a class="color3" href="/cuisine.html">Ẩm Thực</a>
+          </p>
+          <p>
+            <a class="color4" href="/entertainment.html">Giải Trí</a>
+          </p>
+          <p>
+            <a class="color5" href="/touristInformation.html"
+              >Thông Tin Du Lịch</a
+            >
+          </p>
+        </div>
+        <div>
+          <p class="login">
+            <a class="color6" href="/login.html">Đăng Nhập</a>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="background"
+          src="https://statics.vinpearl.com/du-lich-ha-noi-4-ngay-3-dem-1_1681407076.jpg"
+          alt="background"
+        />
+
+        <div class="container" style="margin-bottom: 85px">
+          <h2>Nổi Bật</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img
+                  src="https://media.istockphoto.com/id/481045024/vi/anh/tran-quoc-pagoda.jpg?s=612x612&w=0&k=20&c=yPbbMc3B_WSMM7QG1WrsqgpzNhf9KATeyO6mllBgDfE="
+                  alt="Los Angeles"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="https://bcp.cdnchinhphu.vn/Uploaded/duongphuonglien/2016_09_28/ImageHandler.ashx.jpg"
+                  alt="Chicago"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  src="https://www.shutterstock.com/image-photo/ha-noi-vietnam-mar-09-260nw-2276070763.jpg"
+                  alt="New york"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="section back four">
+          <div class="container center">
+            <div class="banner white square">
+              <h5 class="t-gold">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">BẢN TIN</font></font
+                >
+              </h5>
+              <span class="line black"></span>
+              <h2 class="t-black">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Đừng </font></font
+                ><span class="t-gold"
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">bỏ lỡ</font></font
+                  ></span
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"> nó!</font></font
+                >
+              </h2>
+              <h6 class="center">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Đăng ký nhận bản tin của chúng tôi để biết các chương trình
+                    khuyến mãi đặc biệt và cập nhật thú vị.</font
+                  ></font
+                >
+              </h6>
+              <div id="fields">
+                <!-- CONTACT Form-->
+                <form
+                  id="contact-form"
+                  method="POST"
+                  action="php/contact.php"
+                  novalidate="true"
+                >
+                  <div id="note" class="messages t-dark"></div>
+                  <div class="controls center newsletter">
+                    <!-- form-group-->
+                    <div class="form-group">
+                      <div class="input-item form-group">
+                        <input
+                          id="form_email"
+                          type="email"
+                          name="email"
+                          class="form-control light-grey"
+                          placeholder="Địa chỉ email*"
+                          required="required"
+                          data-error="Valid email is required."
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="help-block with-errors"></div>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          ><input
+                            type="submit"
+                            name="submit"
+                            id="submit"
+                            class="primary-btn large square-bl square-tl black t-snow disabled"
+                            value="Gửi" /></font
+                      ></font>
+                    </div>
+                  </div>
+                </form>
+                <!-- END CONTACT Form-->
+              </div>
+            </div>
+            <h5 class="t-black mt-100">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">giữ liên lạc</font></font
+              >
+            </h5>
+            <span class="line gold"></span>
+            <div class="social-container m-20 center">
+              <a href="" class="primary-btn white icon t-gold"
+                ><i class="fab fa-facebook-square" aria-hidden="true"></i
+              ></a>
+              <a href="" class="primary-btn white icon t-gold"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a href="" class="primary-btn white icon t-gold"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="/main.js"></script>
   </body>
 </html>
