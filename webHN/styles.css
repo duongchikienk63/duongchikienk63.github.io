@@ -34,8 +34,13 @@ p {
   margin: 0 !important;
 }
 
-a:hover {
-  color: blue;
+.header-menu a:hover {
+  color: blue !important;
+}
+
+.card-body a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .header {

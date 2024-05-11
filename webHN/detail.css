@@ -503,3 +503,9 @@ a {
   top: -114px;
   font-weight: 700;
 }
+
+.back a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
