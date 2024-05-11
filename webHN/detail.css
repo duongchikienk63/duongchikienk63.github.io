@@ -509,3 +509,12 @@ a {
   text-decoration: none;
   color: black;
 }
+
+table, th, td {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
