@@ -26,7 +26,8 @@ body {
 }
 
 /* header */
-p {
+p,
+li {
   height: 20px;
   font-size: 18px;
   font-weight: 500;
@@ -62,7 +63,7 @@ a:hover {
 }
 
 .header a {
-  color: white;
+  color: black;
 }
 
 /* banner */
@@ -416,7 +417,7 @@ h6 {
 }
 
 .carousel-indicators {
- margin-left: 20% !important;
+  margin-left: 20% !important;
 }
 
 .carousel-caption {
@@ -433,7 +434,6 @@ h6 {
   align-items: center;
   text-decoration: none;
   color: white;
-
 }
 
 .carousel-caption a:hover {
@@ -448,4 +448,95 @@ h6 {
 
 .item:hover {
   cursor: pointer;
+}
+
+.Search_search-input__U8-e- {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin-right: 25px;
+}
+
+.Search_search-input__U8-e- input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+}
+
+.Search_search-input__U8-e- input:focus {
+  outline: 0;
+}
+
+.Header_search__EPV3e input {
+  border: none;
+  width: 120px;
+  font-size: 14px;
+}
+
+.Search_search-input__U8-e- button {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.header-mb, .header-menu-mb {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+
+  .background {
+    height: 300px;
+  }
+
+  #contact-form .controls {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .center {
+    font-size: 10px;
+  }
+
+  .carousel-inner {
+    height: 222px;
+  }
+
+  .header-mb {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+  }
+
+  .icon i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .header-menu-mb {
+    display: none;
+  }
+
+  .header-menu-mb a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .header-menu-mb a:hover {
+    text-decoration: none;
+  }
+
+  .header-menu-mb p {
+    height: 44px;
+    border-bottom: 1px solid;
+  }
 }

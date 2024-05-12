@@ -24,6 +24,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Home</title>
@@ -51,17 +58,53 @@
             >
           </p>
         </div>
-        <div>
+        <div style="display: flex">
+          <div class="Search_search-input__U8-e-" aria-expanded="false">
+            <input placeholder="Tìm kiếm" spellcheck="false" value="" />
+            <button class="Search_search-btn__Rq3JG">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
           <p class="login">
             <a class="color6" href="/login.html">Đăng Nhập</a>
           </p>
         </div>
       </div>
 
+      <div class="header-mb">
+        <div id="menu_mb" class="icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+  
+      <div class="header-menu-mb">
+        <p>
+          <a href="/"> Trang Chủ </a>
+        </p>
+        <p>
+          <a href="/culturalHistory.html">Lịch Sử - Văn Hoá</a>
+        </p>
+        <p>
+          <a href="/cuisine.html">Ẩm Thực</a>
+        </p>
+        <p>
+          <a href="/entertainment.html">Giải Trí</a>
+        </p>
+        <p>
+          <a href="/touristInformation.html">Thông Tin Du Lịch</a>
+        </p>
+        <p>
+          <a href="/login.html">Đăng Nhập</a>
+        </p>
+      </div>
+
       <div>
         <img
           class="background"
-          src="https://statics.vinpearl.com/du-lich-ha-noi-4-ngay-3-dem-1_1681407076.jpg"
+          src="https://cdn3.ivivu.com/2023/10/du-lich-ha-noi-ivivu-img-2.jpg"
           alt="background"
         />
 
@@ -69,7 +112,7 @@
           <h2>Nổi Bật</h2>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators" >
+            <ol class="carousel-indicators">
               <li
                 data-target="#myCarousel"
                 data-slide-to="0"

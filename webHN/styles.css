@@ -71,3 +71,94 @@ p {
 .header a {
   color: black !important;
 }
+
+.header-mb, .header-menu-mb {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+
+  .background {
+    height: 300px;
+  }
+
+  #contact-form .controls {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .center {
+    font-size: 10px;
+  }
+
+  .carousel-inner {
+    height: 222px;
+  }
+
+  .header-mb {
+    padding: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+  }
+
+  .icon i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .header-menu-mb {
+    display: none;
+  }
+
+  .header-menu-mb a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .header-menu-mb p {
+    height: 44px;
+    border-bottom: 1px solid;
+  }
+
+  .mg {
+    margin-top: 30px !important;
+  }
+
+  .fix-height {
+    height: 210px !important;
+  }
+
+  .card-title-mb a {
+    font-size: 14px !important;
+  }
+
+  .card-des-1 {
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.5 !important;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* line-clamp: 1; */
+    -webkit-box-orient: vertical;
+  }
+
+  .fix-mb {
+    font-size: 14px !important;
+  }
+
+  .header-menu-mb a:hover {
+    text-decoration: none;
+  }
+}

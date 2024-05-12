@@ -262,7 +262,6 @@ img {
   color: #4f4f4f;
   max-width: 670px;
   margin: 0 auto;
-  text-align: left;
   letter-spacing: 0.01em;
   padding-right: 0;
   padding-left: 0;
@@ -517,4 +516,19 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   margin-bottom: 10px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .back {
+    top: -222px !important;
+  }
+
+  .box-category__list-news {
+    padding: 0;
+  }
+ 
 }
